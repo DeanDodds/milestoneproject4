@@ -3,7 +3,7 @@
 northyeastbrewing.co.uk is to promote  a new micro-brew pub launching in Newcastle called North Yeast Brewing. The website the main purpose inform potential costumers of the brewery, 
 promote the Tap room, highlight the selection of craft beer available and promote Events the company will be attending and hosting. ​
 
-a href="https://dean-milestone-project-3.herokuapp.com/">Go to live website.....</a>
+<a href="https://dean-milestone-project-3.herokuapp.com/">Go to live website.....</a>
 
 <a href="https://dean-milestone-project-4.herokuapp.com/">![live website preview]()</a>
 
@@ -15,6 +15,7 @@ a href="https://dean-milestone-project-3.herokuapp.com/">Go to live website.....
    - [Typography](#typography)
    - [Color References](#colors)
    - [Wireframes](#wireframes)
+   - [Data Model](#data-model)
    - [Imagery](#imagery)
 3. [Features](#features) 
    - [Future Features](#future-features)
@@ -98,6 +99,9 @@ The wireframes for the website were created on Drawio, there is a desktop, table
 
 ![Contact page wireframe](/designdocumentation/wireframes/contactus.png)
 
+## Data Model 
+
+![Data model](/designdocumentation/databasedisign/northyeastbrewingredatabase.png)
 ## Logo Design 
 
 I have designed to versions of the North Yeast Brewing logo a white version for contrast over dark backgrounds and a black version for contrast over light backgrounds.
@@ -244,14 +248,16 @@ favicon containg the black version of the logo
 - <a href="https://www.python.org/">Python</a>
 - <a href="https://www.djangoproject.com/">Django</a>
 - <a href="https://www.javascript.com/">JavaScript</a>
+-<a href="https://www.jetbrains.com/datagrip/features/postgresql/">PostgreSQL</a>
+
 
 
 ## Frameworks, Libraries and Programs used <a id="frameworks"></a>
 
-- <a href="https://materializecss.com/">Meteralize:</a>
+- <a href="https://getbootstrap.com/docs/5.2/layout/containers/">Bootstrap:</a>
   Used for responsiveness and styling of the website.
-- <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask: </a>
-  Used to build the application
+  - <a href="https://swiperjs.com/demos#infinite-loop-with-slides-per-group">SwiperJs</a>
+  Used for card carosel slider
 - <a href="https://fontawesome.com/">Font Awesome:</a>
   Used to import icons that used across every page of the website.
 - <a href="https://fonts.google.com/">Google Fonts:</a>
