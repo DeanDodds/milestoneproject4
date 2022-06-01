@@ -235,7 +235,7 @@ favicon containg the black version of the logo
 - Shopping Cart
 - Secure Purchasing
 - Taproom Booking
-- Event Booking
+- Event and taproom Booking
 - Contact Form 
 - Footer with soical media links 
 
@@ -256,7 +256,7 @@ favicon containg the black version of the logo
 
 - <a href="https://getbootstrap.com/docs/5.2/layout/containers/">Bootstrap:</a>
   Used for responsiveness and styling of the website.
-  - <a href="https://swiperjs.com/demos#infinite-loop-with-slides-per-group">SwiperJs</a>
+- <a href="https://swiperjs.com/demos#infinite-loop-with-slides-per-group">SwiperJs</a>
   Used for card carosel slider
 - <a href="https://fontawesome.com/">Font Awesome:</a>
   Used to import icons that used across every page of the website.
@@ -274,3 +274,15 @@ favicon containg the black version of the logo
 - <a href="https://www.adobe.com/uk/creativecloud/renew/resubscribe-cci.html?mv=search&mv=search&sdid=NYTLQZ47&ef_id=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB:G:s&s_kwcid=AL!3085!3!436521415410!e!!g!!photoshop!10105625998!106997352408&gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB">Photoshop</a> Used to edit photos and create content. 
 - <a href="https://www.adobe.com/uk/creativecloud/renew/resubscribe-cci.html?mv=search&mv=search&sdid=NYTLQZ47&ef_id=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB:G:s&s_kwcid=AL!3085!3!436521415410!e!!g!!photoshop!10105625998!106997352408&gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB">Adobe Illustrator</a> Used to create Logo image. 
 - <a href="https://tinypng.com/">TinyPNG</a> Used to compress images. 
+
+# Credits 
+
+## images 
+
+- Index page hero image - <a href="https://stock.adobe.com/uk/images/draught-beer-in-glasses/229883213?prev_url=detail">By luka mervič: Adobe Stock</a>
+- index page events image <a href="https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:738b8d93-a23a-48ba-b71a-e9e00c7f0e4b?asset_id=118466593">By Syda Productions: Adobe Stock</a>
+- Story page hero image - <a href="https://stock.adobe.com/uk/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=home+brew&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=home+brew&get_facets=0&asset_id=187479821">By luka mervič: Adobe Stock</a>
+- Beer page hero - <a href="https://www.pexels.com/photo/red-and-white-craft-lighted-signage-707408/">Photo by Tim Gouw: Pexels</a>
+- products page and our story page hops image <a href="https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:738b8d93-a23a-48ba-b71a-e9e00c7f0e4b?asset_id=199774568">By fedorovacz: Adobe Stock</a>
+
+## Code
