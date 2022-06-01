@@ -35,7 +35,7 @@ promote the Tap room, highlight the selection of craft beer available and promot
 
 ## User Stories 
 
-|![User Stories pdf](/designdocumentation/screenshots/userstories%20.png)
+|![User Stories pdf](/designdocumentation/screenshots/updateduser.png)
 |:--:|
 |<br>User stories</br>|
 
