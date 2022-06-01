@@ -1,108 +1,270 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# North Yeast Brew
 
-Welcome USER_NAME,
+northyeastbrewing.co.uk is to promote  a new micro-brew pub launching in Newcastle called North Yeast Brewing. The website the main purpose inform potential costumers of the brewery, 
+promote the Tap room, highlight the selection of craft beer available and promote Events the company will be attending and hosting. ​
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+a href="https://dean-milestone-project-3.herokuapp.com/">Go to live website.....</a>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<a href="https://dean-milestone-project-4.herokuapp.com/">![live website preview]()</a>
 
-## Gitpod Reminders
+# Table of contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. [User Experience (UX)](#user-experience)
+   - [User Stories](#user-stories)
+2. [Design](#design)
+   - [Typography](#typography)
+   - [Color References](#colors)
+   - [Wireframes](#wireframes)
+   - [Imagery](#imagery)
+3. [Features](#features) 
+   - [Future Features](#future-features)
+4. [Technologies Used](#technologies)
+   - [Langagues Used](#langagues)
+   - [Frameworks, Libraries and Programs used](#frameworks)
+   - [Data Modling](#data)
+5. [Deployment](#deployment)
+   - [Making a Local Clone](#clone)
+   - [Forking the GitHub Repository](#fork)
+6. [Credis](#credits)
+   - [Images](#images)
+   - [Code](#code)
+7. [Acknowledgements](#acknowledgements)
 
-`python3 -m http.server`
+# User Experience (UX) <a id="user-experience"></a>
 
-A blue button should appear to click: _Make Public_,
+## User Stories 
 
-Another blue button should appear to click: _Open Browser_.
+|![User Stories pdf](/designdocumentation/screenshots/userstories%20.png)
+|:--:|
+|<br>User stories</br>|
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Design <a id=design></a>
 
-A blue button should appear to click: _Make Public_,
+## Typography
 
-Another blue button should appear to click: _Open Browser_.
+- Helvetica is the main font used for all headers with a Sans Serif fallback.
+- Arial is the font used for the main text area of the web appliction with a Sans Serif fallback.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Colour theme
 
-To log into the Heroku toolbelt CLI:
+| Color Chart 1     | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| black| ![#142126](https://via.placeholder.com/10/142126?text=+) #142126 |
+| burlywood | ![#f2c879](https://via.placeholder.com/10/f2c879?text=+) #F2C879 |
+| peru | ![#D99036](https://via.placeholder.com/10/d99036?text=+) #D99036 |
+| chocolate| ![#D94B2B](https://via.placeholder.com/10/d94b2b?text=+) #D94B2B |
+| brown | ![#8C2323](https://via.placeholder.com/10/8c2323?text=+) #8C2323 |
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+| Color Chart 2     | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| maroon | ![#591824](https://via.placeholder.com/10/591824?text=+) #591824 |
+| black | ![#030F26](https://via.placeholder.com/10/030F26?text=+) #030F26 |
+| lightgray | ![#D5D9BA](https://via.placeholder.com/10/d5D9BA?text=+) #D5D9BA |
+| goldenrod | ![#F29D35](https://via.placeholder.com/10/f29d35?text=+) #F29D35 |
+| chocolate| ![#D95525](https://via.placeholder.com/10/d95525?text=+) #D95525 |
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Wireframes <a id="wireframes"></a>
 
-------
+The wireframes for the website were created on Drawio, there is a desktop, tablet and mobile wireframe for this website
 
-## Release History
+### Home Page 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Home page wireframe](/designdocumentation/wireframes/homepage.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Product Page 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Product page wireframe](/designdocumentation/wireframes/beerpage.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Product Details Page 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Product Details page wireframe](/designdocumentation/wireframes/poductspage.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Story Page 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Story page wireframe](/designdocumentation/wireframes/ourstory.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Taproom Page 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Taprrom page wireframe](/designdocumentation/wireframes/taprrom.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Events Page 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Events page wireframe](/designdocumentation/wireframes/events.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Contact Page 
 
-------
+![Contact page wireframe](/designdocumentation/wireframes/contactus.png)
 
-## FAQ about the uptime script
+## Logo Design 
 
-**Why have you added this script?**
+I have designed to versions of the North Yeast Brewing logo a white version for contrast over dark backgrounds and a black version for contrast over light backgrounds.
+| ![Black version of the logo](/designdocumentation/images/black%20logo.svg) |
+|:--:|
+| <b>Black version of the logo</b>|
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+| ![White version of the logo](/designdocumentation/images/white%20logo.svg) |
+|:--:|
+| <b>White version of the logo]</b>|
 
-**How will this affect me?**
+## Imagery
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+favicon containg the black version of the logo
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+| ![North Yeast Brewing favicon](/designdocumentation/images/black-logo.ico) |
+|:--:|
+| <b>North Yeast Brewing favicon</b>|
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Homepage
 
-**So….?**
+- 1 v Hero Image
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+| ![Hero Image](/designdocumentation/images/banner-1.jpg) |
+|:--:|
+| <b>Hero Image</b>|
 
-**Can I opt out?**
+| ![Products image](/designdocumentation/images/index-1.png) |
+|:--:|
+| <b>Products image</b>|
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+| ![Events](/designdocumentation/images/index-2.png) |
+|:--:|
+| <b>Events image</b>|
 
-**Anything more?**
+### Our Story Page 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- 1 Hero Image
 
----
+|![Hero Image](/designdocumentation/images/image-1.png)|
+|:--:|
+| <b>Hero Image</b>|
 
-Happy coding!
+3 x Circle images 
+
+| ![Water image](/designdocumentation/images/water1.jpg)|![Wheat image](/designdocumentation/images/wheat.jpg)|![Hops image](/designdocumentation/images/brew.png)|
+|:--:|:--:|:--:|
+| <b>Water Image</b>|<b>Wheat Image</b>|<b>Hops Image</b>|
+
+### Product page (Beers)
+
+- 1 v Hero Image
+
+| ![Hero Image](/designdocumentation/images/banner3.png) |
+|:--:|
+| <b>Hero Image</b>|
+
+- 12 Product images 
+
+| ![example product image](/designdocumentation/images/PA2.png) |
+|:--:|
+|<b>example product image</b>|
+
+- 6 icon images
+
+| ![Style](/designdocumentation/images/istlye.png)|![Malt](/designdocumentation/images/igrain.png)|
+|:--:|:--:|
+|<b>Style</b>|<b>Malt</b>|
+
+| ![Pecentage](/designdocumentation/images/iPERCENTAGE.png)|![Hops](/designdocumentation/images/ihop%20(2).png)|
+|:--:|:--:|
+|<b>Pecentage</b>|<b>Hops</b>|
+
+| ![IBU](/designdocumentation/images/ibrew.png)|![OG](/designdocumentation/images/iog%20(2).png)|
+|:--:|:--:|
+| <b>IBU</b>|<b>OG</b>|
+
+
+### Product Details Page 
+
+- 1 v Hero Image
+
+| ![Product Hero Image](/designdocumentation/images/Product-banner-PA1.png) |
+|:--:|
+| <b>Product Hero Image</b>|
+
+- 12 Product images 
+
+| ![example product image](/designdocumentation/images/PA1.png) |
+|:--:|
+| <b>example product image</b>|
+
+### Taproom page 
+
+- 1 v Hero Image
+
+| ![Product Hero Image](/designdocumentation/images/banner3.png) |
+|:--:|
+| <b>Product Hero Image</b>|
+
+- 12 Product images 
+
+| ![example product image](/designdocumentation/images/PB3.png) |
+|:--:|
+| <b>example product image</b>|
+
+### Events page 
+
+- 1 v Hero Image
+
+| ![Hero Image](/designdocumentation/images/banner-5.png) |
+|:--:|
+| <b>Hero Image</b>|
+
+
+### Contact Page 
+
+- 1 v Hero Image
+
+| ![Hero Image](/designdocumentation/images/banner-6.png) |
+|:--:|
+| <b>Hero Image</b>|
+
+# 3.Features <a id="features"></a>
+
+- Responsive Nav Bar with social media links 
+- Login page 
+- logout 
+- Search Bar 
+- Shopping Cart
+- Secure Purchasing
+- Taproom Booking
+- Event Booking
+- Contact Form 
+- Footer with soical media links 
+
+# 4. Technologies Used <a id="technologies"></a>
+
+## Langagues Used <a id="langagues"></a>
+
+- <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML5</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+- <a href="https://www.python.org/">Python</a>
+- <a href="https://www.djangoproject.com/">Django</a>
+- <a href="https://www.javascript.com/">JavaScript</a>
+
+
+## Frameworks, Libraries and Programs used <a id="frameworks"></a>
+
+- <a href="https://materializecss.com/">Meteralize:</a>
+  Used for responsiveness and styling of the website.
+- <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask: </a>
+  Used to build the application
+- <a href="https://fontawesome.com/">Font Awesome:</a>
+  Used to import icons that used across every page of the website.
+- <a href="https://fonts.google.com/">Google Fonts:</a>
+  Used to import Montserrat and Lora fonts.
+- <a href="https://gitpod.io/">Gitpod: </a>
+  Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- <a href="https://github.com/">GitHub:</a>
+  Used to store the projects code once pushed from Gitpot.
+- <a href="https://app.diagrams.net/">Drawio.net:</a>
+  Used to create all wireframes.
+- <a href="http://https://randomkeygen.com/">Randomkeygen:</a>
+  Used to generate secure passwords.
+- <a href="https://dashboard.heroku.com/apps">HEROKU:</a> Used to deploy the python app.
+- <a href="https://www.adobe.com/uk/creativecloud/renew/resubscribe-cci.html?mv=search&mv=search&sdid=NYTLQZ47&ef_id=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB:G:s&s_kwcid=AL!3085!3!436521415410!e!!g!!photoshop!10105625998!106997352408&gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB">Photoshop</a> Used to edit photos and create content. 
+- <a href="https://www.adobe.com/uk/creativecloud/renew/resubscribe-cci.html?mv=search&mv=search&sdid=NYTLQZ47&ef_id=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB:G:s&s_kwcid=AL!3085!3!436521415410!e!!g!!photoshop!10105625998!106997352408&gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB">Adobe Illustrator</a> Used to create Logo image. 
+- <a href="https://tinypng.com/">TinyPNG</a> Used to compress images. 
