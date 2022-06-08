@@ -13,12 +13,12 @@
 
 {% block hero %}
 <!-- hero -->
-<section>
+<section class="mt-10">
     <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center" id="index-hero-image">
-        <div class="overlay hero-call-to-action mb-3">
+        <div class="overlay hero-call-to-action mb-3 d-none d-md-block">
             <h1 class="display-5 fw-bold">Craft Beer!</h1>
             <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Here at North Yeast Brewing
+                <p class="mb-4 d-md-flex d-none">Here at North Yeast Brewing
                     we have a great selection of beer,
                     ales and stouts for you to enjoy.
                     check out our selection here</p>
@@ -33,5 +33,55 @@
 {% endblock %}
 
 {% block content %}
+<section class="new-section-margin w-100">
+    <div class="row mt-10 ">
+        <div class="col-lg-6 col-xs-12 d-flex align-items-end justify-content-center feat-container d-md-none">
+            <div class="feature px-4 py-5 text-center d-flex align-items-end justify-content-center" id="book-feature">
+                <div class="mb-3 text-center">
+                    <h2>Caft Beer</h2>
+                    <div class="col-lg-6 mx-auto">
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
+                            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-lg-6 col-xs-12 d-flex align-items-end justify-content-center feat-container">
+            <div class="feature px-4 py-5 text-center d-flex align-items-end justify-content-center" id="book-feature">
+                <div class="mb-3 text-center">
+                    <h2>The Taproom</h2>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="mb-4 d-none d-md-flex">Here at North Yeast Brewing
+                            we have a great selection of beer,
+                            ales and stouts for you to enjoy.
+                            check out our selection here</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
+                            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 d-flex align-items-end justify-content-center">
+            <div class="feature px-4 py-5 text-center d-flex align-items-end justify-content-center"
+                id="events-feature">
+                <div class="mb-3 text-center">
+                    <h2>Hope to see you there!</h2>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="mb-4 d-none d-md-flex">
+                            North Yeast Brewing travel up and
+                            the country attending beer events and
+                            festivals. So if you cant make it to the
+                            brewery you can try our beer there</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
+                            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Events</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

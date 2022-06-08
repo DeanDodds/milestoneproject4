@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
 }
@@ -50,6 +55,12 @@ body {
     max-width: 600px;
 }
 
+/* section */
+
+.new-section-margin {
+    margin-top: 90px;
+}
+
 /* Hero images */
 
 /* Index.html */
@@ -58,4 +69,51 @@ body {
     background-size: cover;
     color: #fafafa;
     height: 50vh;
+}
+
+/* Feature */
+
+
+.feature {
+    height: 500px;
+    width: 80%;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .feature {
+        height: 400px;
+        width: 100%;
+        border: 2px solid black;
+    }
+
+    .feature:nth-child(odd) {
+        margin-top: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 773px) {
+    #feat-row {
+        margin: none;
+        padding: none;
+    }
+
+    .feat-container {
+        width: 100%;
+    }
+
+    .feature {
+        height: 250px;
+        width: 100%;
+        border: 2px solid black;
+        margin: none;
+        padding: none;
+    }
+
+    .feature:nth-child(odd) {
+        margin-top: 5px;
+    }
 }
