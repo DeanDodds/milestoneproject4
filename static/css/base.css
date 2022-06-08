@@ -2,6 +2,18 @@ html {
     height: 100%;
 }
 
+body {
+    margin-top: 206px;
+}
+
+@media only screen and (max-width: 991px) {
+    body {
+        margin-top: 168px;
+    }
+}
+
+
+
 /* navbar  */
 #mobile-logo {
     margin-left: 9em;
