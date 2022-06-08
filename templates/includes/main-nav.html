@@ -1,0 +1,69 @@
+<div class="collapse navbar-collapse row" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto w-100">
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black text-center" href="#" aria-expanded="false">
+                Home
+            </a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="font-weight-bold nav-link text-center" href="#" id="beer-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Beers
+            </a>
+            <div class="dropdown-menu border-0 text-center" aria-labelledby="beers-link">
+                <a href="" class="dropdown-item">IPAs</a>
+                <a href="" class="dropdown-item">Beers</a>
+                <a href="" class="dropdown-item">Stout</a>
+                <a href="" class="dropdown-item">Larger</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="font-weight-bold nav-link text-center" href="#" aria-expanded="false">
+                Tap Room
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="font-weight-bold nav-link text-center" href="#" aria-expanded="false">
+                Our Story
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="font-weight-bold nav-link text-center" href="#" aria-expanded="false">
+                Events
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="font-weight-bold nav-link text-center" href="#" aria-expanded="false">
+                Contact Us
+            </a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="font-weight-bold nav-link text-center" href="#" id="user-options" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <div class="text-center">
+                    <p class="my-0">My Account</p>
+                </div>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
+                {% endif %}
+                <a href="" class="dropdown-item">My Profile</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
+            </div>
+        </li>
+
+
+    </ul>
+</div>
