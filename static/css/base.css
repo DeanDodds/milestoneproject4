@@ -8,10 +8,9 @@ body {
 
 @media only screen and (max-width: 991px) {
     body {
-        margin-top: 168px;
+        margin-top: 100px;
     }
 }
-
 
 
 /* navbar  */
@@ -39,4 +38,24 @@ body {
         height: 60px;
         width: 60px
     }
+}
+
+/* Hero image section */
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-call-to-action {
+    max-width: 600px;
+}
+
+/* Hero images */
+
+/* Index.html */
+#index-hero-image {
+    background: url('/media/banner-1.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fafafa;
+    height: 50vh;
 }

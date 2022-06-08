@@ -117,7 +117,7 @@
         <!-- ./top navar -->
 
         <!-- middle navbar -->
-        <div class="row nav-middle d-lg-flex" id="middle-nav">
+        <div class="row nav-middle bg-white d-lg-flex" id="middle-nav">
             <div class="col-lg-6 d-flex justify-content-end">
                 <img class="logo" src="media/blacklogo.svg" alt="North Yeast Brewing Logo">
             </div>
@@ -162,9 +162,13 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
+    {% block hero %}
     {% endblock %}
 
+    {% block content %}
+
+    {% endblock %}
+    <!-- footer -->
     <footer class="py-5">
         <div class="row">
             <div class="col-md-2 col-sm-12 text-center mt-sm-5 mt-md-0">
@@ -230,6 +234,7 @@
             </div>
         </div>
     </footer>
+    <!-- ./footer -->
     {% block postloadjs %}
     {% endblock %}
 
