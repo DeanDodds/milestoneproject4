@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 html {
@@ -19,6 +21,7 @@ body {
 
 
 /* navbar  */
+
 #mobile-logo {
     margin-left: 9em;
 }
@@ -49,6 +52,7 @@ body {
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
+    color: #fafafa;
 }
 
 .hero-call-to-action {
@@ -71,13 +75,27 @@ body {
     height: 50vh;
 }
 
-/* Feature */
-
-
+/* Index Features */
 .feature {
     height: 500px;
     width: 80%;
-    border: 2px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid white;
+
+}
+
+#tap-room-feature {
+    background-image: url('/media/index-1.png');
+}
+
+#events-feature {
+    background-image: url('/media/index-2.png');
+}
+
+#beer-feature {
+    background-image: url('/media/banner3.png');
 }
 
 @media only screen and (max-width: 991px) {
@@ -106,14 +124,19 @@ body {
     }
 
     .feature {
-        height: 250px;
+        height: 100%;
         width: 100%;
         border: 2px solid black;
-        margin: none;
-        padding: none;
+        margin: 0;
+        padding: 0;
     }
 
     .feature:nth-child(odd) {
         margin-top: 5px;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
     }
 }
