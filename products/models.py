@@ -16,6 +16,7 @@ class Product(models.Model):
     sku = models.CharField(max_length=254, null=True, blank=True)
     product_name = models.CharField(max_length=254)
     description = models.TextField()
+    descriptive_words = ArrayField(models.CharField(max_length=254, null=True, blank=True), default=list)
     color = models.IntegerField(null=True, blank=True)
     hoppyness = models.IntegerField(null=True, blank=True)
     bitterness = models.IntegerField(null=True, blank=True)

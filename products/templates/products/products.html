@@ -14,7 +14,7 @@
 {% block hero %}
 <!-- hero -->
 <section class="mt-10">
-    <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center" id="index-hero-image">
+    <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center hero" id="products-hero-image">
         <div class="overlay hero-call-to-action mb-3 d-none d-md-block">
             <h1 class="display-5 fw-bold">The Taproom!</h1>
             <div class="col-lg-6 mx-auto">
@@ -33,5 +33,25 @@
 {% endblock %}
 
 {% block content %}
-
+<section class="container-fluid new-section-margin ">
+    <div class="row text-center">
+        {% for product in products %}
+        <div class="col-xl-3 col-lg-4 col-md-6  d-flex justify-content-center">
+            <div class="card mb-5" style="width: 18rem;">
+                <img src="{{ product.image_url }}" class="card-img-top" alt="Drink of a {{ product.product_name }}">
+                <div class="card-body">
+                    <h4 class="card-title">{{ product.product_name }}</h4>
+                    <div class="row d-flex justify-content-center card_descriptive_words">
+                        {% for adjective in product.descriptive_words %}
+                        <h5 class="descritive_product_words">{{ adjective }}.</h5>
+                        {% endfor %}
+                    </div>
+                    <p class="card-text">{{ product.product_price }}</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
 {% endblock %}
