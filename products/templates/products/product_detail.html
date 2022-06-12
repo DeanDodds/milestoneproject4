@@ -9,6 +9,23 @@
 </div>
 {% endblock %}
 
+{% block hero %}
+<!-- hero -->
+<section class="mt-10">
+    <div class="product-hero">
+        <img class="product-hero" src="{{ product.product_banner_url }}" alt="{{ product.product_name }}">
+        <div class="centered overlay text-center product-overlay d-none d-lg-block">
+            <h1>{{ product.product_name }}</h1>
+            <p>{{ product.description }}</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ./hero -->
+{% endblock %}
+
+
 {% block content %}
 
 <div class="container-fluid">
