@@ -19,6 +19,11 @@ body {
     }
 }
 
+/* colors */
+
+.white-text {
+    color: #fafafa;
+}
 
 /* navbar  */
 
@@ -201,4 +206,20 @@ body {
 
 .color-scale-marker-active {
     border: 5px solid black;
+}
+
+.brew-sheet-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid black;
+
+}
+
+#brew-sheet-section {
+    background-image: url("/static/images/brew.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
