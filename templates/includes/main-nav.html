@@ -14,10 +14,12 @@
                 Beers
             </a>
             <div class="dropdown-menu border-0 text-center" aria-labelledby="beers-link">
-                <a href="" class="dropdown-item">IPAs</a>
-                <a href="" class="dropdown-item">Beers</a>
-                <a href="" class="dropdown-item">Stout</a>
-                <a href="" class="dropdown-item">Larger</a>
+                <a href="{% url 'products' %}" class="dropdown-item">Shop All</a>
+                <a href="{% url 'products' %}?style=IPA" class="dropdown-item">IPAs</a>
+                <a href="{% url 'products' %}?style=Ale" class="dropdown-item">Ales</a>
+                <a href="{% url 'products' %}?style=Stout,Porter" class="dropdown-item">Stouts</a>
+                <a href="{% url 'products' %}?style=Larger,Pilsner" class="dropdown-item">Largers</a>
+                <a href="{% url 'products' %}?style=Sours" class="dropdown-item">Sours</a>
             </div>
         </li>
 

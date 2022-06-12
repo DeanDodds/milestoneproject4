@@ -123,7 +123,7 @@
                 </a>
             </div>
             <div class="col-lg-6 my-auto py-1 py-lg-0">
-                <form method="GET" action="">
+                <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-50">
                         <input class="form-control border border-black rounded-0" type="text" name="q"
                             placeholder="Search our site">
@@ -173,7 +173,7 @@
     <footer class="new-section-margin ">
         <div class="row">
             <div class="col-md-2 col-sm-12 text-center mt-sm-5 mt-md-0">
-                <img class="logo" src="media/blacklogo.svg" alt="North Yeast Brewing Logo">
+                <img class="logo" src="{% static 'images/blacklogo.svg' %}" alt="North Yeast Brewing Logo">
             </div>
 
             <div class="col-md-2 col-sm-12 text-center mt-sm-5 mt-md-0">
