@@ -98,7 +98,7 @@
                     </li>
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                            href="">
+                            href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
@@ -117,7 +117,7 @@
         <!-- ./top navar -->
 
         <!-- middle navbar -->
-        <div class="row nav-middle bg-white d-lg-flex" id="middle-nav">
+        <div class=" row nav-middle bg-white d-lg-flex" id="middle-nav">
             <div class="col-lg-6 d-flex justify-content-end"><a href="{% url 'home' %}">
                     <img class="logo" src="{% static 'images/blacklogo.svg' %}" alt="North Yeast Brewing Logo">
                 </a>
