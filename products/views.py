@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Style
+from django.db.models.functions import Lower
 
 # Create your views here.
 
@@ -12,8 +13,23 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     styles = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'style':
+                sortkey = 'style__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
         if 'style' in request.GET:
             styles = request.GET['style'].split(',')
             products = products.filter(style__name__in=styles)
@@ -28,10 +44,13 @@ def all_products(request):
             queries = Q(product_name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'products': products,
         'search_term': query,
         'current_styles': styles,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)
