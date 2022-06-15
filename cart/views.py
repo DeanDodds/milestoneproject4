@@ -59,12 +59,10 @@ def remove_from_cart(request, item_id):
         if 'product_size' in request.POST:
             size = request.POST['product_size']
         cart = request.session.get('cart', {})
-        print('running')
         if size:
             del cart[item_id]['items_by_size'][size]
             if not cart[item_id]['items_by_size']:
                 cart.pop(item_id)
-                print(removerd)
         else:
             cart.pop(item_id)
 
@@ -73,3 +71,4 @@ def remove_from_cart(request, item_id):
 
     except Exception as e:
         return HttpResponse(status=500)
+        
