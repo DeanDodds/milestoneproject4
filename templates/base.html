@@ -163,20 +163,24 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block hero %}
-    {% endblock %}
-
     <section>
         <div id="delivery-banner" class="row text-center">
             <div class="col">
-                <h4 class=" my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+                <h4 class=" my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
             </div>
         </div>
     </section>
 
+    {% block hero %}
+    {% endblock %}
+
+
+
     {% block content %}
 
     {% endblock %}
+
+
     <!-- footer -->
     <footer class="new-section-margin ">
         <div class="row">
