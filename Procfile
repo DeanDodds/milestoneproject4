@@ -1,0 +1,1 @@
+web: gunicorn north_yeast_brewing.wsgi:application
