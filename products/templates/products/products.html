@@ -106,8 +106,15 @@
                         <p class="card-text">{{ product.product_price }}</p>
                         <a href="#" class="btn btn-primary">Buy Now</a>
                     </div>
+                    {% if request.user.is_superuser %}
+                    <small class="ml-3">
+                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                    </small>
+                    {% endif %}
                 </div>
             </div>
+
             {% endfor %}
         </div>
         <div class="btt-button shadow-sm rounded-0 border border-black">
