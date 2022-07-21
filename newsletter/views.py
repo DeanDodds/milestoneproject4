@@ -25,13 +25,13 @@ def newsletter(request):
             NewletterSubscribers.objects.create(email=email)
             print('added')
             #send email confirmation to user
-            # send_mail(
-            #     'North Yeast Brewing',
-            #     'Hey, You have subscriped to the North Yeast Brewing newletter. We will send you all the lastest events and offers',
-            #     'northyeastbrewing.com',
-            #     [email],
-            #     fail_silently=False,
-            # )
+            send_mail(
+                'North Yeast Brewing',
+                'Hey, You have subscriped to the North Yeast Brewing newletter. We will send you all the lastest events and offers',
+                'northyeastbrewing.com',
+                [email],
+                fail_silently=False,
+            )
 
 
         context = {
