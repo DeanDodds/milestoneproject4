@@ -104,7 +104,7 @@
                             {% endfor %}
                         </div>
                         <p class="card-text">{{ product.product_price }}</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">Buy Now</a>
                     </div>
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
