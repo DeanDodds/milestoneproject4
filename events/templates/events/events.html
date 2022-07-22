@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block hero %}
+<!-- hero -->
+<section class="mt-10">
+    <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center" id="index-hero-image">
+        <div class="overlay hero-call-to-action mb-3 d-none d-md-block">
+            <h1 class="display-5 fw-bold">EVENTS</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="mb-4 d-md-flex d-none">Upcoming events at the taproom</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./hero -->
+{% endblock %}
+
+{% block content %}
+<section class="container">
+    <div class="card">
+        <div class="card-head text-center events-header">
+            <h1>Upcoming Events</h1>
+        </div>
+        <div class="card-body events body">
+            {% for event in events %}
+            <div class="row">
+                <div class="col-2">
+                    <div>
+                        <div class="sqaure">{{ event.event_date }}</div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div>
+                        <h2>{{ event.event_name }}</h2>
+                        <ul>
+                            <i class="fa-solid fa-calendar"></i> <span>
+                                {{ event.event_date}}</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o"></i><span>
+                                    {{ event.event_start_time }} - {{ event.event_end_time }}</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-pin"></i><span>
+                                    {{ event.event_location }}
+                                </span>
+                            </li>
+                            <li>
+                                <a href="{{ event.event_ticket_link }}">
+                                    <i class="fa-solid fa-up-right-from-square"></i><span>
+                                        {{ event.event_ticket_host }}</span></a>
+                                </span>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>See More</summary>
+                                    <p>{{ event.event_description }}</p>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <small class="ml-3">
+                        <a href="">Edit</a> |
+                        <a class="text-danger" href="">Delete</a>
+                    </small></li>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+    </div>
+</section>
+{% endblock %}
