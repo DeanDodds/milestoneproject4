@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Mailing list</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for email in email_list %}
+            <tr>
+                <td>{{ email }}</td>
+                <td><small class="ml-3">
+                        <a href="#" data-toggle="modal" data-target="#modal{{ email.id }}">Edit</a> |
+                        <a class="text-danger" href="{% url 'delete_mail' email.id %}">Delete</a>
+                    </small></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal{{ email.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit user email</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="{% url 'edit_mail' email.id %}" class="form mb-2"
+                        enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Edit address</label>
+                            <input type="email" name="updated-email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" value="{{ email.email }}" name="updated-email" required>
+                            <button type="submit" class="btn btn-primary">Update
+                                Email</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
