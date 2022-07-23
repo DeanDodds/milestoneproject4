@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block hero %}
+<!-- hero -->
+<section class="mt-10">
+    <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center" id="contact-hero-image">
+        <div class="overlay hero-call-to-action mb-3 d-none d-md-block">
+            <h1 class="display-5 fw-bold">MAKE A BOOKING</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="mb-4 d-md-flex d-none">Here at North Yeast Brewing
+                    If you would like to come
+                    visit us here at North East
+                    Brewing, you can book now
+                    We Are open 7 days a
+                    week so get yourself down</p>
+                <a href="{% url 'products' %}" class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Book Now</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./hero -->
+{% endblock %}
+
+{% block content %}
+<!-- Enquiry Section -->
+<section class="new-section-margin w-100">
+    <div class="container">
+        <div class="contact-forms">
+            <div class="text-center">
+                <h1>Make an Enqiry</h1>
+            </div>
+
+            <!-- Contact Form -->
+            <form method="POST" action="" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg px-4 gap-3" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+<!-- ./Enquiry Section -->
+{% endblock %}
