@@ -302,3 +302,12 @@ body {
 .allauth-form-inner-content a {
     color: #17a2b8;
 }
+
+/* contact page */
+
+#contact-hero-image {
+    background: url('/media/banner-6.png') no-repeat center center;
+    background-size: cover;
+    color: #fafafa;
+    height: 50vh;
+}
