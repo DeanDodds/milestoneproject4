@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.db import models
+from north_yeast_brewing import settings
 from django.conf import settings
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
@@ -17,7 +18,6 @@ def newsletter(request):
     """ Add user newsletter signups to the database """
 
     if request.method == 'POST':
-        print('emailing all')
         # get email address from form
         email = request.POST['newsletter']
         #if user already has already subscripbed 
@@ -85,7 +85,7 @@ def delete_mail(request, email_id):
     """ Allow admin to delete email subscriber from list """
     # find email in database 
     email = get_object_or_404(NewletterSubscribers, pk=email_id)
-    # delet it from databes 
+    # delete email address from databese 
     email.delete()
     # get new mailing list from database 
     email_list = NewletterSubscribers.objects.all()

@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'True'
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['north-yeast-brewing.herokuapp.com', 'localhost']
 
@@ -218,7 +218,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+    DEFAULT_FROM_EMAIL = 'northyeastbrewing.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
