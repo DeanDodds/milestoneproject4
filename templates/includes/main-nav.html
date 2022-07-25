@@ -59,9 +59,10 @@
                 {% if request.user.is_superuser %}
                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                 <a href="{% url 'send_newsletter' %}" class="dropdown-item">Create Newsletter</a>
-                <a href="{% url 'view_email_list' %}" class="dropdown-item">Newsletter signups</a>
-                <a href="{% url 'add_event' %}" class="dropdown-item">Add Events</a>
-                <a href="{% url 'messages' %}" class="dropdown-item">View Messages</a>
+                <a href="{% url 'view_email_list' %}" class="dropdown-item">Mange Newsletter signups</a>
+                <a href="{% url 'add_event' %}" class="dropdown-item">Create Events</a>
+                <a href="{% url 'messages' %}" class="dropdown-item">Manage Messages</a>
+                <a href="{% url 'manage_bookings' %}" class="dropdown-item">Manage Bookings</a>
 
                 {% endif %}
                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>

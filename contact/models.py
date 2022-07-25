@@ -11,5 +11,3 @@ class Message(models.Model):
     message = models.TextField(max_length=500, null=False, blank=False)
     received = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.subject

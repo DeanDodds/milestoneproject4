@@ -36,7 +36,6 @@ def newsletter(request):
                 fail_silently=False,
             )
 
-
         context = {
             'email': email,
         }
@@ -78,7 +77,6 @@ def view_email_list(request):
     }
 
     return render(request, 'newsletter/view_email_list.html', context)
-
 
 
 def delete_mail(request, email_id):

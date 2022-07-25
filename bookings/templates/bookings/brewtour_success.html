@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<!-- ./Confirmation Brewtour Section -->
+<section class="new-section-margin w-100">
+    <div class="text-center">
+        <h1>Booking Confirmed</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p>Hey {{ name }},</p>
+            <p>Your all set. Your Brewery Tour for {{ people }} on the {{ date }} is all booked.</p>
+            <p>The tour will start at {{ time }} and last an hour.</p>
+            <p>We look forward to seeing you</p>
+        </div>
+        <a href="{% url 'products' %}" class="btn btn-success">Continue Shopping</a>
+    </div>
+</section>
+<!-- ../Confirmation Brewtour Section -->
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<!-- ./Taproom booking Section -->
+<section class="new-section-margin w-100">
+    <div class="text-center">
+        <h1>Booking Confirmed</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p>Hey {{ name }},</p>
+            <p>Your all set. Taproom table for {{ people }} people on the {{ date }} is all booked.</p>
+            <p>Your table will be ready at will start at {{ time }}.</p>
+            <p>We look forward to seeing you.</p>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'products' %}" class="btn btn-success">Continue Shopping</a>
+        </div>
+    </div>
+</section>
+<!-- ./Taproom booking Section -->
+{% endblock %}

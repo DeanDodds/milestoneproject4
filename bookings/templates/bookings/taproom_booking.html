@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<!-- ./Taproom booking Section -->
+<section class="new-section-margin w-100">
+    <div class="container">
+
+        <div class="text-center">
+            <h1>Book the Taproom</h1>
+        </div>
+        <div class="contact-forms">
+            <!-- Contact Form -->
+            <form method="POST" action="{% url 'booking_taproom' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg px-4 gap-3" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- ./Taproom booking Section -->
+{% endblock %}

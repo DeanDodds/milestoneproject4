@@ -10,7 +10,7 @@ from .forms import ContactForm
 # Create your views here.
 
 def contact(request):
-    """ A view to return the Contact page """ 
+    """ A view to return the Contact page """
 
     if request.method == 'POST':
         form = ContactForm(request.POST, request.FILES)
@@ -18,7 +18,7 @@ def contact(request):
             form.save()
     else:
         form = ContactForm()
-    
+
 
     context = {
         'form': form,
@@ -27,7 +27,7 @@ def contact(request):
 
 
 def messages(request):
-    """ A view to return the Messages page """ 
+    """ A view to return the Messages page """
 
     user_messages = Message.objects.all()
 
@@ -52,6 +52,7 @@ def delete_message(request, message_id):
 
 
 def reply_to_message(request, message_id):
+    """ Allows admin to reply to user messages """
     message = get_object_or_404(Message, pk=message_id)
 
     context = {
@@ -61,8 +62,9 @@ def reply_to_message(request, message_id):
 
 
 def send_email_message(request, message_id):
+    """ Allows admin to reply to messages """
     if request.method == 'POST':
-        # Get data from form 
+        # Get data from form
         email = request.POST.get['to_email']
         subject = request.POST.get['subject']
         reply_message = request.POST.get['message']
@@ -82,4 +84,3 @@ def send_email_message(request, message_id):
             'message': message,
         }
         return render(request, 'contact/view_messages.html', context)
-
