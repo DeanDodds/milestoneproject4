@@ -24,7 +24,7 @@
                     to enjoy. We are open 7 days a
                     week so get yourself down.</p>
                 <a href="{% url 'booking_taproom' %}" class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Book Now</button>
+                    <button type="button" class="btn btn-main-color btn-lg px-4 gap-3">Book Now</button>
                 </a>
             </div>
         </div>
@@ -35,7 +35,7 @@
 
 {% block content %}
 <!-- Taproom details section -->
-<section>
+<section class="new-section-margin">
     <div class="container text-center">
         <div class="row">
             <div class="col-12">
@@ -58,10 +58,10 @@
 <!-- ./Taproom details section -->
 
 <!-- Beer selection section -->
-<section id="taproom-beer-section">
-    <div class="contianer-fluid" id="taproom-beer-slider">
+<section class="new-section-margin dark-background-color">
+    <div class="contianer-fluid p-5" id="taproom-beer-slider">
         <div class="row">
-            <div class="col-5 offset-1 m-col-12">
+            <div class="col-lg-5 col-sm-12 offset-lg-1">
                 <div id="slide-container">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -106,10 +106,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 m-col-12">
+            <div class="col-lg-6 col-sm-12">
                 <div class="text-center w-80">
                     <div class="d-flex align-items-end">
-                        <div class="">
+                        <div class="p-5">
                             <h2>Craft Beer Selection</h2>
                             <p>There is a great selection of craft beers, ales, and
                                 stout to try here at the North Yeast Brewing taproom.
@@ -117,8 +117,8 @@
                                 so you taste great beer at home. You can down load our
                                 drinks menu below.
                             </p>
-                            <form method="get" action="/static/download/menu.pdf" target="blank">
-                                <button class="btn btn-success" type="submit"><i
+                            <form method="get" action="/static/download/" target="blank">
+                                <button class="btn btn-main-color" type="submit"><i
                                         class="fa fa-download"></i>Download</button>
                             </form>
                         </div>
