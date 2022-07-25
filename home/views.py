@@ -26,7 +26,13 @@ def taproom(request):
     return render(request, 'home/taproom.html', context)
 
 
+def privacy(request):
+    """ A view to return the terms and conditions page """
+ 
+    return render(request, 'home/privacy.html')
+
+
 def ts_and_cs(request):
-    """ A view to return the our taproom page """
+    """ A view to return the our privicy page """
  
     return render(request, 'home/tandcs.html')
