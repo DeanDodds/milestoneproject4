@@ -195,8 +195,10 @@
             <div class="col-md-2 col-sm-12 text-center mt-sm-5 mt-md-0">
                 <h5>Need Help?</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms and Conditions</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                    <li class="nav-item mb-2"><a href="{% url 'ts_and_cs' %}" class="nav-link p-0 text-muted">Terms and
+                            Conditions</a></li>
+                    <li class="nav-item mb-2"><a href="{% url 'privacy' %}" class="nav-link p-0 text-muted">Privacy
+                            Policy</a></li>
                 </ul>
             </div>
 
@@ -205,7 +207,10 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="{% url 'contact' %}" class="nav-link p-0 text-muted">Contact
                             Us</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Need a Booking</a></li>
+                    <li class="nav-item mb-2"><a href="{% url 'booking_taproom' %}" class="nav-link p-0 text-muted">Book
+                            the Taproom</a></li>
+                    <li class="nav-item mb-2"><a href="{% url 'book_brew_tour' %}" class="nav-link p-0 text-muted">Book
+                            the Brewtour</a></li>
                 </ul>
             </div>
 
