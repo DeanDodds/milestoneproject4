@@ -13,3 +13,9 @@ def story(request):
     """ A view to return the our story page """
 
     return render(request, 'home/our_story.html')
+
+
+def taproom(request):
+    """ A view to return the our taproom page """
+
+    return render(request, 'home/taproom.html')
