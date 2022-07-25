@@ -23,7 +23,7 @@
                     take away and theres 9 taps to choose from.
                     Ecommerce and home delivery coming soon</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Book Now</button>
+                    <a href="{% url 'booking_taproom' %}" class="btn btn-main-color btn-lg px-4 gap-3">Events</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
         <div class="col text-center mt-3">
             <h2 class="logo-font">Products</h2>
             {% for style in current_styles %}
-            <a class="category-badge text-decoration-none" href="{% url 'products' %}?style={{ style.name }}">
+            <a class="category-badge text-decoration-none dark-text" href="{% url 'products' %}?style={{ style.name }}">
                 <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ style.name }}</span>
             </a>
             {% endfor %}
@@ -104,11 +104,11 @@
                             {% endfor %}
                         </div>
                         <p class="card-text">{{ product.product_price }}</p>
-                        <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">Buy Now</a>
+                        <a href="{% url 'product_detail' product.id %}" class="btn btn-secoundary-color">Buy Now</a>
                     </div>
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
-                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                        <a class="dark-text" href="{% url 'edit_product' product.id %}">Edit</a> |
                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                     </small>
                     {% endif %}
