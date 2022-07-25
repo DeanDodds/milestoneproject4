@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block hero %}
+<!-- hero -->
+<section class="mt-10">
+    <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center" id="story-hero-image">
+        <div class="overlay hero-call-to-action mb-3 d-none d-md-block">
+            <h1 class="display-5 fw-bold">THE BREWTOUR!</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="mb-4 d-md-flex d-none">While your visiting why not book
+                    a BrewTour. We will show you how
+                    we produce our delicious beer,
+                    meet the master brewer and then visit the
+                    taproom for a taster session.</p>
+                <div>
+                    <a type="button" href="{% url 'book_brew_tour' %}" class="btn btn-primary btn-lg px-4 gap-3">Shop
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./hero -->
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="text-center">
+            <h2>The Brewery</h2>
+            <p>Inspired by the brewing scene on the West Coast of America, Adam Whilam founded North Yeast Brewing in
+                2019.
+            </p>
+            <p>Adam has brewed over fifty different kinds of beer and drank a lot more, he's most comfortable in his
+                wellies
+                up to his knees in hops and malt. Adams favorite type of beer is a West Coast IPA.</p>
+            <p>We host BrewTours everyday which include an introduction to the brewing process by the in house Master
+                Brewer, a brief history of the Brewery and the opportunity to sample four of our beers.</p>
+            <p>So bring colleagues, friends, family, stag/hen parties, beer geeks or who ever you want, as long as they
+                are
+                18 years or older. Our tours begin 1:00pm and at 2:30pm and last approximately an hour. After the tour
+                you
+                are more than welcome to hang out in The Taproom if you wish.</p>
+        </div>
+    </div>
+</section>
+<!-- ./brewery section -->
+
+<!-- brewmaster section -->
+<section>
+
+</section>
+<!-- brewmaster section -->
+
+<!-- mission section -->
+<section>
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Our Mission</h3>
+        </div>
+    </div>
+    <div class="row" id="story-water-section">
+        <div class="col-12 col-lg-4">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="rounded-circle circle d-none d-md-block" id="water-image"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4>Only the best spring water</h4>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <p>Here at North Yeast Brewing it is our mission to make the finest Craft Beer in the world. We
+                        Believe to do this You need the finest and freshest ingredients. Beer is only made up of four
+                        main ingredients Water, Grains, yeast and hops , This means everyone of them is important!</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="col-12 col-lg-4" id="story-grains-section">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="rounded-circle circle d-none d-md-block"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4>Fresh Organic Grains</h4>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <p>We source all our grains and hops from local farms and businesses. this means that they are still
+                        as fresh as possible when we use them in our beer
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="col-12 col-lg-4" id="story-hops-section">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="rounded-circle circle d-none d-md-block"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4>Aromatic Hops</h4>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <p>When you visit the brewery the smell on brew day is fantastic. the smell of beer as it mashes and
+                        boils; it's sweet and malty from the grains, and then fresh and spicy from the hops. You must
+                        come experience it for yourself</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<!-- ./mission section -->
+{% endblock %}
