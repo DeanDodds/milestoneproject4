@@ -71,22 +71,6 @@ body {
 }
 
 /* Hero images */
-
-/* Index.html */
-
-.hero {
-    background-size: cover;
-    color: #fafafa;
-    height: 50vh;
-}
-
-#index-hero-image {
-    background: url('/media/banner-1.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fafafa;
-    height: 50vh;
-}
-
 #products-hero-image {
     background-image: url('/media/banner3.png');
     background-size: cover;
@@ -106,6 +90,30 @@ body {
     color: #fafafa;
     height: 50vh;
 }
+
+#taproom-hero-image {
+    background: url('/media/image-4.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fafafa;
+    height: 50vh;
+}
+
+/* Index.html */
+
+.hero {
+    background-size: cover;
+    color: #fafafa;
+    height: 50vh;
+}
+
+#index-hero-image {
+    background: url('/media/banner-1.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fafafa;
+    height: 50vh;
+}
+
+
 
 
 /* product details page heros */
@@ -321,8 +329,6 @@ body {
 
 /* our story page */
 
-
-
 #water-image {
     background: url('/static/images/water1.jpg') no-repeat center center;
     background-size: cover;
@@ -346,3 +352,5 @@ body {
     height: 10em;
     width: 10em;
 }
+
+/* Taproom page */

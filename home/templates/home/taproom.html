@@ -14,15 +14,16 @@
 {% block hero %}
 <!-- hero -->
 <section class="mt-10">
-    <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center" id="index-hero-image">
+    <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center" id="taproom-hero-image">
         <div class="overlay hero-call-to-action mb-3 d-none d-md-block">
-            <h1 class="display-5 fw-bold">The BrewTour</h1>
+            <h1 class="display-5 fw-bold">WELCOME TO THE TAPROOM</h1>
             <div class="col-lg-6 mx-auto">
-                <p class="mb-4 d-md-flex d-none">Here at North Yeast Brewing
-                    we have a great selection of beer,
-                    ales and stouts for you to enjoy.
-                    check out our selection here</p>
-                <a href="{% url 'products' %}" class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
+                <p class="mb-4 d-md-flex d-none">Come and check out our Taproom.
+                    we have a great selection of
+                    Draught craft beer for you
+                    to enjoy. We are open 7 days a
+                    week so get yourself down.</p>
+                <a href="{% url 'booking_taproom' %}" class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
                     <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Book Now</button>
                 </a>
             </div>
@@ -33,4 +34,99 @@
 {% endblock %}
 
 {% block content %}
+<!-- Taproom details section -->
+<section>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <h1>The Taproom</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>There are 9 different beers available to enjoy across cask and keg, as well as a selection of beers
+                    to take away in cans and bottles. Soft drinks are also available if you must.</p>
+                <p>Our Tap Room serves the latest releases from our friends here in the UK Craft Beer Community. Also,
+                    if that wasn’t enough, we host Tap Takeovers from leading independent breweries from around the
+                    globe.</p>
+                <p>The taproom is serving 7 days a week, 12:00AM - 11:00PM weekdays, 12:00 - 12:00PM on a weekend.
+                    You're gonna wanna book to guarantee a table.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./Taproom details section -->
+
+<!-- Beer selection section -->
+<section id="taproom-beer-section">
+    <div class="contianer-fluid" id="taproom-beer-slider">
+        <div class="row">
+            <div class="col-5 offset-1 m-col-12">
+                <div id="slide-container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                        </ol>
+                        <div class="carousel-inner w-100">
+                            {% for product in products %}
+                            {% if forloop.first %}
+                            <div class="carousel-item active">
+                                <a href="{% url 'product_detail' product.id %}"><img class="d-block w-100"
+                                        src="{{ product.image_url }}" alt="{{ product.product_name }}"></a>
+                            </div>
+                            {% endif %}
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{ product.image_url }}"
+                                    alt="{{ product.product_name }}">
+                            </div>
+                            {% endfor %}
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 m-col-12">
+                <div class="text-center w-80">
+                    <div class="d-flex align-items-end">
+                        <div class="">
+                            <h2>Craft Beer Selection</h2>
+                            <p>There is a great selection of craft beers, ales, and
+                                stout to try here at the North Yeast Brewing taproom.
+                                Avaiable on tap, bottled and canned to takaway with you,
+                                so you taste great beer at home. You can down load our
+                                drinks menu below.
+                            </p>
+                            <form method="get" action="/static/download/menu.pdf" target="blank">
+                                <button class="btn btn-success" type="submit"><i
+                                        class="fa fa-download"></i>Download</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./Beer selection section
 {% endblock %}
