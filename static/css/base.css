@@ -93,6 +93,20 @@ body {
     background-position: center;
 }
 
+#contact-hero-image {
+    background: url('/media/banner-6.png') no-repeat center center;
+    background-size: cover;
+    color: #fafafa;
+    height: 50vh;
+}
+
+#story-hero-image {
+    background: url('/media/image-3.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fafafa;
+    height: 50vh;
+}
+
 
 /* product details page heros */
 
@@ -305,9 +319,30 @@ body {
 
 /* contact page */
 
-#contact-hero-image {
-    background: url('/media/banner-6.png') no-repeat center center;
+/* our story page */
+
+
+
+#water-image {
+    background: url('/static/images/water1.jpg') no-repeat center center;
+    background-size: cover;
+    border: 2px soild black;
+    height: 10em;
+    width: 10em;
+}
+
+#grain-image {
+    background: url('/static/images/wheat.jpg') no-repeat center center;
     background-size: cover;
     color: #fafafa;
-    height: 50vh;
+    height: 10em;
+    width: 10em;
+}
+
+#hop-image {
+    background: url('/static/images/brew.png') no-repeat center center;
+    background-size: cover;
+    color: #fafafa;
+    height: 10em;
+    width: 10em;
 }
