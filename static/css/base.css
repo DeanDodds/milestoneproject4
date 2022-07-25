@@ -309,7 +309,7 @@ nav .navbar-nav li a:hover {
 
 /* product details page heros */
 .product-overlay {
-    width: 30%;
+    width: 50%;
 }
 
 .centered {
@@ -383,7 +383,6 @@ nav .navbar-nav li a:hover {
 }
 
 /* Allauth form formatting */
-
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     /* mt-4 */
@@ -443,7 +442,7 @@ nav .navbar-nav li a:hover {
     border: 2px solid #142127;
     padding: 50px;
     border-radius: 5px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: none;
 }
 

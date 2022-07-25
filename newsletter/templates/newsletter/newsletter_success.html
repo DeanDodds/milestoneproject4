@@ -3,11 +3,12 @@
 
 
 {% block content %}
-<div>
-    <div class="card-body">
-        <h5 class="card-title">Your all signed up</h5>
+
+<div class="new-section-margin container">
+    <div class="card-body contact-forms">
+        <h1 class="card-title">Your all signed up</h1>
         <p class="card-text">{{ email }} as been added to our mailing list.</p>
-        <a href="{% url 'products' %}" class="btn btn-primary">Back to shopping</a>
+        <a href="{% url 'products' %}" class="btn btn-secoundary-color">Back to shopping</a>
     </div>
 </div>
 {% endblock %}

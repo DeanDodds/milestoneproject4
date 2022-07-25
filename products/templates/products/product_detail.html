@@ -14,9 +14,9 @@
 <section class="mt-10">
     <div class="product-hero">
         <img class="product-hero" src="{{ product.product_banner_url }}" alt="{{ product.product_name }}">
-        <div class="centered overlay text-center product-overlay d-none d-lg-block">
+        <div class="centered overlay text-center product-overlay">
             <h1>{{ product.product_name }}</h1>
-            <p>{{ product.description }}</p>
+            <p class="d-none d-lg-block">{{ product.description }}</p>
             <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
@@ -48,13 +48,13 @@
                 </div>
 
                 <div class="col-12">
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                    <a href="{% url 'products' %}" class="btn rounded-0 mt-5 btn-secoundary-color">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="text-uppercase btn btn-secondary">Keep Shopping</span>
+                        <span class="text-uppercase">Keep Shopping</span>
                     </a>
-                    <input type="submit" class="btn btn-primary rounded-0 text-uppercase mt-5" value="Add to Cart">
+                    <input type="submit" class="btn btn-main-color rounded-0 text-uppercase mt-5" value="Add to Cart">
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 {% if request.user.is_superuser %}
@@ -63,10 +63,8 @@
                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                 </small>
                 {% endif %}
+            </form>
         </div>
-        </form>
-    </div>
-    </div>
 </section>
 
 <!-- ./hero -->

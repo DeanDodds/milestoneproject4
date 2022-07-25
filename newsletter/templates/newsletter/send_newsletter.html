@@ -5,22 +5,26 @@
 {% block content %}
 
 
-<div class="container">
+<div class="container new-section-margin">
     <form method="POST" action="{% url 'send_newsletter' %}">
         {% csrf_token %}
-        <h1>Send out newsletter</h1>
-
-
-
-        <div class="formsubject">Subject</label>
-            <input type="text" class="form-control" id="subject" name="subject" aria-describedby="emailHelp"
-                placeholder="Enter Subject">
+        <div class="text-center">
+            <h1>Create new newsletter</h1>
         </div>
-        <div class="formsubject">Message </label>
-            <textarea type="text" class="form-control" id="message" name="message" aria-describedby="message"
-                placeholder="Enter Message"></textarea>
+
+        <div class="contact-forms">
+            <div class="formsubject">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" aria-describedby="emailHelp"
+                    placeholder="Enter Subject">
+            </div>
+            <div class="formsubject">Message </label>
+                <textarea type="text" class="form-control" id="message" name="message" aria-describedby="message"
+                    placeholder="Enter Message"></textarea>
+            </div>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-secoundary-color">Send</button>
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Send</button>
     </form>
 </div>
 </div>
