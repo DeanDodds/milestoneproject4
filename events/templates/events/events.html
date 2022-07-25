@@ -18,9 +18,9 @@
 {% endblock %}
 
 {% block content %}
-<section class="container">
+<section class="container new-section-margin">
     <div class="card">
-        <div class="card-head text-center events-header">
+        <div class="card-head text-center events-header white-text dark-background-color">
             <h1>Upcoming Events</h1>
         </div>
         <div class="card-body events body">
@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-2">
                     <div>
-                        <div class="sqaure">{{ event.event_date }}</div>
+                        <div class="sqaure text-center">{{ event.event_date }}</div>
                     </div>
                 </div>
                 <div class="col-10">
@@ -49,7 +49,7 @@
                             </li>
                             <li>
                                 <a href="{{ event.event_ticket_link }}">
-                                    <i class="fa-solid fa-up-right-from-square"></i><span>
+                                    <span class="orange"><i class="fa-solid fa-up-right-from-square"></i>
                                         {{ event.event_ticket_host }}</span></a>
                                 </span>
                             </li>
@@ -66,8 +66,8 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <small class="ml-3">
-                        <a href="{% url 'edit_event' event.id %}">Edit {{ event.id }}</a> |
-                        <a class="text-danger" href="{% url 'delete_event' event.id %}">Delete {{ event.id}}</a>
+                        <a class="dark-text" href="{% url 'edit_event' event.id %}">Edit</a> |
+                        <a class="text-danger" href="{% url 'delete_event' event.id %}">Delete</a>
                     </small></li>
                 </div>
             </div>

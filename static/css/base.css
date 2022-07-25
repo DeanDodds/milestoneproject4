@@ -56,10 +56,6 @@ li {
 
 /* colors */
 
-.dark-text {
-    color: #142127;
-}
-
 a {
     text-decoration: none;
     color: #fafafa;
@@ -80,8 +76,6 @@ a .orange:hover {
     color: #212529;
 }
 
-
-
 footer {
     background-color: #142127;
     color: #fafafa;
@@ -91,8 +85,8 @@ footer {
     color: #fafafa !important;
 }
 
-.padding-5 {
-    padding: 5px:
+.dark-text {
+    color: #142127;
 }
 
 /* button colors */
@@ -474,5 +468,3 @@ nav .navbar-nav li a:hover {
     height: 10em;
     width: 10em;
 }
-
-/* Taproom page */

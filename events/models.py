@@ -3,6 +3,9 @@ import datetime
 
 # Create your models here.
 class Events(models.Model):
+    class Meta:
+        ordering = ('event_date',)
+        
     event_name = models.CharField(max_length=255)
     event_description = models.TextField()
     event_date = models.DateField(("Date"), default=datetime.date.today)
