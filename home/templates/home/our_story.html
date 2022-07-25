@@ -13,7 +13,7 @@
 
 {% block hero %}
 <!-- hero -->
-<section class="mt-10">
+<section>
     <div class="px-4 py-5 text-center d-flex align-items-end justify-content-center" id="story-hero-image">
         <div class="overlay hero-call-to-action mb-3 d-none d-md-block">
             <h1 class="display-5 fw-bold">THE BREWTOUR!</h1>
@@ -24,8 +24,8 @@
                     meet the master brewer and then visit the
                     taproom for a taster session.</p>
                 <div>
-                    <a type="button" href="{% url 'book_brew_tour' %}" class="btn btn-primary btn-lg px-4 gap-3">Book
-                        Now</a>
+                    <a href="{% url 'book_brew_tour' %}" class="btn btn-main-color btn-lg px-4 gap-3">Book Now
+                    </a>
                 </div>
             </div>
         </div>
@@ -35,10 +35,10 @@
 {% endblock %}
 
 {% block content %}
-<section>
+<section class="new-section-margin">
     <div class="container">
         <div class="text-center">
-            <h2>The Brewery</h2>
+            <h1>The Brewery</h1>
             <p>Inspired by the brewing scene on the West Coast of America, Adam Whilam founded North Yeast Brewing in
                 2019.
             </p>
@@ -58,17 +58,17 @@
 <!-- ./brewery section -->
 
 <!-- mission section -->
-<section>
-    <div class="row">
+<section class="new-section-margin dark-background-color py-5">
+    <div class="row py-3">
         <div class="col-12 text-center">
-            <h3>Our Mission</h3>
+            <h1>Our Mission</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row py-2">
         <div class="col-12 col-lg-4">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h4>Only the best spring water</h4>
+                    <h3>Only the best spring water</h3>
                 </div>
             </div>
             <div class="row">
@@ -83,14 +83,15 @@
                         main ingredients Water, Grains, yeast and hops , This means everyone of them is important!</p>
                 </div>
             </div>
+            <hr>
         </div>
-        <hr>
+
 
         <div class="col-12 col-lg-4">
 
             <div class="row">
                 <div class="col-12 text-center">
-                    <h4>Fresh Organic Grains</h4>
+                    <h3>Fresh Organic Grains</h3>
                 </div>
             </div>
             <div class="row">
@@ -109,10 +110,10 @@
 
         <hr>
 
-        <div class="col-12 col-lg-4" id="story-hops-section">
+        <div class="col-12 col-lg-4">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h4>Aromatic Hops</h4>
+                    <h3>Aromatic Hops</h3>
                 </div>
             </div>
             <div class="row">
