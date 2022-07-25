@@ -13,6 +13,7 @@ body {
     margin-top: 206px;
 }
 
+
 @media only screen and (max-width: 991px) {
     body {
         margin-top: 100px;
@@ -20,15 +21,60 @@ body {
 }
 
 /* colors */
+a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #F29035;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #142127;
+    color: #fafafa;
+}
 
 .white-text {
-    color: #fafafa;
+    color: #fafafa !important;
+
+}
+
+/* section background colors */
+
+/* button colors */
+.btn-main-color {
+    background-color: white;
+    color: #142127;
+    transition: 0.5s;
+}
+
+.btn-main-color:hover {
+    background-color: #142127;
+    color: #F29035;
 }
 
 /* navbar  */
 
 #mobile-logo {
     margin-left: 9em;
+}
+
+.nav-bar {
+    background-color: #142127;
+    color: #fafafa;
+}
+
+nav .navbar-nav li a {
+    color: white !important;
+    transition: ;
+}
+
+nav .navbar-nav li a:hover {
+    color: #F29035 !important;
+    border: solid 2px #fff;
 }
 
 @media only screen and (max-width: 500px) {

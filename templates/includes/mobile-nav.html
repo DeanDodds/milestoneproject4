@@ -1,6 +1,7 @@
 {% load static %}
 <div class="text-center d-lg-none">
-    <img class="logo" src="{% static 'images/blacklogo.svg' %}" alt="North Yeast Brewing Logo" id="mobile-logo">
+    <a href="{% url 'home' %}"><img class="logo" src="{% static 'images/whitelogo.svg' %}"
+            alt="North Yeast Brewing Logo" id="mobile-logo"></a>
 </div>
 
 <!-- lmedium and small screen bottom navbar -->
@@ -13,7 +14,7 @@
                 <p class="my-0">Search</p>
             </div>
         </a>
-        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0 white-text" aria-labelledby="mobile-search">
             <form class="form" method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q"
