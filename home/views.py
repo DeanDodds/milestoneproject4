@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from products.models import Product
 
 # Create your views here.
 
@@ -17,5 +18,15 @@ def story(request):
 
 def taproom(request):
     """ A view to return the our taproom page """
+    products = Product.objects.all()
 
-    return render(request, 'home/taproom.html')
+    context = {
+        'products': products,
+    }
+    return render(request, 'home/taproom.html', context)
+
+
+def ts_and_cs(request):
+    """ A view to return the our taproom page """
+ 
+    return render(request, 'home/tandcs.html')
