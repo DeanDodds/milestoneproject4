@@ -5,12 +5,14 @@
 {% block content %}
 
 
-<div class="container new-section-margin">
+<div class="container">
     <form method="POST" action="{% url 'send_newsletter' %}">
         {% csrf_token %}
+        <hr>
         <div class="text-center">
             <h1>Create new newsletter</h1>
         </div>
+        <hr>
 
         <div class="contact-forms">
             <div class="formsubject">Subject</label>

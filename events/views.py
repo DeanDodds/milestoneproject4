@@ -4,13 +4,13 @@ from django.contrib import messages
 from .models import Events
 from .forms import EventForm
 
-# Create your views here.
+
 def events(request):
     """ A view to return the events page """
     events = Events.objects.all()
 
     context = {
-        'events' : events,
+        'events': events,
     }
     return render(request, 'events/events.html', context)
 
@@ -24,7 +24,8 @@ def add_event(request):
             messages.success(request, 'Successfully added event!')
             return redirect(reverse('events'))
         else:
-            messages.error(request, 'Failed to add event. Please ensure the form is valid.')
+            messages.error(request, 
+                           'Failed to add event. Please ensure the form is valid.')
     else:
         form = EventForm()
 
@@ -44,10 +45,12 @@ def edit_event(request, event_id):
         form = EventForm(request.POST, request.FILES, instance=event)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated event!')
+            messages.success(request,
+                             'Successfully updated event!')
             return redirect(reverse('events'))
         else:
-            messages.error(request, 'Failed to update Events. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update Events. Please ensure the form is valid.')
     else:
         form = EventForm(instance=event)
         messages.info(request, f'You are editing {event.event_name}')
@@ -69,4 +72,4 @@ def delete_event(request, event_id):
         'events': events
     }
     return render(request, 'events/events.html', context)
-    
+

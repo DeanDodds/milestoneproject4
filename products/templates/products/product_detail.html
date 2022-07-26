@@ -48,13 +48,14 @@
                 </div>
 
                 <div class="col-12">
-                    <a href="{% url 'products' %}" class="btn rounded-0 mt-5 btn-secoundary-color">
+                    <a href="{% url 'products' %}" class="btn rounded-0 mt-5 btn-main-color">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
-                    <input type="submit" class="btn btn-main-color rounded-0 text-uppercase mt-5" value="Add to Cart">
+                    <input type="submit" class="btn btn-secoundary-color rounded-0 text-uppercase mt-5"
+                        value="Add to Cart">
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 {% if request.user.is_superuser %}
@@ -65,7 +66,7 @@
                 {% endif %}
             </form>
         </div>
-
+    </div>
 </section>
 
 <!-- ./hero -->
