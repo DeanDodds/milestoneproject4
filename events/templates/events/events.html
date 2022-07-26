@@ -35,8 +35,9 @@
                     <div>
                         <h2>{{ event.event_name }}</h2>
                         <ul>
-                            <i class="fa-solid fa-calendar"></i> <span>
-                                {{ event.event_date}}</span>
+                            <li>
+                                <i class="fa-solid fa-calendar"></i> <span>
+                                    {{ event.event_date}}</span>
                             </li>
                             <li>
                                 <i class="fa fa-clock-o"></i><span>
@@ -51,7 +52,6 @@
                                 <a href="{{ event.event_ticket_link }}">
                                     <span class="orange"><i class="fa-solid fa-up-right-from-square"></i>
                                         {{ event.event_ticket_host }}</span></a>
-                                </span>
                             </li>
                             <li>
                                 <details>
