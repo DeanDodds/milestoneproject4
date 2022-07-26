@@ -24,9 +24,9 @@
                     Brewing, you can book now
                     We Are open 7 days a
                     week so get yourself down</p>
-                <a href="{% url 'products' %}" class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
-                    <button type="button" class="btn btn-main-color btn-lg px-4 gap-3">Book Now</button>
-                </a>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
+                    <a href="{% url 'products' %}" class="btn btn-main-color btn-lg px-4 gap-3">Book Now</a>
+                </div>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
                 {% csrf_token %}
                 {{ form | crispy }}
                 <div class="text-center">
-                    <button class="btn btn-primary btn-lg px-4 gap-3" type="submit">Submit</button>
+                    <button class="btn btn-secoundary-color btn-lg px-4 gap-3 mt-3" type="submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -63,7 +63,9 @@
             <div class="col-md-5 offset-md-1 col-12">
                 <div class="info-content">
                     <ul>
-                        <h2>OPENING HOURS</h2>
+                        <li>
+                            <h2>OPENING HOURS</h2>
+                        </li>
                         <li>Monday 12:00PM - 11:00PM</li>
                         <li>Tuesday 12:00PM - 11:00PM</li>
                         <li>Wednesday 12:00PM - 11:00PM </li>
@@ -78,10 +80,12 @@
             <div class="col-md-5 offset-md-1 col-sm-12">
                 <div class="info-content">
                     <ul>
-                        <h2>CONTACT</h2>
+                        <li>
+                            <h2>CONTACT</h2>
+                        </li>
                         <li><a href="tel:075959522823"><i class="fas fa-phone"></i>07595922823</a></li>
                         <li><a href="mailto:northyeastbrewing@gmail.com"><i class="fas fa-envelope-square"></i>
-                                <Northyeastbrewing@gmail class="com">Northyeastbrewing@gmail
+                                northyeastbrewing@gmail
                             </a></li>
                         <li class="d.flex">
                             <div>
@@ -102,7 +106,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 </section>
 <!-- ./Contact info Section -->
 
@@ -114,25 +118,9 @@
             <h1>FIND US</h1>
         </div>
         <div>
-            <div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=76%20sandrimham%20road%20&t=&z=11&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+            <div class="gmap_canvas"><iframe
+                    src="https://maps.google.com/maps?q=76%20sandrimham%20road%20&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe><a
                     href="https://embedgooglemap.net/124/">director</a></div>
-            <style>
-                .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 400px;
-                    width: 100%;
-                }
-
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 400px;
-                    width: 100%;
-                }
-            </style>
         </div>
     </div>
 </section>
