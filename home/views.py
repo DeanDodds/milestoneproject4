@@ -1,7 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from products.models import Product
-
-# Create your views here.
 
 
 def index(request):
@@ -28,11 +26,11 @@ def taproom(request):
 
 def privacy(request):
     """ A view to return the terms and conditions page """
- 
+
     return render(request, 'home/privacy.html')
 
 
 def ts_and_cs(request):
     """ A view to return the our privicy page """
- 
+
     return render(request, 'home/tandcs.html')

@@ -1,8 +1,7 @@
-from django.db import models
 import datetime
+from django.db import models
 
 
-# Create your models here.
 class BreweryTourBooking(models.Model):
     class Meta:
         ordering = ('date',)
@@ -41,7 +40,7 @@ class BreweryTourBooking(models.Model):
 class TaproomBooking(models.Model):
     class Meta:
         ordering = ('date',)
-        
+
     NUMBER_OF_PEOPLE = (
         (1, '1'),
         (2, '2'),

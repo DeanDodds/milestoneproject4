@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.contact, name='contact'),
-    path('messages/', views.messages, name='messages'),
+    path('messages/', views.view_messages, name='messages'),
     path('delete_message/<int:message_id>/',
          views.delete_message, name='delete_message'),
     path('reply_to_message/<int:message_id>/',

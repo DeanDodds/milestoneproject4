@@ -2,9 +2,6 @@ import datetime
 from django.db import models
 
 
-# Create your models here.
-
-
 class Events(models.Model):
     class Meta:
         ordering = ('event_date',)
