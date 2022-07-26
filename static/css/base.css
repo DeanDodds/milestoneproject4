@@ -28,7 +28,7 @@ h1 {
 
 h2 {
     font-family: Helvetica, sans-serif;
-    size: 26px;
+    font-size: 26px;
 
 }
 
@@ -279,8 +279,8 @@ nav .navbar-nav li a:hover {
 
 @media only screen and (max-width: 773px) {
     #feat-row {
-        margin: none;
-        padding: none;
+        margin: 0px;
+        padding: 0px;
     }
 
     .feat-container {
@@ -456,7 +456,6 @@ iframe {
 #water-image {
     background: url('/static/images/water1.jpg') no-repeat center center;
     background-size: cover;
-    border: 2px soild black;
     height: 10em;
     width: 10em;
 }
