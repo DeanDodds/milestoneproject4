@@ -12,7 +12,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 Beers
             </a>
-            <div class="dropdown-menu border-0 dark-background-color text-center" aria-labelledby="beers-link">
+            <div class="dropdown-menu border-0 dark-background-color text-center" aria-labelledby="user-options">
                 <a href="{% url 'products' %}" class="dropdown-item">Shop All</a>
                 <a href="{% url 'products' %}?style=IPA" class="dropdown-item">IPAs</a>
                 <a href="{% url 'products' %}?style=Ale" class="dropdown-item">Ales</a>
@@ -47,7 +47,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link text-center" href="#" id="user-options" data-toggle="dropdown"
+            <a class="font-weight-bold nav-link text-center" href="#" id="user-options-myaccount" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                     <p class="my-0">My Account</p>
