@@ -147,4 +147,37 @@ I used the jShint validator to to ensure there was no syntax errors in my JavaSc
 
 # 2. Lighthouse Testing <a id="lighthouse"></a>
 
+All my pages have went through google devtools lighthouse analysis which are scored on: 
+* Performance 
+* Accesibility 
+* Best Practices 
+* Search Engine Optimization (SEO)
+
+![home page lighthouse scores]() |
+|:--:|
+| <b>Home page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+
+![Products page lighthouse scores]() |
+|:--:|
+| <b>Products page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+
+![Taproom page lighthouse scores]() |
+|:--:|
+| <b>Taproom page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+
+![Our Story page lighthouse scores]() |
+|:--:|
+| <b>Taproom page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>
+
+![Contact page lighthouse scores]() |
+|:--:|
+| <b>Contact page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+
+![Taproom bookinG page lighthouse scores]() |
+|:--:|
+| <b>Taproom booking page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+
+![Brewtour booking page lighthouse scores]() |
+|:--:|
+| <b>Brewtour booking page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
 

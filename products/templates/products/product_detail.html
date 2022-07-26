@@ -26,7 +26,8 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <button class="decrement-qty btn btn-black rounded-0"
-                                        data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                        data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}"
+                                        aria-label="minus-one">
                                         <span class="icon">
                                             <i class="fas fa-minus white-text"></i>
                                         </span>
@@ -36,7 +37,8 @@
                                     max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                 <div class="input-group-append">
                                     <button class="increment-qty btn btn-black rounded-0"
-                                        data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                        data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}"
+                                        aria-label="add-one">
                                         <span class="icon">
                                             <i class="fas fa-plus white-text"></i>
                                         </span>
@@ -191,6 +193,7 @@
                     </div>
                     <div>
                         <h3 class="mb-2">Bitterness</h3><br>
+
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="{{ product.bitterness }}"
                                 aria-valuemin="0" aria-valuemax="100" style="width:{{ product.bitterness }}%">
