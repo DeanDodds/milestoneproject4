@@ -175,7 +175,7 @@ favicon containg the black version of the logo
 |:--:|:--:|
 |<b>Style</b>|<b>Malt</b>|
 
-| ![Pecentage](/designdocumentation/images/iPERCENTAGE.png)|![Hops](/designdocumentation/images/ihop%20(2).png)|
+| ![Pecentage](/designdocumentation/images/iPERCENTAGE.png)|![Hops](/designdocumentation/images/ihop.png)|
 |:--:|:--:|
 |<b>Pecentage</b>|<b>Hops</b>|
 
