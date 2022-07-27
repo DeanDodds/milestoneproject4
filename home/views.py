@@ -2,13 +2,13 @@ from django.shortcuts import render
 from products.models import Product
 
 
-def index(request):
+def home(request):
     """ A view to return the index page """
 
     return render(request, 'home/index.html')
 
 
-def story(request):
+def our_story(request):
     """ A view to return the our story page """
 
     return render(request, 'home/our_story.html')
@@ -21,7 +21,7 @@ def taproom(request):
     context = {
         'products': products,
     }
-    return render(request, 'home/taproom.html', context)
+    return render(request, 'home/ts_and_cs/.html', context)
 
 
 def privacy(request):
@@ -34,3 +34,5 @@ def ts_and_cs(request):
     """ A view to return the our privicy page """
 
     return render(request, 'home/tandcs.html')
+
+

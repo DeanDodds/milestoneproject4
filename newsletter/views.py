@@ -14,6 +14,7 @@ def newsletter(request):
         # if user already has already subscripbed
         if NewletterSubscribers.objects.filter(email=email).exists():
             messages.error(request, 'Already subscribed')
+            return redirect('/')
         # if new email
         else:
             # saves form to database
