@@ -3,9 +3,9 @@
 northyeastbrewing.co.uk is to promote  a new micro-brew pub launching in Newcastle called North Yeast Brewing. The website the main purpose inform potential costumers of the brewery, 
 promote the Tap room, highlight the selection of craft beer available and promote Events the company will be attending and hosting. ​
 
-<a href="https://dean-milestone-project-3.herokuapp.com/">Go to live website.....</a>
+<a href="https://north-yeast-brewing.herokuapp.com/">Go to live website.....</a>
 
-<a href="https://dean-milestone-project-4.herokuapp.com/">![live website preview]()</a>
+<a href="https://north-yeast-brewing.herokuapp.com/">![live website preview]()</a>
 
 # Table of contents
 
