@@ -245,15 +245,15 @@ favicon containg the black version of the logo
 All pages have a collapsible navigation bar, this makes it fully responsive on all devices.
 
 
-| ![screenshot of laptop navbar]() |
+| ![screenshot of laptop navbar](/designdocumentation/screenshots/features/navbar.png) |
 |:--:|
 | <b>on smaller screens</b>|
 
-| ![screenshot of medium navbar]() |
+| ![screenshot of medium navbar](/designdocumentation/screenshots/features/navmedium.png) |
 |:--:|
 | <b>on medium screens</b>|
 
-| ![screenshot of smaller navbar]() |
+| ![screenshot of smaller navbar](/designdocumentation/screenshots/features/navsmal.png) |
 |:--:|
 | <b>on smaller screens</b>|
 
@@ -261,11 +261,11 @@ All pages have a collapsible navigation bar, this makes it fully responsive on a
 
 All pages have a responsive footer that contains links to social media and a sign up for the newletter form.
 
-| ![screenshot of smaller footer]() |
+| ![screenshot of smaller footer](/designdocumentation/screenshots/features/footer.png) |
 |:--:|
 | <b>on smaller footer</b>|
 
-| ![screenshot of laptop footer]() |
+| ![screenshot of laptop footer](/designdocumentation/screenshots/features/footersmall.png) |
 |:--:|
 | <b>on laptop footer</b>|
 
@@ -273,58 +273,58 @@ All pages have a responsive footer that contains links to social media and a sig
 ### Sign up page 
 
 a form to allow users to sign up for an accout 
-| ![screenshot of the sign up page]() |
+| ![screenshot of the sign up page](/designdocumentation/screenshots/manualtesting/registerpage.png) |
 |:--:|
 | <b>Of sign up form</b>|
 
 ### Login Page 
 
 a form to allow users to log in to thier accout
-| ![screenshot of the login form]() |
+| ![screenshot of the login form](/designdocumentation/screenshots/manualtesting/loginpage.png) |
 |:--:|
 | <b>Login form</b>|
 
 ### Logout option
 Log out button in the navbar 
-| ![screenshot of the login form]() |
+| ![screenshot of the login form](/designdocumentation/screenshots/features/logoutpage.png) |
 |:--:|
 | <b>Logout form</b>|
 
 ### Search Bar
 Users can search for product they would like to see 
-| ![screenshot of the search bar]() |
+| ![screenshot of the search bar](/designdocumentation/screenshots/features/navbar.png) |
 |:--:|
 | <b>Search bar</b>|
 
 ### Shopping Cart
 Users can add products too and view their shopping cart
-| ![screenshot of the shopping cart]() |
+| ![screenshot of the shopping cart](/designdocumentation/screenshots/manualtesting/cart.png) |
 |:--:|
 | <b>Shopping cart</b>|
 
 ### Secure Purchasing
 Users can pay for their shopping using Stripe secure payment 
-| ![screenshot of the stripe payment form]() |
+| ![screenshot of the stripe payment form](/designdocumentation/screenshots/features/checkout.png) |
 |:--:|
 | <b>stripe payment form</b>|
 
 ### Taproom Booking
 Users can book tables in the Taproom
-| ![screenshot of the taproom booking form]() |
+| ![screenshot of the taproom booking form](/designdocumentation/screenshots/manualtesting/taproomform.png) |
 |:--:|
 | <b>Taproom booking form</b>|
 
 
 ### Brewery Tour Booking
 Users can book tables in the a brewery tour
-| ![screenshot of the brewery tour booking form]() |
+| ![screenshot of the brewery tour booking form](/designdocumentation/screenshots/manualtesting/brewtourform.png) |
 |:--:|
 | <b>Brewery tour booking form</b>|
 
 
 ### Contact Form 
 Users can get in contact via form on the contact page
-| ![screenshot of the contact form]() |
+| ![screenshot of the contact form](/designdocumentation/screenshots/manualtesting/contactuslinks.png) |
 |:--:|
 | <b>Contact form</b>|
 
@@ -332,29 +332,29 @@ Users can get in contact via form on the contact page
 
 ## Add products
 Admin can add products to the website 
-| ![screenshot of the add product form]() |
+| ![screenshot of the add product form](/designdocumentation/screenshots/manualtesting/productmanagement.png) |
 |:--:|
 | <b>Add product form</b>|
 
 ## add Events
  Admin can add Events to the website 
-| ![screenshot of the add events form]() |
+| ![screenshot of the add events form](/designdocumentation/screenshots/manualtesting/eventsmanagement.png) |
 |:--:|
 | <b>Add events form</b>|
 
 ## View bookings 
 Admin can view bookings made by users 
-| ![screenshot of the Booking management Page]() |
+| ![screenshot of the Booking management Page](/designdocumentation/screenshots/manualtesting/managebookingpage.png) |
 |:--:|
 | <b>Booking mangement page</b>|
 
 ## Send Newsletters   
 Admin can send Newsletters and view users who have signed up to the sign up to recive them
-| ![screenshot of the send newsletter page]() |
+| ![screenshot of the send newsletter page](/designdocumentation/screenshots/features/sendnewa.png) |
 |:--:|
 | <b>send newsletter page</b>|
 
-| ![screenshot of the sign up list]() |
+| ![screenshot of the sign up list](/designdocumentation/screenshots/manualtesting/mailinglist.png) |
 |:--:|
 | <b>Sign up list</b>|
 
