@@ -2,45 +2,51 @@
 {% load static %}
 
 {% block content %}
-<div class="text-center">
-    <h1>Messages</h1>
-</div>
+<section class="conatiner">
+    <hr>
+    <div class="text-center">
+        <h1>Manage Enquirys</h1>
+    </div>
+    <hr>
 
-{% if user_messages %}
-{% for message in user_messages %}
-<div class="row">
-    <div class="col-2 offset-1">
-        <p>{{ message.full_name }}</p>
+    <div class="contacts-forms">
+        {% if user_messages %}
+        {% for message in user_messages %}
+        <div class="row">
+            <div class="col-2 offset-1">
+                <p>{{ message.full_name }}</p>
+            </div>
+            <div class="col-2">
+                <p>{{ message.subject }}</p>
+            </div>
+            <div class="col-2">
+                <p>{{ message.received }}</p>
+            </div>
+            <div class="col-2">
+                <details>
+                    <summary>see message</summary>
+                    <p>{{ message.message }}</p>
+                </details>
+            </div>
+            <div class="col-2">
+                <small class="ml-3">
+                    <a
+                        href="mailto:{{ message.email }}?subject={{ message.subject }}&body=Dear {{ message.full_name }}">reply</a>
+                    |
+                    <a class="text-danger" href="{% url 'delete_message' message.id %}">delete</a>
+                </small>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="row">
+            <div class="col-12">
+                <p>No Messages</p>
+            </div>
+        </div>
+        {% endif %}
     </div>
-    <div class="col-2">
-        <p>{{ message.subject }}</p>
-    </div>
-    <div class="col-2">
-        <p>{{ message.received }}</p>
-    </div>
-    <div class="col-2">
-        <details>
-            <summary>see message</summary>
-            <p>{{ message.message }}</p>
-        </details>
-    </div>
-    <div class="col-2">
-        <small class="ml-3">
-            <a
-                href="mailto:{{ message.email }}?subject={{ message.subject }}&body=Dear {{ message.full_name }}">reply</a>
-            |
-            <a class="text-danger" href="{% url 'delete_message' message.id %}">delete</a>
-        </small>
-    </div>
-</div>
-{% endfor %}
-{% else %}
-<div class="row">
-    <div class="col-12">
-        <p>No Messages</p>
-    </div>
-</div>
-{% endif %}
+</section>
 {% endblock %}
 
 <A HREF="mailto:you@yourdomain.com?subject=Your Subject&body=Message for the body">you@yourdomain.com</a>

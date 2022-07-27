@@ -2,58 +2,65 @@
 {% load static %}
 
 {% block content %}
-<div class="text-center">
-    <h1>Bookings</h1>
-</div>
 
-<section>
-
-    <div class="row text-center">
-        <div class="col-12">
-            <h2>Taproom Bookings</h2>
-        </div>
+<section class="container">
+    <hr>
+    <div class="text-center">
+        <h1>Manage Bookings</h1>
     </div>
+    <hr>
+    <div class="contact-forms">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2>Taproom Bookings</h2>
+            </div>
+        </div>
+        <hr>
 
-    {% for booking in taproom %}
-    <div class="row">
-        <div class="col-2 offset-1">
-            <p>{{ booking.name }}</p>
+        {% for booking in taproom %}
+        <div class="row">
+            <div class="col-2 offset-1">
+                <p>{{ booking.name }}</p>
+            </div>
+            <div class="col-2">
+                <p>{{ booking.number_of_people }}</p>
+            </div>
+            <div class="col-2">
+                <p>{{ booking.date }}</p>
+            </div>
+            <div class="col-2">
+                <p>{{ booking.time }}</p>
+            </div>
         </div>
-        <div class="col-2">
-            <p>{{ booking.number_of_people }}</p>
-        </div>
-        <div class="col-2">
-            <p>{{ booking.date }}</p>
-        </div>
-        <div class="col-2">
-            <p>{{ booking.time }}</p>
-        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </section>
-<hr>
-<section>
-    <div class="row text-center">
-        <div class="col-12 ">
-            <h2>Brewery Tour Bookings</h2>
-        </div>
-    </div>
-    {% for booking in brewtour %}
 
-    <div class="row">
-        <div class="col-2 offset-1">
-            <p>{{ booking.name }}</p>
+<section class="new-section-margin container">
+    <div class="contact-forms">
+        <div class="row text-center">
+            <div class="col-12 ">
+                <h2>Brewery Tour Bookings</h2>
+            </div>
         </div>
-        <div class="col-2">
-            <p>{{ booking.number_of_people }}</p>
-        </div>
-        <div class="col-2">
-            <p>{{ booking.date }}</p>
-        </div>
-        <div class="col-2">
-            <p>{{ booking.time }}</p>
+        <hr>
+        {% for booking in brewtour %}
+        <div class="row">
+            <div class="col-2 offset-1">
+                <p>{{ booking.name }}</p>
+            </div>
+            <div class="col-2">
+                <p>{{ booking.number_of_people }}</p>
+            </div>
+            <div class="col-2">
+                <p>{{ booking.date }}</p>
+            </div>
+            <div class="col-2">
+                <p>{{ booking.time }}</p>
+            </div>
         </div>
     </div>
+
 </section>
 {% endfor %}
 {% endblock %}
