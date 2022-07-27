@@ -21,37 +21,37 @@ I used the W3C Markup and CSS Validator Service to ensure there were no syntax e
 
 # Html <a id="html"></a> 
 
-| ![index page validation]() |
+| ![index page validation](/designdocumentation/screenshots/validation/html/home.png) |
 |:--:|
 | <b>Index page validation - Passed  - No errors or warnings</b>|
 
-![Products page validation]() |
+![Products page validation](/designdocumentation/screenshots/validation/html/productspage.png) |
 |:--:|
 | <b>Products page validation - Passed  - No errors or warnings</b>|
 
-![Products details page validation]() |
+![Products details page validation](/designdocumentation/screenshots/validation/html/productdetails.png) |
 |:--:|
 | <b>Products details page validation - Passed  - No errors or warnings</b>|
 
-![Taproom page validation]() |
+![Taproom page validation](/designdocumentation/screenshots/validation/html/taproom.png) |
 |:--:|
 | <b>Taproom page validation - Passed  - No errors or warnings</b>|
 
-![Our Story page validation]() |
+![Our Story page validation](/designdocumentation/screenshots/validation/html/storypage.png) |
 |:--:|
 | <b>Ourstory page validation - Passed  - No errors or warnings</b>|
 
-![Contacts page validation]() |
+![Contacts page validation](/designdocumentation/screenshots/validation/html/contact.png) |
 |:--:|
 | <b>Taproom page validation - Passed  - No errors or warnings</b>|
 
-![Events Page validation]() |
+![Events Page validation](/designdocumentation/screenshots/validation/html/events.png) |
 |:--:|
 | <b>Events page validation - Passed  - No errors or warnings</b>|
 
 ## CSS <a id="css"></a>
 
- ![CSS validation](/assets/screenshots/cssval.png) |
+ ![CSS validation](/designdocumentation/screenshots/validation/css/css.png) |
 |:--:|
 | <b>CSS validation  - Passed  - All errors and warnings are from the Font Awessome and Bootstrap CSS files</b>|
 
@@ -61,81 +61,81 @@ I used the Pep8 validator to to ensure there were no syntax errors in my python 
 
 ### Booking app files 
 
-![models.py file validated]() |
+![models.py file validated](/designdocumentation/screenshots/validation/pep8/bookingmodels.png) |
 |:--:|
 | <b>models.py file validated  - Passed  </b>|
 
-![urls.py file validated]() |
+![urls.py file validated](/designdocumentation/screenshots/validation/pep8/bookingurls.png) |
 |:--:|
 | <b>url.py file validated  - Passed  - </b>|
 
-![viewss.py file validated]() |
+![viewss.py file validated](/designdocumentation/screenshots/validation/pep8/bookingviews.png) |
 |:--:|
 | <b>models.py file validated  - Passed  - </b>|
 
 ### contact app files 
 
-![models.py file validated]() |
+![models.py file validated](/designdocumentation/screenshots/validation/pep8/contactsmodels.png) |
 |:--:|
 | <b>models.py file validated  - Passed  </b>|
 
-![urls.py file validated]() |
+![urls.py file validated](/designdocumentation/screenshots/validation/pep8/contactsurls.png) |
 |:--:|
 | <b>url.py file validated  - Passed  - </b>|
 
-![viewss.py file validated]() |
+![views.py file validated](/designdocumentation/screenshots/validation/pep8/contactsviews.png) |
 |:--:|
 | <b>models.py file validated  - Passed  - </b>|
 
-![forms.py file validated]() |
+![forms.py file validated](/designdocumentation/screenshots/validation/pep8/contactforms.png) |
 |:--:|
 | <b>models.py file validated  - Passed  - </b>|
 
 
 ### events app files 
 
-![models.py file validated]() |
+![models.py file validated](/designdocumentation/screenshots/validation/pep8/eventsviews.png) |
 |:--:|
 | <b>views.py file validated  - Passed  </b>|
 
-![urls.py file validated]() |
+![urls.py file validated](/designdocumentation/screenshots/validation/pep8/eventsurls.png) |
 |:--:|
 | <b>url.py file validated  - Passed  - </b>|
 
-![viewss.py file validated]() |
+![viewss.py file validated](/designdocumentation/screenshots/validation/pep8/bookingviews.png) |
 |:--:|
 | <b>models.py file validated  - Passed  - </b>|
 
-![forms.py file validated]() |
+![forms.py file validated](/designdocumentation/screenshots/validation/pep8/eventsforms.png) |
 |:--:|
 | <b>forms.py file validated  - Passed  - </b>|
 
 ### Newsletter app files 
 
-![models.py file validated]() |
+![models.py file validated](/designdocumentation/screenshots/validation/pep8/newsletterviews.png) |
 |:--:|
 | <b>views.py file validated  - Passed  </b>|
 
-![urls.py file validated]() |
+![urls.py file validated](/designdocumentation/screenshots/validation/pep8/newsletterurls.png) |
 |:--:|
 | <b>url.py file validated  - Passed  - </b>|
 
-![viewss.py file validated]() |
+![viewss.py file validated](/designdocumentation/screenshots/validation/pep8/newsletterviews.png) |
 |:--:|
 | <b>models.py file validated  - Passed  - </b>|
 
-![forms.py file validated]() |
+![forms.py file validated](/designdocumentation/screenshots/validation/pep8/newsletterforms.png) |
 |:--:|
 | <b>forms.py file validated  - Passed  - </b>|
 
 
 ### Home app files 
 
-![models.py file validated]() |
+![models.py file validated](/designdocumentation/screenshots/validation/pep8/homevews.png) |
 |:--:|
 | <b>views.py file validated  - Passed  </b>|
 
-![urls.py file validated]() |
+![urls.py file validated](/designdocumentation/screenshots/validation/pep8/homeurls.png) |
 |:--:|
 | <b>url.py file validated  - Passed  - </b>|
 
@@ -144,7 +144,7 @@ I used the Pep8 validator to to ensure there were no syntax errors in my python 
 
 I used the jShint validator to to ensure there was no syntax errors in my JavaScript code
 
-![stripe_elements.js validated](/assets/screenshots/jshint.png) |
+![stripe_elements.js validated](/designdocumentation/screenshots/validation/jshint/JSHINT.png) |
 |:--:|
 | <b>stripe_elements.js validated  - Passed  - unused variables are on onclick functions</b>|
 
@@ -156,31 +156,31 @@ All my pages have went through google devtools lighthouse analysis which are sco
 * Best Practices 
 * Search Engine Optimization (SEO)
 
-![home page lighthouse scores]() |
+![home page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/home.png) |
 |:--:|
 | <b>Home page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
 
-![Products page lighthouse scores]() |
+![Products page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/productspage.png) |
 |:--:|
 | <b>Products page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
 
-![Taproom page lighthouse scores]() |
+![Taproom page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/taproom.png) |
 |:--:|
 | <b>Taproom page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
 
-![Our Story page lighthouse scores]() |
+![Our Story page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/ourstory.png) |
 |:--:|
 | <b>Taproom page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>
 
-![Contact page lighthouse scores]() |
+![Contact page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/contact.png) |
 |:--:|
 | <b>Contact page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
 
-![Taproom bookinG page lighthouse scores]() |
+![Taproom bookinG page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/bookingtaproompage.png) |
 |:--:|
 | <b>Taproom booking page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
 
-![Brewtour booking page lighthouse scores]() |
+![Brewtour booking page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/brewerybookingpage.png) |
 |:--:|
 | <b>Brewtour booking page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
 
@@ -191,7 +191,7 @@ All my pages have went through google devtools lighthouse analysis which are sco
 1. As a first time vistor, I want to be able easily recongise the navigation bar of the website. So that i can easily navigate through the pages 
  * When entering the site users can clearly see the navigation bar and the purpose of the site is very clear.
 
- ![home page screenshot]() |
+ ![home page screenshot](/designdocumentation/screenshots/userstories/us1.png) |
 |:--:|
 | <b>Outline of the home page and a clear navigation bar at the top of the page</b>|
 
@@ -199,14 +199,14 @@ All my pages have went through google devtools lighthouse analysis which are sco
 2. As a shopper. I want to easily view a list of products.
  * all products can been seen on the products page. The product page is in the navbar at the top of the screen. Shoppers can also type into the search bar to just view products relevent to their searches.  
 
- ![Beer page screenshot]() |
+ ![Beer page screenshot](/designdocumentation/screenshots/userstories/us2.png) |
 |:--:|
 | <b>search bar at top of screen and link in navbar</b>|
 
 3. As a shopper. I want to easily view a individual product details. So that i can view the product name, price, description and style.  
  * all products hav a products detail page with more info on each product. 
 
- ![Product details page screenshot]() |
+ ![Product details page screenshot](/designdocumentation/screenshots/userstories/us3.png) |
 |:--:|
 | <b>all information on each product can be found here</b>|
 
