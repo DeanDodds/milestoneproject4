@@ -114,19 +114,17 @@
                             <p>There is a great selection of craft beers, ales, and
                                 stout to try here at the North Yeast Brewing taproom.
                                 Avaiable on tap, bottled and canned to takaway with you,
-                                so you taste great beer at home. You can down load our
-                                drinks menu below.
+                                so you taste great beer at home. Our why not get a delivery
+                                of beers straight to your door
                             </p>
-                            <form method="get" action="/static/download/" target="blank">
-                                <button class="btn btn-main-color" type="submit"><i
-                                        class="fa fa-download"></i>Download</button>
-                            </form>
+                            <div>
+                                <a a href="{% url 'products' %}" class="btn btn-main-color btn-lg px-4 gap-3">Shop
+                                    Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 </section>
 <!-- ./Beer selection section -->
 {% endblock %}

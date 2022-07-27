@@ -4,27 +4,29 @@
 
 {% block content %}
 <!-- newsletter signup section -->
-<section id="newletter-sign-up">
+<section>
     <div class="container">
-        <div>
-
-            <div>
-                <h1>Mailing list</h1>
-
-            </div>
-
-
-            <ul>
-                {% for email in email_list %}
-                <li>{{ email }}
-                    <small class="ml-3">
-                        <a href="#" data-toggle="modal" data-target="#modal{{ email.id }}">Edit</a> |
-                        <a class="text-danger" href="{% url 'delete_mail' email.id %}">Delete</a>
-                    </small></td>
-                    {% endfor %}
-            </ul>
+        <hr>
+        <div class="text-center">
+            <h1>Mailing list</h1>
         </div>
-    </div>
+        <hr>
+        <div class="contact-forms">
+            <div class="row">
+                <div class="col-8">
+                    {% for email in email_list %}
+                    <p>{{ email }}</p>
+                </div>
+                <div class="col-4">
+                    <small class="ml-3">
+                        <a href="#" class="dark-text" data-toggle="modal" data-target="#modal{{ email.id }}">Edit</a> |
+                        <a class="text-danger" href="{% url 'delete_mail' email.id %}">Delete</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
 </section>
 <!-- ./newsletter signup section -->
 
@@ -48,13 +50,13 @@
                         <label for="exampleInputEmail1">Edit address</label>
                         <input type="email" name="updated-email" class="form-control" id="exampleInputEmail1"
                             aria-describedby="emailHelp" value="{{ email.email }}" name="updated-email" required>
-                        <button type="submit" class="btn btn-primary">Update
+                        <button type="button" class="btn btn-secondary">Update
                             Email</button>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-main-color" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
