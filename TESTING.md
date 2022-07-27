@@ -5,7 +5,13 @@
    - [javaScript jshint complience](#javscript) 
 2. [Lighthouse reports](#lighthouse)
 3. [Testing user stories](#stories)
-4. [Test Plan](#test-plan)
+   - [Viewing and navigition](#nav) 
+   - [Sorting and searching](#search) 
+   - [Registration and User Account](#account)
+   - [Purchasing and check out](#order)
+   - [Contact and booking](#booking)
+   - [Adding content](#content)
+4. [Manual Testing](#Tesing)
 5. [Further testing](#further)
 6. [Bugs](#bugs)
 
@@ -336,7 +342,7 @@ All my pages have went through google devtools lighthouse analysis which are sco
 |:--:|
 | <b>Contact Form </b>|
 
-### Adding content 
+### Adding content <a id="content"></a>
 
 19. As a site Site Owner, i want to admin pages that allow me to add content. So i can add products/events to the website 
  * Admin users can add products and Events to the website by going to the management pages and filling out the form.
@@ -370,3 +376,108 @@ All my pages have went through google devtools lighthouse analysis which are sco
 ![delete Product links ]() |
 |:--:|
 | <b>delete Product Form</b>|
+
+# 4. Manual Texting <a id="testing"></a>
+
+## Navigation links (logged out)
+
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|1|Navigation links|Home button clicked|Opens home page|![home page]()|Pass|Works as expected|
+|2|Navigation links|Beer button clicked|Opens beer page|![beer page]()|Pass|Works as expected|
+|3|Navigation links|Taproom button clicked|Opens Taproom page|![taproom page]()|Pass|Works as expected|
+|4|Navigation links|Our story button clicked|Opens Our Story page|![Our Story page]()|Pass|Works as expected|
+|5|Navigation links|Our Contact button clicked|Opens Contact page|![Contact page]()|Pass|Works as expected|
+|7|Navigation links|Login button clicked|Opens login page|![Login page]()|Pass|Works as expected|
+|8|Navigation links|Sign up button clicked|Opens login page|![Sign up]()|Pass|Works as expected|
+|9|Navigation links|Shopping cart buttonclicked|Opens shopping cart page|![Opens shopping cart page]()|Pass|Works as expected|
+|10|Navigation links|facebook link clicked|Opens Facebook in new tab![Opens Facebook page]()|Pass|Works as expected|
+|11|Navigation links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter]()|Pass|Works as expected|
+|12|Navigation links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube]()|Pass|Works as expected|
+|13|Navigation links|phone number link clicked|Opens Call pop up|![Opens Call pop up]()|Pass|Works as expected|
+|13|Navigation links|Logo clicked|Opens Homepage| ![Home Page]()|Pass|Works as expected|
+
+
+## Navigation links (logged in)
+
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|14|Navigation links|Profile link clicked|Opens Profile page|![Pofile page]()|Pass|Works as expected|
+
+## Navigation links (Admin Logged in)
+
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|15|Navigation links|Product Management link clicked|Opens Product management page|![Product management page|]()|Pass|Works as expected|
+|16|Navigation links|Create Newsletter  link clicked|Opens Create Newsletter page|![Create Newsletter page|]()|Pass|Works as expected|
+|17|Navigation links|Create Newsletter sign up link clicked|Opens Newsletter sign page|![Newsletter sign up page|]()|Pass|Works as expected|
+|18|Navigation links|Product Management link clicked|Opens Events management page|![Events management page|]()|Pass|Works as expected|
+|19|Navigation links|Product Management link clicked|Opens Bookings page|![Bookings page|]()|Pass|Works as expected|
+|20|Navigation links|Contact Management link clicked|Opens Contact management page|![Manage messages|]()|Pass|Works as expected|
+
+## Footer links 
+
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|21|Footer links|logo link clicked|Opens Home page|![Home page|]()|Pass|Works as expected|
+|22|Footer links|Terms and conditions link clicked|Opens Terms and conditions |![HTerms and conditions]()|Pass|Works as expected|
+|23|Footer links|Privacylink clicked|Opens Terms and conditions |![privacy |]()|Pass|Works as expected|
+|24|Footer links|Contact clicked|Opens contact page |![contact page |]()|Pass|Works as expected|
+|25|Footer links|Book taproomclicked|Opens book taproom page |![taproom booking page |]()|Pass|Works as expected|
+|26|Footer links|Book brewery tour clicked|Opens book brewery tour page |![conatct page |]()|Pass|Works as expected|
+|27|Footer links|facebook link clicked|Opens Facebook in new tab![Opens Facebook page]()|Pass|Works as expected|
+|28|Footer links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter]()|Pass|Works as expected|
+|29|Footer links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube]()|Pass|Works as expected|
+|30|Footer links|phone number link clicked|Opens Call pop up|![Opens Call pop up]()|Pass|Works as expected|
+
+## Home Page Button 
+
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|31|Home page |Shop now button clicked|Opens products page|![Beer page|]()|Pass|Works as expected|
+|32|Home page |Book now button clicked|Opens taproom booking page|![Taproom button page|]()|Pass|Works as expected|
+|33|Home page |Events button clicked|Opens Events page|![Events button page|]()|Pass|Works as expected|
+
+### Products Page Buttons and links
+
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|34|Product page |Buy now button clicked|Opens products details page|![product Details page|]()|Pass|Works as expected|
+|35|Product page |Image clicked|Opens taproom booking details page|![Product Details page|]()|Pass|Works as expected|
+|36|Product page |Book now button clicked|Opens taproom booking page|![Taproom button page|]()|Pass|Works as expected|
+
+### Taproom page Buttons and links
+
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|37|Taproom page |Book now button clicked|Opens Taproom booking page|![Taproom booking page|]()|Pass|Works as expected|
+|38|Taproom page |Shop now clicked|Opens Product page|![Product page|]()|Pass|Works as expected|
+
+### Our Story Buttons
+
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|37|Our Storypage |Book now button clicked|Opens Taproom booking page|![Brewery tour booking page|]()|Pass|Works as expected|
+
+### Events Links
+|37|Events |Ticket link clicked|Opens ticket link page in new tape|![Eventbrite|]()|Pass|Works as expected|
+
+### Contact Links
+|38|Contact links|facebook link clicked|Opens Facebook in new tab![Opens Facebook page]()|Pass|Works as expected|
+|39|Contact links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter]()|Pass|Works as expected|
+|40|Contact links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube]()|Pass|Works as expected|
+|41|Contact links|phone number link clicked|Opens Call pop up|![Opens Call pop up]()|Pass|Works as expected|
+|42|Contact links|email link clicked|Opens Email pop up|![Opens email pop up]()|Pass|Works as expected|
+
+
+
+# 5. Bugs 
+
+
+# Known bugs 
+
+- Subscription email form not validating.
+- Newsletter send email error.
+- product page spills over the container on small screens
+- contact submit does not clear on submit
+- matching icons 
