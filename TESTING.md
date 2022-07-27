@@ -481,3 +481,4 @@ All my pages have went through google devtools lighthouse analysis which are sco
 - product page spills over the container on small screens
 - contact submit does not clear on submit
 - matching icons 
+- toasts now showing up

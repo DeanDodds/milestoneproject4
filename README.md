@@ -101,7 +101,10 @@ The wireframes for the website were created on Drawio, there is a desktop, table
 
 ## Data Model 
 
+I have modeled my database on a relation-relational database system. I have used the POSTGRES. I have used the following mapping 
+
 ![Data model](/designdocumentation/databasedisign/northyeastbrewingredatabase.png)
+
 ## Logo Design 
 
 I have designed to versions of the North Yeast Brewing logo a white version for contrast over dark backgrounds and a black version for contrast over light backgrounds.
@@ -226,18 +229,152 @@ favicon containg the black version of the logo
 |:--:|
 | <b>Hero Image</b>|
 
+
+
 # 3.Features <a id="features"></a>
 
-- Responsive Nav Bar with social media links 
-- Login page 
-- logout 
-- Search Bar 
-- Shopping Cart
-- Secure Purchasing
-- Taproom Booking
-- Event and taproom Booking
-- Contact Form 
-- Footer with soical media links 
+## User features
+
+
+### Responsiveness
+
+- Responsiveness on all device sizes.
+
+
+### Navigation Bar 
+All pages have a collapsible navigation bar, this makes it fully responsive on all devices.
+
+
+| ![screenshot of laptop navbar]() |
+|:--:|
+| <b>on smaller screens</b>|
+
+| ![screenshot of medium navbar]() |
+|:--:|
+| <b>on medium screens</b>|
+
+| ![screenshot of smaller navbar]() |
+|:--:|
+| <b>on smaller screens</b>|
+
+### Footer
+
+All pages have a responsive footer that contains links to social media and a sign up for the newletter form.
+
+| ![screenshot of smaller footer]() |
+|:--:|
+| <b>on smaller footer</b>|
+
+| ![screenshot of laptop footer]() |
+|:--:|
+| <b>on laptop footer</b>|
+
+
+### Sign up page 
+
+a form to allow users to sign up for an accout 
+| ![screenshot of the sign up page]() |
+|:--:|
+| <b>Of sign up form</b>|
+
+### Login Page 
+
+a form to allow users to log in to thier accout
+| ![screenshot of the login form]() |
+|:--:|
+| <b>Login form</b>|
+
+### Logout option
+Log out button in the navbar 
+| ![screenshot of the login form]() |
+|:--:|
+| <b>Logout form</b>|
+
+### Search Bar
+Users can search for product they would like to see 
+| ![screenshot of the search bar]() |
+|:--:|
+| <b>Search bar</b>|
+
+### Shopping Cart
+Users can add products too and view their shopping cart
+| ![screenshot of the shopping cart]() |
+|:--:|
+| <b>Shopping cart</b>|
+
+### Secure Purchasing
+Users can pay for their shopping using Stripe secure payment 
+| ![screenshot of the stripe payment form]() |
+|:--:|
+| <b>stripe payment form</b>|
+
+### Taproom Booking
+Users can book tables in the Taproom
+| ![screenshot of the taproom booking form]() |
+|:--:|
+| <b>Taproom booking form</b>|
+
+
+### Brewery Tour Booking
+Users can book tables in the a brewery tour
+| ![screenshot of the brewery tour booking form]() |
+|:--:|
+| <b>Brewery tour booking form</b>|
+
+
+### Contact Form 
+Users can get in contact via form on the contact page
+| ![screenshot of the contact form]() |
+|:--:|
+| <b>Contact form</b>|
+
+## Admin Features
+
+## Add products
+Admin can add products to the website 
+| ![screenshot of the add product form]() |
+|:--:|
+| <b>Add product form</b>|
+
+## add Events
+ Admin can add Events to the website 
+| ![screenshot of the add events form]() |
+|:--:|
+| <b>Add events form</b>|
+
+## View bookings 
+Admin can view bookings made by users 
+| ![screenshot of the Booking management Page]() |
+|:--:|
+| <b>Booking mangement page</b>|
+
+## Send Newsletters   
+Admin can send Newsletters and view users who have signed up to the sign up to recive them
+| ![screenshot of the send newsletter page]() |
+|:--:|
+| <b>send newsletter page</b>|
+
+| ![screenshot of the sign up list]() |
+|:--:|
+| <b>Sign up list</b>|
+
+## Defensive Programing
+In order to protect my users data I have used some defensive programing. My application protects the data through:
+
+Python functions that check:
+to see if the user is signed in using the built in django feature @login_required
+if a user is editing data. The function will check that the user who is signed in is a super in the view using 
+```
+if not request.user.is_superuser:
+```
+in the view 
+
+These steps help prevent the use of brute force.
+
+# Future Features Ideas <a id="future-features"></a>
+
+- Addind sizes so cases of beer can be added at a time 
+- Reviews app so users can leave reviews on products 
 
 # 4. Technologies Used <a id="technologies"></a>
 
@@ -250,6 +387,28 @@ favicon containg the black version of the logo
 - <a href="https://www.javascript.com/">JavaScript</a>
 -<a href="https://www.jetbrains.com/datagrip/features/postgresql/">PostgreSQL</a>
 
+# 4. Deployment <a id="deployment"></a>
+
+# Github <a id=pages></a>
+
+## Making a local clone <A id="clone"></a>
+
+You can clone a Github repository to your local computer by following these steps:
+
+1. On GitHub.com, navigate the repository page
+2. Above the list of files, click on the Code dropdown menu
+3. Select the download zip file 
+4. Once the files have downloaded you can extract them form the zip file and run them on your local environment 
+
+You can see more information on making local clones [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
+
+## Forking the GitHub Repository <a id="fork"></a>
+
+Forking a Github repositary allows you to make a copy that you can work on without effecting the original repository. You can fork a repository by:
+
+1. On GitHub.com, navigate the repository page of the repository you would like to fork
+2. On the top right hand side of the page locate click fork button 
+3. A copy of this resository should now be in your own repositories
 
 
 ## Frameworks, Libraries and Programs used <a id="frameworks"></a>
@@ -275,6 +434,151 @@ favicon containg the black version of the logo
 - <a href="https://www.adobe.com/uk/creativecloud/renew/resubscribe-cci.html?mv=search&mv=search&sdid=NYTLQZ47&ef_id=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB:G:s&s_kwcid=AL!3085!3!436521415410!e!!g!!photoshop!10105625998!106997352408&gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB">Adobe Illustrator</a> Used to create Logo image. 
 - <a href="https://tinypng.com/">TinyPNG</a> Used to compress images. 
 
+# 4. Deployment <a id="deployment"></a>
+
+## Github <a id=pages></a>
+
+### Making a local clone <A id="clone"></a>
+
+You can clone a Github repository to your local computer by following these steps:
+
+1. On GitHub.com, navigate the repository page
+2. Above the list of files, click on the Code dropdown menu
+3. Select the download zip file 
+4. Once the files have downloaded you can extract them form the zip file and run them on your local environment 
+
+You can see more information on making local clones [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
+
+### Forking the GitHub Repository <a id="fork"></a>
+
+Forking a Github repositary allows you to make a copy that you can work on without effecting the original repository. You can fork a repository by:
+
+1. On GitHub.com, navigate the repository page of the repository you would like to fork
+2. On the top right hand side of the page locate click fork button 
+3. A copy of this resository should now be in your own repositories
+
+### Deploying Locally 
+
+## Environment variables and app set up
+
+In order to connect you to keep your Sectret keys safe you must set up a env.py file. This is a  file containing key value pairs of all the environment variables required to configure you application. This is then linked into you settings.py file in the main app of yor project. 
+
+## Deployment to a local server 
+
+In order to deploy your website locally you can deploy it on a local server for testing purposes. To run your application on the local server you must install all dependencies using the 
+```
+pip3 install -r requirements.txt
+```
+command and then to run you django application. use the 
+```
+python3 manage.py runserver
+```
+command.
+
+This will deploy the app on a local port 8080. You can stop the app running by pressing control and c on mac or ctrl and c on windows. Close all ports by typing:
+```
+pkill -9 python3 
+```
+
+## Deploying a your Live Django app through HEROKU
+
+Before you can set up a HEROKU app you must set up the following files:
+- requirements.txt file - this tells HEROKU what dependencies are needed 
+- a Procfile file - this specifies the commands that are executed by the app on startup
+in you github repository.
+- Ensure the project has been fully committed and pushed to git
+
+now you can go to the heroku website and begain the deployment 
+1. To begin with HEROKU you must first create an account on the <a href="https://id.heroku.com/login">HEROKU website</a>
+2. Once logged in, create a new app. When seleting the app name, keep in mind that it must be unique. Then select your region and create app.
+3. Then select the deploy tab and scoll to the deployment method section. You can connect your app by either the HEROKU CLI or through Github. I selected GitHuB so I can use the automatic deployment feature 
+4. Then go to the settings tab and set up you Congfi Vars. These variables will be the same as the ones in you env.py file 
+5. You can then go back to the deploy tab and select automatic deployment 
+6. Your site is now live    
+------
+
+## Amazon Web Services S3
+Amazon Web Services is a cloud computing platform that provides customers with a wide array of cloud services. 
+To use the s3 service you need to follow these steps 
+1. Go to the Amazon Web Services website <a href="https://aws.amazon.com/free/?trk=d5254134-67ca-4a35-91cc-77868c97eedd&sc_channel=ps&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services&ef_id=Cj0KCQjwxIOXBhCrARIsAL1QFCaSWuZ2Ip9G8w-RTPAts4p5YEAtLgD2lEqRyFY3ftmF03pJkxVvHNQaAldNEALw_wcB:G:s&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">here</a> and create an account 
+2. Then login and in the search bar find S3
+3. Create a new Bucket within the S3 application with an appropriate name. When creating a buckeT the Object Ownership setting needs the ACLs enabled option checked.
+4. The S3 Bucket can now be configured using the following <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html">documentation</a>
+
+Once you bucket is created we need to add a user to access it in the Idenity Access Management(IAM)
+
+## Amazon IAM 
+1. In the search bar find IAM
+2. Click User Groups on the side menu and click Create New Group and call it appropriate name and click on Create Group
+3. Click on Policies and then click on Create Policies
+4. In the JSON tab select 'import managed policy' which will let us import the 'S3 Full Access Policy'  
+ - get the bucket ARN from the bucket policy page in S3 and paste it under Resource as a list, first,  ARN as it is and the second time with /* at the end to add to allow access for all files and folders in the bucket.
+5. Click review policy, give it a name and description and click Create Policy.
+To attach the policy to the group we created click on User Groups, select the group name then click Attach Policy button, search policy created, select it and click Attach Policy.
+6. Now create a user to put in the group: click Users in the sidebar menu.
+7. Create the user with an appropriate name, select Programmatic Access and select Next.
+From the list provided select the group name and click Create User.
+8. Click on 'Download .csv'. You must keep this safe as contains the keys to connect to you django .
+
+## Connecting AWS to Django
+
+Now connect the AWS to django
+
+1. install django storages and boto3. we can do this using the commands
+
+```
+pip3 install boto3
+pip3 install django-storages
+```
+3. add 'storages' to your installed apps inside your settings.py file
+4.  In the root directory of your project create a file called 'custom_storages.py'
+5.  at the top of this files add 
+```
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+```
+6. now add the following settings in to your settings.py file
+```
+if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME',)
+    AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME')
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+7.  Go to Heroku and add the the vars from the csv file to your config vars.
+8.  go to gitpod and in settings.py file and under the if statement above add
+```
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
+9. Go to you S3 bucket , and 'Create folder'. Name the folder 'media' and click 'Save'.
+10. Inside the new media folder you just created, click 'Upload', 'Add files', and then select all the images that you are using on your site.
+11. Under 'Permissions' select the option 'Grant public-read access' and click upload.
+
+The django website should now be connected to you AS bucket 
+
 # Credits 
 
 ## images 
@@ -286,3 +590,4 @@ favicon containg the black version of the logo
 - products page and our story page hops image <a href="https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:738b8d93-a23a-48ba-b71a-e9e00c7f0e4b?asset_id=199774568">By fedorovacz: Adobe Stock</a>
 
 ## Code
+- Ecommerce code from the Boutique Abo tutorial 
