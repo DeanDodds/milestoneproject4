@@ -58,6 +58,13 @@
             <div class="col-2">
                 <p>{{ booking.time }}</p>
             </div>
+            <div class="col-12 text-center">
+                <small class="ml-3">
+                    <a class="dark-text" href="">Edit</a> |
+                    <a class="text-danger" href="{% url 'delete_brewtour_booking' brewtour.id %}">Delete</a>
+                </small>
+            </div>
+
         </div>
         {% endfor %}
     </div>

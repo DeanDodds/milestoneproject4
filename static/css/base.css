@@ -125,6 +125,10 @@ footer {
     margin-top: 90px;
 }
 
+.min-height {
+    min-height: 40vh;
+}
+
 /* navbar  */
 #mobile-logo {
     margin-left: 9em;
@@ -198,6 +202,7 @@ nav .navbar-nav li a:hover {
     background-image: url('/media/banner3.png');
     background-size: cover;
     background-position: center;
+    height: 60vh;
 }
 
 .product-hero {
