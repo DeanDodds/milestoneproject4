@@ -12,6 +12,7 @@
         </div>
         <hr>
         <div class="contact-forms">
+            {% if email_list %}
             {% for email in email_list %}
             <div class="row">
                 <div class="col-8">
@@ -25,6 +26,12 @@
                 </div>
             </div>
             {% endfor %}
+            {% else %}
+
+            <div class="text-center">
+                <h2>No newsletter sign ups</h2>
+            </div>
+            {% endif %}
         </div>
 </section>
 <!-- ./newsletter signup section -->
