@@ -37,21 +37,11 @@ def newsletter(request):
 
     return render(request, 'newsletter/newsletter_success.html', context)
 
-value = "foo.bar@baz.qux"
 
-try:
-    validate_email(value)
-except ValidationError as e:
-    print("bad email, details:", e)
-else:
-    print("good email")
-
-    
 @login_required
 def send_newsletter(request):
     """" Gets user input then sends a email to newsletter subscriber\
         with vaild email addresss """
-
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, you must be admin to add products.')
         return redirect(reverse('home'))
@@ -62,11 +52,12 @@ def send_newsletter(request):
 
         # Get emal list from database
         email_list = []
-        for subscriber in NewletterSubscribers.objects.all():
-            email_list.append(subscriber.email)
-            
         invalid_email = 0
         sent_emails = 0
+        
+        for subscriber in NewletterSubscribers.objects.all():
+            email_list.append(subscriber.email)
+
         for email in email_list:
             # vaildate email and send to vaid email address
             try:
@@ -82,7 +73,7 @@ def send_newsletter(request):
                     [email],
                     fail_silently=False,
                 )
-    messages.success(request, f"Sent newsletter to {sent_emails} email address. { invalid_email} could not sent ")                       
+        messages.success(request, f"Sent newsletter to {sent_emails} email address. { invalid_email} could not sent ")                       
 
     return render(request, 'newsletter/send_newsletter.html')
 

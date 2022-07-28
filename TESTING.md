@@ -215,65 +215,66 @@ All my pages have went through google devtools lighthouse analysis which are sco
 4. As a shopper. I want to Sort through products. So that i can easily sort through products for the product im looking for.  
  * In the navbar there is a drop down menu so shoppers can select the styles the like. Shoppers can also type into the search bar to just view products relevent to their searches.    
 
- ![nav bar drop down menu and search bar]() |
+ ![nav bar drop down menu and search bar](/designdocumentation/screenshots/userstories/us4.png) |
 |:--:|
 | <b>nav bar drop down menu and search bar can be used to sort through products</b>|
 
 5. As a shopper. I want to Sort through products Sort through products by style. So that i can easily sort through products in the style i like .  
  * In the navbar there is a drop down menu so shoppers can select the styles the like.   
 
- ![drop down menu with the styles highlighted]() |
+ ![drop down menu with the styles highlighted](/designdocumentation/screenshots/userstories/us5.png) |
 |:--:|
 | <b>When a style is selected the user will only see beers of that style</b>|
 
 6. As a shopper. I want to search for products by name or description. So that i can find a specific product .  
  * Users can search in the search bar this will query the name field and description and only return matches.  
    
- ![search bar and result]() |
+ ![search bar and result](/designdocumentation/screenshots/userstories/us6.png) |
 |:--:|
 | <b>product search using search bar </b>|
 
 ## Registration and User Account <a id="account"></a>
+
 7. As a site user. I want to Sign up for an account easily. Create a personal profile.  
  * Users can register for an account by clicking the resgister account button in the navbar and filling out the form.  
 
- ![regisiter acount link]() |
+ ![regisiter acount link](/designdocumentation/screenshots/userstories/us7.png) |
 |:--:|
 | <b>Register account link in the navbar</b>|
 
- ![regisiter form]() |
+ ![regisiter form](/designdocumentation/screenshots/userstories/us7-2.png) |
 |:--:|
 | <b>Register form user must filling</b>|
 
 8. As a site user. I want to easily login. So that access my personal account.  
  * Users can fimd the login link in the nav bar and fill in the form.  
    
- ![Login link]() |
+ ![Login link](/designdocumentation/screenshots/userstories/us8.png) |
 |:--:|
 | <b>Login link in the navbar</b>|
 
- ![Login form]() |
+ ![Login form](/designdocumentation/screenshots/userstories/us8-2.png) |
 |:--:|
 | <b>Login form user must filling</b>|
 
 9. As a registered user. I want Easily recover my account if i forget my password.  
  * Users can press the Easily recover my password link on the login page and recover there password using there email address.  
 
-  ![recover password form]() |
+  ![recover password form](/designdocumentation/screenshots/userstories/us9.png) |
 |:--:|
 | <b>recover password form</b>|
 
 10. As a registered user, i want to easily logout my account.
  * A logged in user will see the log out option in the nav bar. 
 
-  ![Logout option in navbar]() |
+  ![Logout option in navbar](/designdocumentation/screenshots/userstories/us10.png) |
 |:--:|
 | <b>log out option in navbar</b>|
 
 11. As a site user, i want recieve an confirmation ater sign up, So that i can Verify my email address.
  * Users will recieve a confirmation email once they register for an acoount. 
 
-![Confirmation email sent ]() |
+![Confirmation email sent ](/designdocumentation/screenshots/userstories/us11.png) |
 |:--:|
 | <b>confirmation email sent</b>|
 
@@ -282,32 +283,32 @@ All my pages have went through google devtools lighthouse analysis which are sco
 12. As a shopper. I want to easily select and purchase products . So that i Add products to my cart.  
  * Users can add items to their shopping cart on the products details page. This can then be viewed in there shopping cart.  
    
- ![Adding product to he shoppong cart]() |
+ ![Adding product to he shoppong cart](/designdocumentation/screenshots/userstories/us12.png) |
 |:--:|
 | <b>adding product to the basket</b>|
 
- ![products now in the shoppong cart]() |
+ ![products now in the shoppong cart](/designdocumentation/screenshots/userstories/us12-2.png) |
 |:--:|
 | <b>added product to he shoppong cart</b>|
 
 13. As a shopper. Easily view the total of my purchases  . So that i dont over spend.  
  * The total of the shopping cart is always displayed in the corner of the screen so users can always keep track of what they are spending.  
 
-  ![Total of shopping cart in the navbar]() |
+  ![Total of shopping cart in the navbar](/designdocumentation/screenshots/userstories/us13.png) |
 |:--:|
 | <b>Total of shopping cart in the navbar</b>|
 
 14. As a shopper, I want to be able to easily remove items from my shopping cart.
  * Shoppers can remove items from the basket by clicking the remove item link inside the basket 
 
- ![Remove item link ]()
+ ![Remove item link ](/designdocumentation/screenshots/userstories/us14.png)
  |:--:|
  | <br>Remove item link</br>
 
  15. As a returning user, I want to beable to view my previous purchases.
  * Users can see their order history on their profile page 
 
-![User Profile page]() |
+![User Profile page](/designdocumentation/screenshots/userstories/us15.png) |
 |:--:|
 | <b>User Profile page</b>|
 
@@ -316,29 +317,29 @@ All my pages have went through google devtools lighthouse analysis which are sco
 16. As a site user, I want to easily make booking at the brewery. So that i can book a table or a brewery tour. 
 * Users can make booking for the taproom and brewery tour by filling out the book now forms. Links to both forms are clearly seen throught the site and in the footer. 
 
-![Brewery tour booking form]() |
+![Brewery tour booking form](/designdocumentation/screenshots/userstories/us16.png) |
 |:--:|
 | <b>Brewery tour booking form</b>|
 
-![Taproom booking form]() |
+![Taproom booking form](/designdocumentation/screenshots/userstories/us16-2.png) |
 |:--:|
 | <b>Taproom booking form</b>|
 
 17. As a site user, I want to easily Find social media links. So can follow and interact with thier content
 * Social media links in both the navbar and the footer. Also in the contact page 
 
-![Navbar with social media links ]() |
+![Navbar with social media links ](/designdocumentation/screenshots/userstories/us17.png) |
 |:--:|
 | <b>Navbar with social media links</b>|
 
-![Footer with social media links ]() |
+![Footer with social media links ](/designdocumentation/screenshots/userstories/us17-1.png) |
 |:--:|
 | <b>Footer with social media links</b>|
 
 18. As a site user, I want to easily find contact details. Get in touch if i need too and find opening hour.
 *  The contact us page is clearly linked in the navigation bar. On this page it has an enquiry form and all other contact information. The opening times are listed here too.
 
-![Contact Form ]() |
+![Contact Form ](/designdocumentation/screenshots/userstories/us18.png) |
 |:--:|
 | <b>Contact Form </b>|
 
@@ -347,33 +348,29 @@ All my pages have went through google devtools lighthouse analysis which are sco
 19. As a site Site Owner, i want to admin pages that allow me to add content. So i can add products/events to the website 
  * Admin users can add products and Events to the website by going to the management pages and filling out the form.
 
-![Add Product Form ]() |
+![Add Product Form ](/designdocumentation/screenshots/userstories/us19-2.png) |
 |:--:|
 | <b>Add Product Form</b>|
 
-![Event Product Form ]() |
+![Event Product Form ](/designdocumentation/screenshots/userstories/us19.png) |
 |:--:|
 | <b>Add Product Form</b>|
 
 20. As a site Site Owner, i want to admin pages that allow me to edit content. So i can edit products/events to the website 
  * Admin users can edit products and Events by clicking the edit links under each product/event and filling out the form.
 
-![Edit Product Form ]() |
-|:--:|
-| <b>Add Product Form</b>|
-
-![Edit Product links ]() |
+![Edit Product Form ](/designdocumentation/screenshots/userstories/us20.png) |
 |:--:|
 | <b>Add Product Form</b>|
 
 21. As a site Site Owner, i want to admin pages that allow me to delet content. So i can delete products/events to the website 
  * Admin users can delete products and Events by clicking the delete links under each product/event 
 
-![delete Product links ]() |
+![delete Product links ](/designdocumentation/screenshots/userstories/us20.png) |
 |:--:|
 | <b>Add Product Form</b>|
 
-![delete Product links ]() |
+![delete Product links ](/designdocumentation/screenshots/userstories/us21.png) |
 |:--:|
 | <b>delete Product Form</b>|
 
@@ -383,91 +380,95 @@ All my pages have went through google devtools lighthouse analysis which are sco
 
 | Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
-|1|Navigation links|Home button clicked|Opens home page|![home page]()|Pass|Works as expected|
-|2|Navigation links|Beer button clicked|Opens beer page|![beer page]()|Pass|Works as expected|
-|3|Navigation links|Taproom button clicked|Opens Taproom page|![taproom page]()|Pass|Works as expected|
-|4|Navigation links|Our story button clicked|Opens Our Story page|![Our Story page]()|Pass|Works as expected|
-|5|Navigation links|Our Contact button clicked|Opens Contact page|![Contact page]()|Pass|Works as expected|
-|7|Navigation links|Login button clicked|Opens login page|![Login page]()|Pass|Works as expected|
-|8|Navigation links|Sign up button clicked|Opens login page|![Sign up]()|Pass|Works as expected|
-|9|Navigation links|Shopping cart buttonclicked|Opens shopping cart page|![Opens shopping cart page]()|Pass|Works as expected|
-|10|Navigation links|facebook link clicked|Opens Facebook in new tab![Opens Facebook page]()|Pass|Works as expected|
-|11|Navigation links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter]()|Pass|Works as expected|
-|12|Navigation links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube]()|Pass|Works as expected|
-|13|Navigation links|phone number link clicked|Opens Call pop up|![Opens Call pop up]()|Pass|Works as expected|
-|13|Navigation links|Logo clicked|Opens Homepage| ![Home Page]()|Pass|Works as expected|
+|1|Navigation links|Home button clicked|Opens home page|![home page](/designdocumentation/screenshots/manualtesting/homepage.png)|Pass|Works as expected|
+|2|Navigation links|Beer button clicked|Opens beer page|![beer page](/designdocumentation/screenshots/manualtesting/beerlink.png)|Pass|Works as expected|
+|3|Navigation links|Taproom button clicked|Opens Taproom page|![taproom page](/designdocumentation/screenshots/manualtesting/taproom.png)|Pass|Works as expected|
+|4|Navigation links|Our story button clicked|Opens Our Story page|![Our Story page](/designdocumentation/screenshots/features/story.png)|Pass|Works as expected|
+|5|Navigation links|Our Contact button clicked|Opens Contact page|![Contact page](/designdocumentation/screenshots/manualtesting/contactuslinks.png)|Pass|Works as expected|
+|7|Navigation links|Login button clicked|Opens login page|![Login page](/designdocumentation/screenshots/manualtesting/loginpage.png)|Pass|Works as expected|
+|8|Navigation links|Sign up button clicked|Opens login page|![Sign up](/designdocumentation/screenshots/manualtesting/registerpage.png)|Pass|Works as expected|
+|9|Navigation links|Shopping cart buttonclicked|Opens shopping cart page|![Opens shopping cart page](/designdocumentation/screenshots/manualtesting/cartlink.png)|Pass|Works as expected|
+|10|Navigation links|facebook link clicked|Opens Facebook in new tab|![Opens Facebook page](/designdocumentation/screenshots/manualtesting/facebook.png)|Pass|Works as expected|
+|11|Navigation links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter](/designdocumentation/screenshots/manualtesting/twitter.png)|Pass|Works as expected|
+|12|Navigation links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube](/designdocumentation/screenshots/manualtesting/youtube.png)|Pass|Works as expected|
+|13|Navigation links|phone number link clicked|Opens Call pop up|![Opens Call pop up](/designdocumentation/screenshots/manualtesting/call.png)|Pass|Works as expected|
+|13|Navigation links|Logo clicked|Opens Homepage| ![Home Page](/designdocumentation/screenshots/manualtesting/homepage.png)|Pass|Works as expected|
 
 
 ## Navigation links (logged in)
 
 | Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
-|14|Navigation links|Profile link clicked|Opens Profile page|![Pofile page]()|Pass|Works as expected|
+|14|Navigation links|Profile link clicked|Opens Profile page|![Pofile page](/designdocumentation/screenshots/manualtesting/profilelink.png)|Pass|Works as expected|
 
 ## Navigation links (Admin Logged in)
 
 | Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
-|15|Navigation links|Product Management link clicked|Opens Product management page|![Product management page|]()|Pass|Works as expected|
-|16|Navigation links|Create Newsletter  link clicked|Opens Create Newsletter page|![Create Newsletter page|]()|Pass|Works as expected|
-|17|Navigation links|Create Newsletter sign up link clicked|Opens Newsletter sign page|![Newsletter sign up page|]()|Pass|Works as expected|
-|18|Navigation links|Product Management link clicked|Opens Events management page|![Events management page|]()|Pass|Works as expected|
-|19|Navigation links|Product Management link clicked|Opens Bookings page|![Bookings page|]()|Pass|Works as expected|
-|20|Navigation links|Contact Management link clicked|Opens Contact management page|![Manage messages|]()|Pass|Works as expected|
+|15|Navigation links|Product Management link clicked|Opens Product management page|![Product management page](/designdocumentation/screenshots/manualtesting/productmanagement.png)|Pass|Works as expected|
+|16|Navigation links|Create Newsletter  link clicked|Opens Create Newsletter page |![Create Newsletter page](/designdocumentation/screenshots/manualtesting/mailinglist.png)|Pass|Works as expected|
+|17|Navigation links|Create Newsletter sign up link clicked|Opens Newsletter sign page|![Newsletter sign up page](/designdocumentation/screenshots/features/maillist.png)||Pass|Works as expected|
+|18|Navigation links|Product Management link clicked|Opens Events management page|![Events management page](/designdocumentation/screenshots/manualtesting/eventsmanagement.png)|Pass|Works as expected|
+|19|Navigation links|Product Management link clicked|Opens Bookings page|![Bookings page](/designdocumentation/screenshots/manualtesting/managebookingpage.png)\Pass|Works as expected|
+|20|Navigation links|Contact Management link clicked|Opens Contact management page|![Manage messages](/designdocumentation/screenshots/manualtesting/messages.png)|Pass|Works as expected|
 
 ## Footer links 
 
 | Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
-|21|Footer links|logo link clicked|Opens Home page|![Home page|]()|Pass|Works as expected|
-|22|Footer links|Terms and conditions link clicked|Opens Terms and conditions |![HTerms and conditions]()|Pass|Works as expected|
-|23|Footer links|Privacylink clicked|Opens Terms and conditions |![privacy |]()|Pass|Works as expected|
-|24|Footer links|Contact clicked|Opens contact page |![contact page |]()|Pass|Works as expected|
-|25|Footer links|Book taproomclicked|Opens book taproom page |![taproom booking page |]()|Pass|Works as expected|
-|26|Footer links|Book brewery tour clicked|Opens book brewery tour page |![conatct page |]()|Pass|Works as expected|
-|27|Footer links|facebook link clicked|Opens Facebook in new tab![Opens Facebook page]()|Pass|Works as expected|
-|28|Footer links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter]()|Pass|Works as expected|
-|29|Footer links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube]()|Pass|Works as expected|
-|30|Footer links|phone number link clicked|Opens Call pop up|![Opens Call pop up]()|Pass|Works as expected|
+|21|Footer links|logo link clicked|Opens Home page|![Home page](/designdocumentation/screenshots/manualtesting/homepage.png)|Pass|Works as expected|
+|22|Footer links|Terms and conditions link clicked|Opens Terms and conditions |![HTerms and conditions](/designdocumentation/screenshots/manualtesting/termsandconditions.png)|Pass|Works as expected|
+|23|Footer links|Privacylink clicked|Opens Terms and conditions |![privacy](/designdocumentation/screenshots/manualtesting/privacy.png)|Pass|Works as expected|
+|24|Footer links|Contact clicked|Opens contact page |![contact page ](/designdocumentation/screenshots/manualtesting/contactuslinks.png)|Pass|Works as expected|
+|25|Footer links|Book taproom clicked|Opens book taproom page |![taproom booking page ](/designdocumentation/screenshots/manualtesting/taproomform.png)|Pass|Works as expected|
+|26|Footer links|Book brewery tour clicked|Opens book brewery tour page |![brewtour page](/designdocumentation/screenshots/manualtesting/brewtourform.png)|Pass|Works as expected|
+|27|Footer links|facebook link clicked|Opens Facebook in new tab|![Opens Facebook page](/designdocumentation/screenshots/manualtesting/facebook.png)|Pass|Works as expected|
+|28|Footer links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter](/designdocumentation/screenshots/manualtesting/twitter.png)|Pass|Works as expected|
+|29|Footer links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube](/designdocumentation/screenshots/manualtesting/youtube.png)|Pass|Works as expected|
+|30|Footer links|phone number link clicked|Opens Call pop up|![Opens Call pop up](/designdocumentation/screenshots/manualtesting/call.png)|Pass|Works as expected|
 
 ## Home Page Button 
 
 | Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
-|31|Home page |Shop now button clicked|Opens products page|![Beer page|]()|Pass|Works as expected|
-|32|Home page |Book now button clicked|Opens taproom booking page|![Taproom button page|]()|Pass|Works as expected|
-|33|Home page |Events button clicked|Opens Events page|![Events button page|]()|Pass|Works as expected|
+|31|Home page |Shop now button clicked|Opens products page|![Beer page](/designdocumentation/screenshots/manualtesting/beerlink.png)|Pass|Works as expected|
+|32|Home page |Book now button clicked|Opens taproom booking page|![Taproom button page](/designdocumentation/screenshots/manualtesting/taproomform.png)|Pass|Works as expected|
+|33|Home page |Events button clicked|Opens Events page|![Events button page](/designdocumentation/screenshots/manualtesting/eventslink.png)|Pass|Works as expected|
 
 ### Products Page Buttons and links
 
 | Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
-|34|Product page |Buy now button clicked|Opens products details page|![product Details page|]()|Pass|Works as expected|
-|35|Product page |Image clicked|Opens taproom booking details page|![Product Details page|]()|Pass|Works as expected|
-|36|Product page |Book now button clicked|Opens taproom booking page|![Taproom button page|]()|Pass|Works as expected|
+|34|Product page |Buy now button clicked|Opens products details page|![product Details page](/designdocumentation/screenshots/manualtesting/beerlink.png)|Pass|Works as expected|
+|35|Product page |Image clicked|Opens taproom booking details page|![Product Details page](/designdocumentation/screenshots/userstories/us12.png)|Pass|Works as expected|
+|36|Product page |Book now button clicked|Opens taproom booking page|![Taproom button page](/designdocumentation/screenshots/manualtesting/taproomform.png)|Pass|Works as expected|
 
 ### Taproom page Buttons and links
 
 | Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
-|37|Taproom page |Book now button clicked|Opens Taproom booking page|![Taproom booking page|]()|Pass|Works as expected|
-|38|Taproom page |Shop now clicked|Opens Product page|![Product page|]()|Pass|Works as expected|
+|37|Taproom page |Book now button clicked|Opens Taproom booking page|![Taproom booking page](/designdocumentation/screenshots/manualtesting/taproomform.png)|Pass|Works as expected|
+|38|Taproom page |Shop now clicked|Opens Product page|![Product page](/designdocumentation/screenshots/manualtesting/beerlink.png)|Pass|Works as expected|
 
 ### Our Story Buttons
 
 | Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
-|37|Our Storypage |Book now button clicked|Opens Taproom booking page|![Brewery tour booking page|]()|Pass|Works as expected|
+|37|Our Storypage |Book now button clicked|Opens Taproom booking page|![Brewery tour booking](/designdocumentation/screenshots/manualtesting/brewtourform.png)|Pass|Works as expected|
 
 ### Events Links
-|37|Events |Ticket link clicked|Opens ticket link page in new tape|![Eventbrite|]()|Pass|Works as expected|
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|37|Events |Ticket link clicked|Opens ticket link page in new tape|![Eventbrite](/designdocumentation/screenshots/manualtesting/eventbright.png)|Pass|Works as expected|
 
 ### Contact Links
-|38|Contact links|facebook link clicked|Opens Facebook in new tab![Opens Facebook page]()|Pass|Works as expected|
-|39|Contact links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter]()|Pass|Works as expected|
-|40|Contact links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube]()|Pass|Works as expected|
-|41|Contact links|phone number link clicked|Opens Call pop up|![Opens Call pop up]()|Pass|Works as expected|
-|42|Contact links|email link clicked|Opens Email pop up|![Opens email pop up]()|Pass|Works as expected|
+| Test number | Page |Test Description|Expected Outcome|ScreenShot| Pass/Fail| Comment |
+|:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
+|38|Contact links|facebook link clicked|Opens Facebook in new tab|![Opens Facebook page](/designdocumentation/screenshots/manualtesting/facebook.png)|Pass|Works as expected|
+|39|Contact links|twitter link clicked|Opens Twitter in new tab|![Opens Twitter](/designdocumentation/screenshots/manualtesting/twitter.png)|Pass|Works as expected|
+|40|Contact links|youtube link clicked|Opens Youtube in new tab|![Opens Youtube](/designdocumentation/screenshots/manualtesting/youtube.png)|Pass|Works as expected|
+|41|Contact links|phone number link clicked|Opens Call pop up|![Opens Call pop up](/designdocumentation/screenshots/manualtesting/call.png)|Pass|Works as expected|
+|42|Contact links|email link clicked|Opens Email pop up|![Opens email pop up](/designdocumentation/screenshots/features/maillink.png)|Pass|Works as expected|
 
 
 

@@ -5,7 +5,7 @@ promote the Tap room, highlight the selection of craft beer available and promot
 
 <a href="https://north-yeast-brewing.herokuapp.com/">Go to live website.....</a>
 
-<a href="https://north-yeast-brewing.herokuapp.com/">![live website preview]()</a>
+<a href="https://north-yeast-brewing.herokuapp.com/">![live website preview](/designdocumentation/screenshots/features/mockup.png)</a>
 
 # Table of contents
 

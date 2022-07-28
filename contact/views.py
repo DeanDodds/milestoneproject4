@@ -14,6 +14,11 @@ def contact(request):
         form = ContactForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Thank you for you \
+            enquiry we will get back to you as soon as we can')
+        else:
+            messages.error(request, 'sorry \
+            something went wrong there please try again')
     else:
         form = ContactForm()
 
@@ -47,6 +52,7 @@ def delete_message(request, message_id):
         messages.error(request, 'Sorry, you must be admin to delete user messages.')
         return redirect(reverse('home'))
     message = get_object_or_404(Message, pk=message_id)
+    messages.success(request, "message deleted")
     message.delete()
     user_messages = Message.objects.all()
 
