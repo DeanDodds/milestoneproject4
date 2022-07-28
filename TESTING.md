@@ -1,3 +1,5 @@
+# contents
+
 1. [Validation](#validation) 
    - [html validator](#html)
    - [css validator](#css)
@@ -470,16 +472,177 @@ All my pages have went through google devtools lighthouse analysis which are sco
 |41|Contact links|phone number link clicked|Opens Call pop up|![Opens Call pop up](/designdocumentation/screenshots/manualtesting/call.png)|Pass|Works as expected|
 |42|Contact links|email link clicked|Opens Email pop up|![Opens email pop up](/designdocumentation/screenshots/features/maillink.png)|Pass|Works as expected|
 
+# Automated Testing
+I have completed automated testing my app using the built in test.py in the apps folder.  The tests check the templte exsits the url and view resolves;
+i ran this by addeding the following tests in home app tests.py
+```
+from django.test import SimpleTestCase
+from django.urls import reverse, resolve
 
 
+class HomePageTests(SimpleTestCase):
+    """ Test for checking the home page exsits, the url exsits,\
+         the template exsits and the view exsits""" 
+
+    def setUp(self):
+        url = reverse("home")
+        self.response = self.client.get(url)
+
+    def test_url_exsits_at_correct_location(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_url_name(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_template(self):
+        self.assertTemplateUsed(self.response, 'home/index.html')
+
+    def test__page_resolves_homepageview(self):
+        view = resolve("/")
+        self.assertEqual(view.func.__name__, 'index', __name__)
+
+
+class StoryPageTests(SimpleTestCase):
+    """ Test for checking the Story page exsits, the url exsits, \
+        the template exsits and the view exsits""" 
+
+    def setUp(self):
+        url = reverse("our_story")
+        self.response = self.client.get(url)
+
+    def test_url_exsits_at_correct_location(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_url_name(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_template(self):
+        self.assertTemplateUsed(self.response, 'home/our_story.html')
+
+    def test_page_resolves_homepageview(self):
+        view = resolve("/our_story/")
+        self.assertEqual(view.func.__name__, 'our_story', __name__)
+
+
+class PrivacypageTests(SimpleTestCase):
+    """ Test for checking the taproom page exsits, the url exsits,\
+         the template exsits and the view exsits""" 
+
+    def setUp(self):
+        url = reverse("privacy")
+        self.response = self.client.get(url)
+
+    def test_url_exsits_at_correct_location(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_url_name(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_template(self):
+        self.assertTemplateUsed(self.response, 'home/privacy.html')
+
+    def test_page_resolves_view(self):
+        view = resolve("/privacy/")
+        self.assertEqual(view.func.__name__, 'privacy', __name__)
+
+
+class TermsAndConditionsTests(SimpleTestCase):
+    """ Test for checking the taproom page exsits, the url exsits, the template exsits and the view exsits""" 
+
+    def setUp(self):
+        url = reverse("ts_and_cs")
+        self.response = self.client.get(url)
+
+    def test_url_exsits_at_correct_location(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_url_name(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_template(self):
+        self.assertTemplateUsed(self.response, 'home/tandcs.html')
+
+    def test_page_resolves_view(self):
+        view = resolve("/ts_and_cs/")
+        self.assertEqual(view.func.__name__, 'ts_and_cs', __name__)
+
+
+class PrivacypageTests(SimpleTestCase):
+    """ Test for checking that the Privacy page exsits, the url exsits, the template exsits and the view exsits""" 
+
+    def setUp(self):
+        url = reverse("privacy")
+        self.response = self.client.get(url)
+
+    def test_url_exsits_at_correct_location(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_url_name(self):
+        self.assertEqual(self.response.status_code, 200)
+
+    def test_template(self):
+        self.assertTemplateUsed(self.response, 'home/privacy.html')
+
+    def test_home_page_resolves_view(self):
+        view = resolve("/privacy/")
+        self.assertEqual(view.func.__name__, 'privacy', __name__)
+```
+and running 
+```
+python3 manage.py test home.tests 
+```
+This returned  
+
+```
+gitpod /workspace/milestoneproject4 (main) $ python3 manage.py test home.tests
+System check identified no issues (0 silenced).
+................
+----------------------------------------------------------------------
+Ran 16 tests in 0.088s
+
+OK
+gitpod /workspace/milestoneproject4 (main) $ 
+
+```
+
+## Further Testing <a id="ftesting"></a>
+
+I have tested my project on a variety of browsers such as:
+  ### Google Chrome 
+
+ ![Google chrome screenshot](/designdocumentation/screenshots/features/chrome.png) |
+|:--:|
+| <b>Tested well on Chrome</b>|
+
+  ### Firefox 
+ ![Firefox screenshot](/designdocumentation/screenshots/features/firefox.png) |
+|:--:|
+| <b>Tested well on Firefox</b>|
+
+  ### Safari
+   ![safari screenshor](/designdocumentation/screenshots/features/safari.png) |
+|:--:|
+| <b>Tested well on Safari</b>|
+  
+i have tested app responsiveness through google 
+I have also tested it on a range of devices such as:
+  * Iphone 6
+  * Iphone S
+  * Laptop 
+  * Desktop
+  * Huawei T10 tablet
+
+
+I also had friends and family test my website and had no issues reported.
+
+### Test Local againt Deployed 
+
+I regulary check my local version against my deployed version to make user there are no difference between the two.
 # 5. Bugs 
 
 
 # Known bugs 
 
 - Subscription email form not validating.
-- Newsletter send email error.
-- product page spills over the container on small screens
 - contact submit does not clear on submit
 - matching icons 
-- toasts now showing up
