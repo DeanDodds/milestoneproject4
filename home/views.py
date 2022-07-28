@@ -2,7 +2,7 @@ from django.shortcuts import render
 from products.models import Product
 
 
-def home(request):
+def index(request):
     """ A view to return the index page """
 
     return render(request, 'home/index.html')
@@ -21,7 +21,7 @@ def taproom(request):
     context = {
         'products': products,
     }
-    return render(request, 'home/ts_and_cs/.html', context)
+    return render(request, 'home/taproom.html', context)
 
 
 def privacy(request):
