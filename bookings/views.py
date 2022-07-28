@@ -13,7 +13,6 @@ def booking_brew_tour(request):
             form.save()
 
             name = request.POST['name']
-            email = request.POST['email']
             date = request.POST['date']
             time = request.POST['time']
             people = request.POST['number_of_people']
@@ -45,7 +44,6 @@ def booking_taproom(request):
             form.save()
 
             name = request.POST['name']
-            email = request.POST['email']
             date = request.POST['date']
             time = request.POST['time']
             people = request.POST['number_of_people']
