@@ -57,7 +57,6 @@ def delete_message(request, message_id):
     messages.success(request, "message deleted")
     message.delete()
     user_messages = Message.objects.all()
-
     context = {
         'user_messages': user_messages,
     }

@@ -2,14 +2,14 @@
 {% load static %}
 
 {% block content %}
-<section class="conatiner">
+<section class="container-fluid">
     <hr>
     <div class="text-center">
         <h1>Manage Enquirys</h1>
     </div>
     <hr>
 
-    <div class="contacts-forms">
+    <div class="contact-forms">
         {% if user_messages %}
         {% for message in user_messages %}
         <div class="row">
@@ -30,8 +30,8 @@
             </div>
             <div class="col-2">
                 <small class="ml-3">
-                    <a
-                        href="mailto:{{ message.email }}?subject={{ message.subject }}&body=Dear {{ message.full_name }}">reply</a>
+                    <a href="mailto:{{ message.email }}?subject={{ message.subject }}&body=Dear {{ message.full_name }}"
+                        class="text-dark orange">reply</a>
                     |
                     <a class="text-danger" href="{% url 'delete_message' message.id %}">delete</a>
                 </small>
@@ -40,7 +40,7 @@
         {% endfor %}
         {% else %}
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <p>No Messages</p>
             </div>
         </div>
