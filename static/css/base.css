@@ -149,6 +149,15 @@ nav .navbar-nav li a:hover {
     border-left: none;
 }
 
+#middle-nav {
+    display: none;
+}
+
+.logo {
+    height: 80px;
+    width: 80px
+}
+
 @media only screen and (max-width: 500px) {
     #mobile-logo {
         display: none;
@@ -197,20 +206,9 @@ nav .navbar-nav li a:hover {
 
 }
 
-@media only screen and (max-width: 500px) {}
-
-#middle-nav {
-    display: none;
-}
-
-.logo {
-    height: 80px;
-    width: 80px
-}
-
 #contact-hero-image {
     background: url('/media/banner-6.png') no-repeat center center;
-    background-size: cover;
+    background-size: ;
     color: #fafafa;
     height: 50vh;
 }
@@ -230,7 +228,7 @@ nav .navbar-nav li a:hover {
 }
 
 #events-hero-image {
-    background: url('/media/banner-6.png') no-repeat center center;
+    background: url('/media/banner-5.png') no-repeat center center;
     background-size: cover;
     color: #fafafa;
     height: 50vh;
@@ -329,8 +327,6 @@ nav .navbar-nav li a:hover {
         width: 100%;
     }
 }
-
-
 
 .centered {
     position: absolute;
@@ -444,9 +440,6 @@ nav .navbar-nav li a:hover {
 #color-12 {
     background-color: #3a0c0d;
 }
-
-
-
 
 @media only screen and (max-width: 600px) {
     .brew-sheet-image {

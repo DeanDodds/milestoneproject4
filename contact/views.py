@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
@@ -33,7 +33,8 @@ def view_messages(request):
     """ A view to return the Messages page """
 
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, you must be admin to view user messages.')
+        messages.error(request, 'Sorry, you must be \
+                       admin to view user messages.')
         return redirect(reverse('home'))
 
     user_messages = Message.objects.all()
@@ -49,7 +50,8 @@ def view_messages(request):
 def delete_message(request, message_id):
     ''' delete user messages '''
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, you must be admin to delete user messages.')
+        messages.error(request, 'Sorry, you must be admin \
+                       to delete user messages.')
         return redirect(reverse('home'))
     message = get_object_or_404(Message, pk=message_id)
     messages.success(request, "message deleted")
@@ -66,7 +68,8 @@ def delete_message(request, message_id):
 def reply_to_message(request, message_id):
     """ Allows admin to reply to user messages """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, you must be admin to add reply to user messages.')
+        messages.error(request, 'Sorry, you must be admin \
+                       to add reply to user messages.')
         return redirect(reverse('home'))
     message = get_object_or_404(Message, pk=message_id)
 
@@ -88,7 +91,6 @@ def send_email_message(request, message_id):
         email = request.POST.get['to_email']
         subject = request.POST.get['subject']
         reply_message = request.POST.get['message']
-        print(email, subject, reply_message)
 
         # send email to user
         send_mail(
