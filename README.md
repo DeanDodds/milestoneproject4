@@ -1,7 +1,7 @@
 # North Yeast Brew
 
-northyeastbrewing.co.uk is to promote  a new micro-brew pub launching in Newcastle called North Yeast Brewing. The website the main purpose inform potential costumers of the brewery, 
-promote the Tap room, highlight the selection of craft beer available and promote Events the company will be attending and hosting. ​
+northyeastbrewing.co.uk is to promote  a new micro-brew pub launching in Newcastle called North Yeast Brewing. The main purpose of the website is to inform potential customers of the brewery, 
+promote the Tap Room, highlight the selection of craft beer available, and promote events the company will be attending and hosting. ​
 
 <a href="https://north-yeast-brewing.herokuapp.com/">Go to live website.....</a>
 
@@ -22,7 +22,7 @@ promote the Tap room, highlight the selection of craft beer available and promot
 4. [Technologies Used](#technologies)
    - [Langagues Used](#langagues)
    - [Frameworks, Libraries and Programs used](#frameworks)
-   - [Data Modling](#data)
+   - [Data Modelling](#data)
 5. [Deployment](#deployment)
    - [Making a Local Clone](#clone)
    - [Forking the GitHub Repository](#fork)
@@ -101,20 +101,20 @@ The wireframes for the website were created on Drawio, there is a desktop, table
 
 ## Data Model 
 
-I have modeled my database on a relation-relational database system. I have used the POSTGRES. I have used the following mapping 
+I have modelled my database on a relation-relational database system. I have used the POSTGRES. I have used the following mapping 
 
 ![Data model](/designdocumentation/databasedisign/northyeastbrewingredatabase.png)
 
 ## Logo Design 
 
-I have designed to versions of the North Yeast Brewing logo a white version for contrast over dark backgrounds and a black version for contrast over light backgrounds.
+I have designed two versions of the North Yeast Brewing logo a white version for contrast over dark backgrounds and a black version for contrast over light backgrounds.
 | ![Black version of the logo](/designdocumentation/images/black%20logo.svg) |
 |:--:|
 | <b>Black version of the logo</b>|
 
 | ![White version of the logo](/designdocumentation/images/white%20logo.svg) |
 |:--:|
-| <b>White version of the logo]</b>|
+| <b>White version of the logo</b>|
 
 ## Imagery
 
@@ -139,7 +139,7 @@ favicon containg the black version of the logo
 
 | ![Events](/designdocumentation/images/index-2.png) |
 |:--:|
-| <b>Events image</b>|
+| <b>Events Image</b>|
 
 ### Our Story Page 
 
@@ -149,7 +149,7 @@ favicon containg the black version of the logo
 |:--:|
 | <b>Hero Image</b>|
 
-3 x Circle images 
+3 x Circle Images 
 
 | ![Water image](/designdocumentation/images/water1.jpg)|![Wheat image](/designdocumentation/images/wheat.jpg)|![Hops image](/designdocumentation/images/brew.png)|
 |:--:|:--:|:--:|
@@ -167,9 +167,9 @@ favicon containg the black version of the logo
 
 | ![example product image](/designdocumentation/images/PA2.png) |
 |:--:|
-|<b>example product image</b>|
+|<b>Example Product Image</b>|
 
-- 6 icon images
+- 6 Icon images
 
 | ![Style](/designdocumentation/images/istlye.png)|![Malt](/designdocumentation/images/igrain.png)|
 |:--:|:--:|
@@ -196,7 +196,7 @@ favicon containg the black version of the logo
 
 | ![example product image](/designdocumentation/images/PA1.png) |
 |:--:|
-| <b>example product image</b>|
+| <b>Example Product Image</b>|
 
 ### Taproom page 
 
@@ -206,11 +206,11 @@ favicon containg the black version of the logo
 |:--:|
 | <b>Product Hero Image</b>|
 
-- 12 Product images 
+- 12 Product Images 
 
 | ![example product image](/designdocumentation/images/PB3.png) |
 |:--:|
-| <b>example product image</b>|
+| <b>Example Product Image</b>|
 
 ### Events page 
 
@@ -233,7 +233,7 @@ favicon containg the black version of the logo
 
 # 3.Features <a id="features"></a>
 
-## User features
+## User Features
 
 
 ### Responsiveness
@@ -247,39 +247,39 @@ All pages have a collapsible navigation bar, this makes it fully responsive on a
 
 | ![screenshot of laptop navbar](/designdocumentation/screenshots/features/navbar.png) |
 |:--:|
-| <b>on smaller screens</b>|
+| <b>on a larger screen</b>|
 
 | ![screenshot of medium navbar](/designdocumentation/screenshots/features/navmedium.png) |
 |:--:|
-| <b>on medium screens</b>|
+| <b>on a medium screen</b>|
 
 | ![screenshot of smaller navbar](/designdocumentation/screenshots/features/navsmal.png) |
 |:--:|
-| <b>on smaller screens</b>|
+| <b>on a small screen</b>|
 
 ### Footer
 
 All pages have a responsive footer that contains links to social media and a sign up for the newletter form.
 
-| ![screenshot of smaller footer](/designdocumentation/screenshots/features/footer.png) |
+| ![screenshot of  footer](/designdocumentation/screenshots/features/footer.png) |
 |:--:|
-| <b>on smaller footer</b>|
+| <b>on a larger screen </b>|
 
 | ![screenshot of laptop footer](/designdocumentation/screenshots/features/footersmall.png) |
 |:--:|
-| <b>on laptop footer</b>|
+| <b>on a small screen</b>|
 
 
 ### Sign up page 
 
-a form to allow users to sign up for an accout 
+A form to allow users to sign up for an accout 
 | ![screenshot of the sign up page](/designdocumentation/screenshots/manualtesting/registerpage.png) |
 |:--:|
-| <b>Of sign up form</b>|
+| <b>Sign up form</b>|
 
 ### Login Page 
 
-a form to allow users to log in to thier accout
+A form to allow users to log in to thier accout
 | ![screenshot of the login form](/designdocumentation/screenshots/manualtesting/loginpage.png) |
 |:--:|
 | <b>Login form</b>|
@@ -291,13 +291,13 @@ Log out button in the navbar
 | <b>Logout form</b>|
 
 ### Search Bar
-Users can search for product they would like to see 
+Users can search for products they would like to see 
 | ![screenshot of the search bar](/designdocumentation/screenshots/features/navbar.png) |
 |:--:|
 | <b>Search bar</b>|
 
 ### Shopping Cart
-Users can add products too and view their shopping cart
+Users can add products and view their shopping cart
 | ![screenshot of the shopping cart](/designdocumentation/screenshots/manualtesting/cart.png) |
 |:--:|
 | <b>Shopping cart</b>|
@@ -306,7 +306,7 @@ Users can add products too and view their shopping cart
 Users can pay for their shopping using Stripe secure payment 
 | ![screenshot of the stripe payment form](/designdocumentation/screenshots/features/checkout.png) |
 |:--:|
-| <b>stripe payment form</b>|
+| <b>Stripe payment form</b>|
 
 ### Taproom Booking
 Users can book tables in the Taproom
@@ -316,14 +316,14 @@ Users can book tables in the Taproom
 
 
 ### Brewery Tour Booking
-Users can book tables in the a brewery tour
+Users can book tables in the brewery tour
 | ![screenshot of the brewery tour booking form](/designdocumentation/screenshots/manualtesting/brewtourform.png) |
 |:--:|
 | <b>Brewery tour booking form</b>|
 
 
 ### Contact Form 
-Users can get in contact via form on the contact page
+Users can get in contact via a form on the contact page
 | ![screenshot of the contact form](/designdocumentation/screenshots/manualtesting/contactuslinks.png) |
 |:--:|
 | <b>Contact form</b>|
@@ -336,8 +336,8 @@ Admin can add products to the website
 |:--:|
 | <b>Add product form</b>|
 
-## add Events
- Admin can add Events to the website 
+## Add Events
+ Admin can add events to the website 
 | ![screenshot of the add events form](/designdocumentation/screenshots/manualtesting/eventsmanagement.png) |
 |:--:|
 | <b>Add events form</b>|
@@ -349,10 +349,10 @@ Admin can view bookings made by users
 | <b>Booking mangement page</b>|
 
 ## Send Newsletters   
-Admin can send Newsletters and view users who have signed up to the sign up to recive them
+Admin can send Newsletters and view users who have signed up to recieve them
 | ![screenshot of the send newsletter page](/designdocumentation/screenshots/features/sendnewa.png) |
 |:--:|
-| <b>send newsletter page</b>|
+| <b>Send newsletter page</b>|
 
 | ![screenshot of the sign up list](/designdocumentation/screenshots/manualtesting/mailinglist.png) |
 |:--:|
@@ -363,18 +363,17 @@ In order to protect my users data I have used some defensive programing. My appl
 
 Python functions that check:
 to see if the user is signed in using the built in django feature @login_required
-if a user is editing data. The function will check that the user who is signed in is a super in the view using 
+if a user is editing data. The function will check that the user who is signed in is a superuser in the view.
 ```
 if not request.user.is_superuser:
 ```
-in the view 
 
 These steps help prevent the use of brute force.
 
 # Future Features Ideas <a id="future-features"></a>
 
-- Addind sizes so cases of beer can be added at a time 
-- Reviews app so users can leave reviews on products 
+- Adding sizes funtionality so beer can be sold in cases of beer. 
+- Reviews app so users can leave reviews on products. 
 
 # 4. Technologies Used <a id="technologies"></a>
 
@@ -440,7 +439,7 @@ Forking a Github repositary allows you to make a copy that you can work on witho
 
 ## Environment variables and app set up
 
-In order to connect you to keep your Sectret keys safe you must set up a env.py file. This is a  file containing key value pairs of all the environment variables required to configure you application. This is then linked into you settings.py file in the main app of yor project. an example en.py looks like
+In order to connect you to keep your Sectret keys safe you must set up a env.py file. This is a  file containing key value pairs of all the environment variables required to configure your application. This is then linked into your settings.py file in the main app of yor project. an example en.py looks like:
 
 ```
 SECRET_KEY=h^z13$qr_s_wd65@gnj7a=xs7t05$w7q8!x_8zsld#
@@ -465,11 +464,11 @@ This will deploy the app on a local port 8080. You can stop the app running by p
 pkill -9 python3 
 ```
 
-## Deploying a your Live Django app through HEROKU
+## Deploying  a Live Django app through HEROKU
 
 
 Before you can set up a HEROKU app you must set up the following files:
-- requirements.txt file - this tells HEROKU what dependencies are needed. to create on run
+- requirements.txt file - this tells HEROKU what dependencies are needed. To create one, run
 ```
 pip3 freeze > requirements.txt
 ```
@@ -484,10 +483,10 @@ in you github repository.
 git push
 '''
 
-now you can go to the heroku website and begain the deployment 
+now you can go to the HEROKU website and begain the deployment 
 1. To begin with HEROKU you must first create an account on the <a href="https://id.heroku.com/login">HEROKU website</a>
-2. Once logged in, create a new app. When seleting the app name, keep in mind that it must be unique. Then select your region and create app.
-3. Then go to the settings tab and set up you Congfi Vars in the Heroku Setting tap. These variables will be the same as the ones in you env.py. You will also need to add the folling to the config var and add the this to the settings.py file
+2. Once logged in, create a new app. When selecting the app name, keep in mind that it must be unique. Then select your region and create app.
+3. Then go to the settings tab and set up you Congfi Vars in the HEROKU Setting tap. These variables will be the same as the ones in you env.py. You will also need to add the following to the config var and add this to the settings.py file
 ```
   STRIPE_CURRENCY = 'gbp'
   STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
@@ -495,30 +494,30 @@ now you can go to the heroku website and begain the deployment
   STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 ```
-4. now to connect to a postgres database, install 
+4. Now to connect to a postgres database, install 
 ```
   pip3 install gunicorn
   pip3 install dj_database_url
   pip3 install psycopg2-binary
 ```
-5. add them to the requirements.txt file
+5. Add them to the requirements.txt file
 ```
 pip3 freeze > requirements.txt
 ```
-6. On heroku in the resouces tab, in the add-ons search bar search for heroku POSTGES, Click the link. Leave it on the Hobby Dev setting and click provision.
+6. On HEROKU, in the resouces tab, in the add-ons search bar, search for HEROKU POSTGES, Click the link. Leave it on the Hobby Dev setting and click provision.
 7. Go to the config vars in the settings tab and copy the DATABASE_URL
-8. add your DATABASE_URL to your env.py file
+8. Add your DATABASE_URL to your env.py file
 9. In your settings.py add 
 ```
   DATABASES = {
     import dj_database_url
       'default': dj_database_url.pares(os.environ.get('DATABASE_USER'))
 ```
-10. to populate the database run migrations
+10. To populate the database run migrations
 ```
   python3 manage.py migrate
 ```
-11. now push to git hub
+11. Now push to git hub
 ```
 git push
 ```
@@ -531,40 +530,40 @@ git push
 
 ## Amazon Web Services S3
 Amazon Web Services is a cloud computing platform that provides customers with a wide array of cloud services. 
-To use the s3 service you need to follow these steps 
+To use the s3 service you need to follow these steps: 
 1. Go to the Amazon Web Services website <a href="https://aws.amazon.com/free/?trk=d5254134-67ca-4a35-91cc-77868c97eedd&sc_channel=ps&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services&ef_id=Cj0KCQjwxIOXBhCrARIsAL1QFCaSWuZ2Ip9G8w-RTPAts4p5YEAtLgD2lEqRyFY3ftmF03pJkxVvHNQaAldNEALw_wcB:G:s&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">here</a> and create an account 
 2. Then login and in the search bar find S3
-3. Create a new Bucket within the S3 application with an appropriate name. When creating a buckeT the Object Ownership setting needs the ACLs enabled option checked.
-4. The S3 Bucket can now be configured using the following <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html">documentation</a>
+3. Create a new Bucket within the S3 application with an appropriate name. When creating a bucket the Object Ownership setting needs the ACLs enabled option checked.
+4. The S3 bucket can now be configured using the following <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html">documentation</a>
 
-Once you bucket is created we need to add a user to access it in the Idenity Access Management(IAM)
+Once your bucket is created we need to add a user to access it in the Idenity Access Management(IAM)
 
 ## Amazon IAM 
 1. In the search bar find IAM
-2. Click User Groups on the side menu and click Create New Group and call it appropriate name and click on Create Group
+2. Click User Groups on the side menu and click Create New Group and call it an appropriate name and click on Create Group
 3. Click on Policies and then click on Create Policies
 4. In the JSON tab select 'import managed policy' which will let us import the 'S3 Full Access Policy'  
- - get the bucket ARN from the bucket policy page in S3 and paste it under Resource as a list, first,  ARN as it is and the second time with /* at the end to add to allow access for all files and folders in the bucket.
-5. Click review policy, give it a name and description and click Create Policy.
+5. Get the bucket ARN from the bucket policy page in S3 and paste it under Resource as a list, first,  ARN as it is and the second time with /* at the end to add to allow access for all files and folders in the bucket.
+6. Click review policy, give it a name and description and click Create Policy.
 To attach the policy to the group we created click on User Groups, select the group name then click Attach Policy button, search policy created, select it and click Attach Policy.
-6. Now create a user to put in the group: click Users in the sidebar menu.
-7. Create the user with an appropriate name, select Programmatic Access and select Next.
+7. Now create a user to put in the group: click Users in the sidebar menu.
+8. Create the user with an appropriate name, select Programmatic Access and select Next.
 From the list provided select the group name and click Create User.
-8. Click on 'Download .csv'. You must keep this safe as contains the keys to connect to you django .
+9. Click on 'Download .csv'. You must keep this safe as contains the keys to connect you to django .
 
 ## Connecting AWS to Django
 
 Now connect the AWS to django
 
-1. install django storages and boto3. we can do this using the commands
+1. Install django storages and boto3. we can do this using the commands
 
 ```
 pip3 install boto3
 pip3 install django-storages
 ```
-3. add 'storages' to your installed apps inside your settings.py file
-4.  In the root directory of your project create a file called 'custom_storages.py'
-5.  at the top of this files add 
+2. Add 'storages' to your installed apps inside your settings.py file
+3.  In the root directory of your project create a file called 'custom_storages.py'
+4.  At the top of this files add 
 ```
 from django.conf import settings
 from storages.backends.s3boto3 import S3Boto3Storage
@@ -575,7 +574,7 @@ class StaticStorage(S3Boto3Storage):
 class MediaStorage(S3Boto3Storage):
     location = settings.MEDIAFILES_LOCATION
 ```
-6. now add the following settings in to your settings.py file
+5. Now add the following settings in to your settings.py file
 ```
 if 'USE_AWS' in os.environ:
     # Cache control
@@ -600,14 +599,14 @@ if 'USE_AWS' in os.environ:
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 ```
-7.  Go to Heroku and add the the vars from the csv file to your config vars.
-8.  go to gitpod and in settings.py file and under the if statement above add
+6.  Go to HEROKU and add the the vars from the csv file to your config vars.
+7.  Go to gitpod and in settings.py file and under the if statement above add
 ```
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 ```
-9. Go to you S3 bucket , and 'Create folder'. Name the folder 'media' and click 'Save'.
-10. Inside the new media folder you just created, click 'Upload', 'Add files', and then select all the images that you are using on your site.
-11. Under 'Permissions' select the option 'Grant public-read access' and click upload.
+8. Go to you S3 bucket , and 'Create folder'. Name the folder 'media' and click 'Save'.
+9. Inside the new media folder you just created, click 'Upload', 'Add files', and then select all the images that you are using on your site.
+10. Under 'Permissions' select the option 'Grant public-read access' and click upload.
 
 The django website should now be connected to you AS bucket 
 
@@ -616,10 +615,12 @@ The django website should now be connected to you AS bucket
 ## images 
 
 - Index page hero image - <a href="https://stock.adobe.com/uk/images/draught-beer-in-glasses/229883213?prev_url=detail">By luka mervič: Adobe Stock</a>
-- index page events image <a href="https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:738b8d93-a23a-48ba-b71a-e9e00c7f0e4b?asset_id=118466593">By Syda Productions: Adobe Stock</a>
+- Index page events image <a href="https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:738b8d93-a23a-48ba-b71a-e9e00c7f0e4b?asset_id=118466593">By Syda Productions: Adobe Stock</a>
 - Story page hero image - <a href="https://stock.adobe.com/uk/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=home+brew&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=home+brew&get_facets=0&asset_id=187479821">By luka mervič: Adobe Stock</a>
 - Beer page hero - <a href="https://www.pexels.com/photo/red-and-white-craft-lighted-signage-707408/">Photo by Tim Gouw: Pexels</a>
-- products page and our story page hops image <a href="https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:738b8d93-a23a-48ba-b71a-e9e00c7f0e4b?asset_id=199774568">By fedorovacz: Adobe Stock</a>
+- Products page and our story page hops image <a href="https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:738b8d93-a23a-48ba-b71a-e9e00c7f0e4b?asset_id=199774568">By fedorovacz: Adobe Stock</a>
+
+Product images banners and logo designed by the developer
 
 ## Code
-- Ecommerce code from the Boutique Abo tutorial 
+- cart app, products app code from the Boutique Abo tutorial

@@ -4,7 +4,7 @@ from django.urls import reverse, resolve
 
 class HomePageTests(SimpleTestCase):
     """ Test for checking the home page exsits, the url exsits,\
-         the template exsits and the view exsits""" 
+         the template exsits and the view exsits"""
 
     def setUp(self):
         url = reverse("home")
@@ -26,7 +26,7 @@ class HomePageTests(SimpleTestCase):
 
 class StoryPageTests(SimpleTestCase):
     """ Test for checking the Story page exsits, the url exsits, \
-        the template exsits and the view exsits""" 
+        the template exsits and the view exsits"""
 
     def setUp(self):
         url = reverse("our_story")
@@ -48,7 +48,7 @@ class StoryPageTests(SimpleTestCase):
 
 class TermsAndConditionsTests(SimpleTestCase):
     """ Test for checking the taproom page exsits, \
-        the url exsits, the template exsits and the view exsits""" 
+        the url exsits, the template exsits and the view exsits"""
 
     def setUp(self):
         url = reverse("ts_and_cs")
@@ -71,7 +71,7 @@ class TermsAndConditionsTests(SimpleTestCase):
 class PrivacypageTests(SimpleTestCase):
     """ Test for checking that the Privacy page exsits, \
         the url exsits, the template exsits and the view\
-        exsits""" 
+        exsits"""
 
     def setUp(self):
         url = reverse("privacy")

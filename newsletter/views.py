@@ -54,7 +54,7 @@ def send_newsletter(request):
         email_list = []
         invalid_email = 0
         sent_emails = 0
-        
+
         for subscriber in NewletterSubscribers.objects.all():
             email_list.append(subscriber.email)
 
@@ -62,7 +62,7 @@ def send_newsletter(request):
             # vaildate email and send to vaid email address
             try:
                 validate_email(email)
-            except:
+            except ValidationError as e:
                 invalid_email = invalid_email + 1
             else:
                 sent_emails = sent_emails + 1
@@ -73,7 +73,8 @@ def send_newsletter(request):
                     [email],
                     fail_silently=False,
                 )
-        messages.success(request, f"Sent newsletter to {sent_emails} email address. { invalid_email} could not sent ")                       
+        messages.success(request, f"Sent newsletter to {sent_emails} \
+                         email address. { invalid_email} could not sent ")                  
 
     return render(request, 'newsletter/send_newsletter.html')
 
