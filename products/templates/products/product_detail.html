@@ -14,7 +14,7 @@
 <section class="mt-10">
     <div class="product-hero">
         <img class="product-hero" src="{{ product.product_banner_url }}" alt="{{ product.product_name }}">
-        <div class="centered overlay text-center product-overlay">
+        <div class="centered text-center product-overlay">
             <h1>{{ product.product_name }}</h1>
             <p class="d-none d-lg-block">{{ product.description }}</p>
             <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
@@ -87,17 +87,18 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5 d-flex flex-column justify-content-between">
+                <div
+                    class="product-details-container text-center mb-5 mt-md-5 d-flex flex-column justify-content-between">
                     <h2 class=" mb-2">{{ product.product_name }}</h2>
-                    <div class="row mb-5 card_descriptive_words">
+                    <div class="d-flex align-self-center">
                         {% for adjective in product.descriptive_words %}
-                        <h4 class="descritive_product_words">{{ adjective }}.</h4>
+                        <p class="descritive_product_words">{{ adjective }}.</p>
                         {% endfor %}
                     </div>
 
                     <div class="mb-2">
                         <h3>Colour</h3>
-                        <div class="color-scale d-flex justify-content-between">
+                        <div class="color-scale d-flex justify-content-between md-flex-wrap">
                             {% if product.color == 1 %}
                             <div class="color-scale-marker color-scale-marker-active" id="color-1"></div>
                             {% else %}
