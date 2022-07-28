@@ -372,8 +372,9 @@ These steps help prevent the use of brute force.
 
 # Future Features Ideas <a id="future-features"></a>
 
-- Adding sizes funtionality so beer can be sold in cases of beer. 
+- Case sizes so beer can be sold in cases of beer. 
 - Reviews app so users can leave reviews on products. 
+- Ablity for admin to delete and edit Events
 
 # 4. Technologies Used <a id="technologies"></a>
 
@@ -623,4 +624,9 @@ The django website should now be connected to you AS bucket
 Product images banners and logo designed by the developer
 
 ## Code
-- cart app, products app code from the Boutique Abo tutorial
+- cart app, products app and product code from the Boutique Abo tutorial
+- box shadow taken from <a href="https://getcssscan.com/css-box-shadow-examples">Get Scan</a>
+
+# 7. Acknowledgements <a id="acknowledgements"></a>
+- Chris Quinn - My Mentor for continuous helpful feedback and advice.
+- The Code Institute Slack Community.
