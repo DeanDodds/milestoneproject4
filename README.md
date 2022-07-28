@@ -387,29 +387,6 @@ These steps help prevent the use of brute force.
 - <a href="https://www.javascript.com/">JavaScript</a>
 -<a href="https://www.jetbrains.com/datagrip/features/postgresql/">PostgreSQL</a>
 
-# 4. Deployment <a id="deployment"></a>
-
-# Github <a id=pages></a>
-
-## Making a local clone <A id="clone"></a>
-
-You can clone a Github repository to your local computer by following these steps:
-
-1. On GitHub.com, navigate the repository page
-2. Above the list of files, click on the Code dropdown menu
-3. Select the download zip file 
-4. Once the files have downloaded you can extract them form the zip file and run them on your local environment 
-
-You can see more information on making local clones [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
-
-## Forking the GitHub Repository <a id="fork"></a>
-
-Forking a Github repositary allows you to make a copy that you can work on without effecting the original repository. You can fork a repository by:
-
-1. On GitHub.com, navigate the repository page of the repository you would like to fork
-2. On the top right hand side of the page locate click fork button 
-3. A copy of this resository should now be in your own repositories
-
 
 ## Frameworks, Libraries and Programs used <a id="frameworks"></a>
 
@@ -434,7 +411,9 @@ Forking a Github repositary allows you to make a copy that you can work on witho
 - <a href="https://www.adobe.com/uk/creativecloud/renew/resubscribe-cci.html?mv=search&mv=search&sdid=NYTLQZ47&ef_id=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB:G:s&s_kwcid=AL!3085!3!436521415410!e!!g!!photoshop!10105625998!106997352408&gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlHcXM-sl-7gsfI6_d9t1A_9c-TotGjeRBMhPA9HrRKAisCC5Ayyv28aApUjEALw_wcB">Adobe Illustrator</a> Used to create Logo image. 
 - <a href="https://tinypng.com/">TinyPNG</a> Used to compress images. 
 
-# 4. Deployment <a id="deployment"></a>
+
+# 5. Deployment <a id="deployment"></a>
+
 
 ## Github <a id=pages></a>
 
@@ -461,7 +440,13 @@ Forking a Github repositary allows you to make a copy that you can work on witho
 
 ## Environment variables and app set up
 
-In order to connect you to keep your Sectret keys safe you must set up a env.py file. This is a  file containing key value pairs of all the environment variables required to configure you application. This is then linked into you settings.py file in the main app of yor project. 
+In order to connect you to keep your Sectret keys safe you must set up a env.py file. This is a  file containing key value pairs of all the environment variables required to configure you application. This is then linked into you settings.py file in the main app of yor project. an example en.py looks like
+
+```
+SECRET_KEY=h^z13$qr_s_wd65@gnj7a=xs7t05$w7q8!x_8zsld#
+and added imported into your settings.py file like 
+```
+SECRET_KEY = env(‘SECRET_KEY’)
 
 ## Deployment to a local server 
 
@@ -482,20 +467,67 @@ pkill -9 python3
 
 ## Deploying a your Live Django app through HEROKU
 
+
 Before you can set up a HEROKU app you must set up the following files:
-- requirements.txt file - this tells HEROKU what dependencies are needed 
-- a Procfile file - this specifies the commands that are executed by the app on startup
+- requirements.txt file - this tells HEROKU what dependencies are needed. to create on run
+```
+pip3 freeze > requirements.txt
+```
+- a Procfile file - this specifies the commands that are executed by the app on startup. You need to add 
+```
+web: gunicorn <app name>.wsgi:application
+```
+
 in you github repository.
 - Ensure the project has been fully committed and pushed to git
+'''
+git push
+'''
 
 now you can go to the heroku website and begain the deployment 
 1. To begin with HEROKU you must first create an account on the <a href="https://id.heroku.com/login">HEROKU website</a>
 2. Once logged in, create a new app. When seleting the app name, keep in mind that it must be unique. Then select your region and create app.
-3. Then select the deploy tab and scoll to the deployment method section. You can connect your app by either the HEROKU CLI or through Github. I selected GitHuB so I can use the automatic deployment feature 
-4. Then go to the settings tab and set up you Congfi Vars. These variables will be the same as the ones in you env.py file 
-5. You can then go back to the deploy tab and select automatic deployment 
-6. Your site is now live    
+3. Then go to the settings tab and set up you Congfi Vars in the Heroku Setting tap. These variables will be the same as the ones in you env.py. You will also need to add the folling to the config var and add the this to the settings.py file
+```
+  STRIPE_CURRENCY = 'gbp'
+  STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+  STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+  STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+
+```
+4. now to connect to a postgres database, install 
+```
+  pip3 install gunicorn
+  pip3 install dj_database_url
+  pip3 install psycopg2-binary
+```
+5. add them to the requirements.txt file
+```
+pip3 freeze > requirements.txt
+```
+6. On heroku in the resouces tab, in the add-ons search bar search for heroku POSTGES, Click the link. Leave it on the Hobby Dev setting and click provision.
+7. Go to the config vars in the settings tab and copy the DATABASE_URL
+8. add your DATABASE_URL to your env.py file
+9. In your settings.py add 
+```
+  DATABASES = {
+    import dj_database_url
+      'default': dj_database_url.pares(os.environ.get('DATABASE_USER'))
+```
+10. to populate the database run migrations
+```
+  python3 manage.py migrate
+```
+11. now push to git hub
+```
+git push
+```
+12. Then select the deploy tab and scoll to the deployment method section. You can connect your app by either the HEROKU CLI or through Github. I selected GitHuB so I can use the automatic deployment feature 
+13. You can then go back to the deploy tab and select automatic deployment 
+14. Your site is now live    
 ------
+
+
 
 ## Amazon Web Services S3
 Amazon Web Services is a cloud computing platform that provides customers with a wide array of cloud services. 
