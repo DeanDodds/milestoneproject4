@@ -1,10 +1,10 @@
-# contents
+# Contents
 
 1. [Validation](#validation) 
    - [html validator](#html)
    - [css validator](#css)
-   - [python Pep8 complience](#pep8) 
-   - [javaScript jshint complience](#javscript) 
+   - [python Pep8 compliance](#pep8) 
+   - [javaScript jshint compliance](#javscript) 
 2. [Lighthouse reports](#lighthouse)
 3. [Testing user stories](#stories)
    - [Viewing and navigition](#nav) 
@@ -142,9 +142,9 @@ I used the Pep8 validator to to ensure there were no syntax errors in my python 
 | <b>url.py file validated  - Passed  - </b>|
 
 
-## JavaScript jshint complience <a id="javascript"></a>
+## JavaScript jshint compliance <a id="javascript"></a>
 
-I used the jShint validator to to ensure there was no syntax errors in my JavaScript code
+I used the jShint validator to to ensure there were no syntax errors in my JavaScript code
 
 ![stripe_elements.js validated](/designdocumentation/screenshots/validation/jshint/JSHINT.png) |
 |:--:|
@@ -160,37 +160,37 @@ All my pages have went through google devtools lighthouse analysis which are sco
 
 ![home page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/home.png) |
 |:--:|
-| <b>Home page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+| <b>Home page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. This is from the Jquery library from bootstrap</b>|
 
 ![Products page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/productspage.png) |
 |:--:|
-| <b>Products page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+| <b>Products page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. This is from the Jquery library from bootstrap</b>|
 
 ![Taproom page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/taproom.png) |
 |:--:|
-| <b>Taproom page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+| <b>Taproom page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. This is from the Jquery library from bootstrap</b>|
 
 ![Our Story page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/ourstory.png) |
 |:--:|
-| <b>Taproom page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>
+| <b>Taproom page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. This is from the Jquery library from bootstrap</b>
 
 ![Contact page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/contact.png) |
 |:--:|
-| <b>Contact page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+| <b>Contact page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. This is from the Jquery library from bootstrap</b>|
 
 ![Taproom bookinG page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/bookingtaproompage.png) |
 |:--:|
-| <b>Taproom booking page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+| <b>Taproom booking page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. This is from the Jquery library from bootstrap</b>|
 
 ![Brewtour booking page lighthouse scores](/designdocumentation/screenshots/validation/lighthouse/brewerybookingpage.png) |
 |:--:|
-| <b>Brewtour booking page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. this is from the Jquery need by libary from bootsrap</b>|
+| <b>Brewtour booking page lighthouse scores - All fine  - Best pratices low due to front-end JavaScript libraries with known security vulnerabilities. This is from the Jquery library from bootstrap</b>|
 
 # 3. Testing User Stories <a id="stories"></a>
 
 ## viewing and navigition <a id="nav"></a>
 
-1. As a first time vistor, I want to be able easily recongise the navigation bar of the website. So that i can easily navigate through the pages 
+1. As a first time vistor, I want to be able easily recongise the navigation bar of the website, so that i can easily navigate through the pages 
  * When entering the site users can clearly see the navigation bar and the purpose of the site is very clear.
 
  ![home page screenshot](/designdocumentation/screenshots/userstories/us1.png) |
@@ -199,45 +199,45 @@ All my pages have went through google devtools lighthouse analysis which are sco
 
 
 2. As a shopper. I want to easily view a list of products.
- * all products can been seen on the products page. The product page is in the navbar at the top of the screen. Shoppers can also type into the search bar to just view products relevent to their searches.  
+ * all products can be seen on the products page. The product page is in the navbar at the top of the screen. Shoppers can also type into the search bar to just view products relevent to their searches.  
 
  ![Beer page screenshot](/designdocumentation/screenshots/userstories/us2.png) |
 |:--:|
-| <b>search bar at top of screen and link in navbar</b>|
+| <b>Search bar at top of screen and link in navbar</b>|
 
-3. As a shopper. I want to easily view a individual product details. So that i can view the product name, price, description and style.  
- * all products hav a products detail page with more info on each product. 
+3. As a shopper. I want to easily view individual product details, so that I can view the product name, price, description and style.  
+ * all products have a products detail page with more info on each product. 
 
  ![Product details page screenshot](/designdocumentation/screenshots/userstories/us3.png) |
 |:--:|
-| <b>all information on each product can be found here</b>|
+| <b>All information on each product can be found here</b>|
 
 ## Searching and sorting <a id="search"></a>
 
-4. As a shopper. I want to Sort through products. So that i can easily sort through products for the product im looking for.  
- * In the navbar there is a drop down menu so shoppers can select the styles the like. Shoppers can also type into the search bar to just view products relevent to their searches.    
+4. As a shopper, I want to sort through products. So that I can easily sort through products for the product I'm looking for.  
+ * In the navbar there is a drop down menu so shoppers can select the styles they like. Shoppers can also type into the search bar to just view products relevant to their searches.    
 
  ![nav bar drop down menu and search bar](/designdocumentation/screenshots/userstories/us4.png) |
 |:--:|
-| <b>nav bar drop down menu and search bar can be used to sort through products</b>|
+| <b>Nav bar drop down menu and search bar can be used to sort through products</b>|
 
-5. As a shopper. I want to Sort through products Sort through products by style. So that i can easily sort through products in the style i like .  
- * In the navbar there is a drop down menu so shoppers can select the styles the like.   
+5. As a shopper, I want to sort through products sort through products by style. So that i can easily sort through products in the style I like .  
+ * In the navbar there is a drop down menu so shoppers can select the styles they like.   
 
  ![drop down menu with the styles highlighted](/designdocumentation/screenshots/userstories/us5.png) |
 |:--:|
 | <b>When a style is selected the user will only see beers of that style</b>|
 
-6. As a shopper. I want to search for products by name or description. So that i can find a specific product .  
+6. As a shopper, I want to search for products by name or description, so that I can find a specific product .  
  * Users can search in the search bar this will query the name field and description and only return matches.  
    
  ![search bar and result](/designdocumentation/screenshots/userstories/us6.png) |
 |:--:|
-| <b>product search using search bar </b>|
+| <b>Product search using search bar </b>|
 
 ## Registration and User Account <a id="account"></a>
 
-7. As a site user. I want to Sign up for an account easily. Create a personal profile.  
+7. As a site user. I want to Sign up for an account easily and create a personal profile.  
  * Users can register for an account by clicking the resgister account button in the navbar and filling out the form.  
 
  ![regisiter acount link](/designdocumentation/screenshots/userstories/us7.png) |
@@ -246,9 +246,9 @@ All my pages have went through google devtools lighthouse analysis which are sco
 
  ![regisiter form](/designdocumentation/screenshots/userstories/us7-2.png) |
 |:--:|
-| <b>Register form user must filling</b>|
+| <b>Register form user must fill in</b>|
 
-8. As a site user. I want to easily login. So that access my personal account.  
+8. As a site user, I want to easily login, so that I can access my personal account.  
  * Users can fimd the login link in the nav bar and fill in the form.  
    
  ![Login link](/designdocumentation/screenshots/userstories/us8.png) |
@@ -257,43 +257,43 @@ All my pages have went through google devtools lighthouse analysis which are sco
 
  ![Login form](/designdocumentation/screenshots/userstories/us8-2.png) |
 |:--:|
-| <b>Login form user must filling</b>|
+| <b>Login form user must fill in</b>|
 
-9. As a registered user. I want Easily recover my account if i forget my password.  
- * Users can press the Easily recover my password link on the login page and recover there password using there email address.  
+9. As a registered user, I want to easily recover my account if I forget my password.  
+ * Users can press the easily recover my password link on the login page and recover their password using their email address.  
 
   ![recover password form](/designdocumentation/screenshots/userstories/us9.png) |
 |:--:|
 | <b>recover password form</b>|
 
-10. As a registered user, i want to easily logout my account.
+10. As a registered user, I want to easily logout of my account.
  * A logged in user will see the log out option in the nav bar. 
 
   ![Logout option in navbar](/designdocumentation/screenshots/userstories/us10.png) |
 |:--:|
-| <b>log out option in navbar</b>|
+| <b>Log out option in navbar</b>|
 
-11. As a site user, i want recieve an confirmation ater sign up, So that i can Verify my email address.
- * Users will recieve a confirmation email once they register for an acoount. 
+11. As a site user, I want to receive a confirmation after I sign up, so that I can verify my email address.
+ * Users will receive a confirmation email once they register for an acoount. 
 
 ![Confirmation email sent ](/designdocumentation/screenshots/userstories/us11.png) |
 |:--:|
-| <b>confirmation email sent</b>|
+| <b>Confirmation email sent</b>|
 
 ## Purchasing and check out <a id="order"></a>
 
-12. As a shopper. I want to easily select and purchase products . So that i Add products to my cart.  
- * Users can add items to their shopping cart on the products details page. This can then be viewed in there shopping cart.  
+12. As a shopper, I want to easily select and purchase products, so that I can add products to my cart.  
+ * Users can add items to their shopping cart on the products details page. This can then be viewed in their shopping cart.  
    
  ![Adding product to he shoppong cart](/designdocumentation/screenshots/userstories/us12.png) |
 |:--:|
-| <b>adding product to the basket</b>|
+| <b>Adding products to the basket</b>|
 
  ![products now in the shoppong cart](/designdocumentation/screenshots/userstories/us12-2.png) |
 |:--:|
-| <b>added product to he shoppong cart</b>|
+| <b>Added product to the shoppong cart</b>|
 
-13. As a shopper. Easily view the total of my purchases  . So that i dont over spend.  
+13. As a shopper, I want to be able to easily view the total cost of my purchases, so that I don't over spend.  
  * The total of the shopping cart is always displayed in the corner of the screen so users can always keep track of what they are spending.  
 
   ![Total of shopping cart in the navbar](/designdocumentation/screenshots/userstories/us13.png) |
@@ -303,11 +303,11 @@ All my pages have went through google devtools lighthouse analysis which are sco
 14. As a shopper, I want to be able to easily remove items from my shopping cart.
  * Shoppers can remove items from the basket by clicking the remove item link inside the basket 
 
- ![Remove item link ](/designdocumentation/screenshots/userstories/us14.png)
+ ![Remove item link ](/designdocumentation/screenshots/userstories/us14.png)|
  |:--:|
- | <br>Remove item link</br>
+ | <br>Remove product link</br>|
 
- 15. As a returning user, I want to beable to view my previous purchases.
+ 15. As a returning user, I want to be able to view my previous purchases.
  * Users can see their order history on their profile page 
 
 ![User Profile page](/designdocumentation/screenshots/userstories/us15.png) |
@@ -316,8 +316,8 @@ All my pages have went through google devtools lighthouse analysis which are sco
 
 ## Contacts and booking <a id="booking"></a>
 
-16. As a site user, I want to easily make booking at the brewery. So that i can book a table or a brewery tour. 
-* Users can make booking for the taproom and brewery tour by filling out the book now forms. Links to both forms are clearly seen throught the site and in the footer. 
+16. As a site user, I want to easily make a booking at the brewery, so that I can book a table or a brewery tour. 
+* Users can make bookings for the taproom and brewery tour by filling out the book now forms. Links to both forms are clearly seen throught the site and in the footer. 
 
 ![Brewery tour booking form](/designdocumentation/screenshots/userstories/us16.png) |
 |:--:|
@@ -327,8 +327,8 @@ All my pages have went through google devtools lighthouse analysis which are sco
 |:--:|
 | <b>Taproom booking form</b>|
 
-17. As a site user, I want to easily Find social media links. So can follow and interact with thier content
-* Social media links in both the navbar and the footer. Also in the contact page 
+17. As a site user, I want to easily find social media links, so I can follow and interact with their content
+* Social media links in both the navbar and the footer. Also in the contact page. 
 
 ![Navbar with social media links ](/designdocumentation/screenshots/userstories/us17.png) |
 |:--:|
@@ -338,7 +338,7 @@ All my pages have went through google devtools lighthouse analysis which are sco
 |:--:|
 | <b>Footer with social media links</b>|
 
-18. As a site user, I want to easily find contact details. Get in touch if i need too and find opening hour.
+18. As a site user, I want to easily find contact details, so I can get in touch if I need to and to find out the opening hours.
 *  The contact us page is clearly linked in the navigation bar. On this page it has an enquiry form and all other contact information. The opening times are listed here too.
 
 ![Contact Form ](/designdocumentation/screenshots/userstories/us18.png) |
@@ -347,8 +347,8 @@ All my pages have went through google devtools lighthouse analysis which are sco
 
 ### Adding content <a id="content"></a>
 
-19. As a site Site Owner, i want to admin pages that allow me to add content. So i can add products/events to the website 
- * Admin users can add products and Events to the website by going to the management pages and filling out the form.
+19. As a site Site Owner, I want admin pages that allow me to add content, so I can add products/events to the website. 
+ * Admin users can add products and events to the website by going to the management pages and filling out the form.
 
 ![Add Product Form ](/designdocumentation/screenshots/userstories/us19-2.png) |
 |:--:|
@@ -358,15 +358,15 @@ All my pages have went through google devtools lighthouse analysis which are sco
 |:--:|
 | <b>Add Product Form</b>|
 
-20. As a site Site Owner, i want to admin pages that allow me to edit content. So i can edit products/events to the website 
- * Admin users can edit products and Events by clicking the edit links under each product/event and filling out the form.
+20. As a site Site Owner, I want admin pages that allow me to edit content, so I can edit products/events on the website. 
+ * Admin users can edit products and events by clicking the edit links under each product/event and filling out the form.
 
 ![Edit Product Form ](/designdocumentation/screenshots/userstories/us20.png) |
 |:--:|
 | <b>Add Product Form</b>|
 
-21. As a site Site Owner, i want to admin pages that allow me to delet content. So i can delete products/events to the website 
- * Admin users can delete products and Events by clicking the delete links under each product/event 
+21. As a Site Owner, I want admin pages that allow me to delete content, so I can delete products/events from the website. 
+ * Admin users can delete products and events by clicking the delete links under each product/event.
 
 ![delete Product links ](/designdocumentation/screenshots/userstories/us20.png) |
 |:--:|
@@ -374,7 +374,7 @@ All my pages have went through google devtools lighthouse analysis which are sco
 
 ![delete Product links ](/designdocumentation/screenshots/userstories/us21.png) |
 |:--:|
-| <b>delete Product Form</b>|
+| <b>Delete Product Form</b>|
 
 # 4. Manual Texting <a id="testing"></a>
 
@@ -409,9 +409,9 @@ All my pages have went through google devtools lighthouse analysis which are sco
 |:-----------:|:----:|:--------------:|:--------------:|:--------:|:--------:|:-------:|
 |15|Navigation links|Product Management link clicked|Opens Product management page|![Product management page](/designdocumentation/screenshots/manualtesting/productmanagement.png)|Pass|Works as expected|
 |16|Navigation links|Create Newsletter  link clicked|Opens Create Newsletter page |![Create Newsletter page](/designdocumentation/screenshots/manualtesting/mailinglist.png)|Pass|Works as expected|
-|17|Navigation links|Create Newsletter sign up link clicked|Opens Newsletter sign page|![Newsletter sign up page](/designdocumentation/screenshots/features/maillist.png)||Pass|Works as expected|
+|17|Navigation links|Create Newsletter sign up link clicked|Opens Newsletter sign page|![Newsletter sign up page](/designdocumentation/screenshots/features/maillist.png)|Pass|Works as expected|
 |18|Navigation links|Product Management link clicked|Opens Events management page|![Events management page](/designdocumentation/screenshots/manualtesting/eventsmanagement.png)|Pass|Works as expected|
-|19|Navigation links|Product Management link clicked|Opens Bookings page|![Bookings page](/designdocumentation/screenshots/manualtesting/managebookingpage.png)\Pass|Works as expected|
+|19|Navigation links|Product Management link clicked|Opens Bookings page|![Bookings page](/designdocumentation/screenshots/manualtesting/managebookingpage.png)|Pass|Works as expected|
 |20|Navigation links|Contact Management link clicked|Opens Contact management page|![Manage messages](/designdocumentation/screenshots/manualtesting/messages.png)|Pass|Works as expected|
 
 ## Footer links 
@@ -473,8 +473,8 @@ All my pages have went through google devtools lighthouse analysis which are sco
 |42|Contact links|email link clicked|Opens Email pop up|![Opens email pop up](/designdocumentation/screenshots/features/maillink.png)|Pass|Works as expected|
 
 # Automated Testing
-I have completed automated testing my app using the built in test.py in the apps folder.  The tests check the templte exsits the url and view resolves;
-i ran this by addeding the following tests in home app tests.py
+I have completed automated testing on my app using the built in test.py in the apps folder.  The tests check template exits the url and view resolves;
+I ran this by adding the following tests in home app tests.py
 ```
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
@@ -591,7 +591,7 @@ and running
 ```
 python3 manage.py test home.tests 
 ```
-This returned  
+this returned  
 
 ```
 gitpod /workspace/milestoneproject4 (main) $ python3 manage.py test home.tests
@@ -624,7 +624,7 @@ I have tested my project on a variety of browsers such as:
 |:--:|
 | <b>Tested well on Safari</b>|
   
-i have tested app responsiveness through google 
+I have tested app responsiveness through Google 
 I have also tested it on a range of devices such as:
   * Iphone 6
   * Iphone S
@@ -637,12 +637,12 @@ I also had friends and family test my website and had no issues reported.
 
 ### Test Local againt Deployed 
 
-I regulary check my local version against my deployed version to make user there are no difference between the two.
+I regulary check my local version against my deployed version to make sure there are no difference between the two.
 # 5. Bugs 
 
 
 # Known bugs 
 
 - Subscription email form not validating.
-- contact submit does not clear on submit
-- matching icons 
+- 
+
