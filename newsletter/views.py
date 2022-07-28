@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.exceptions import ValidationError
+from django.core.validators import validate_email
 from django.core.mail import send_mail
 from .models import NewletterSubscribers
 
@@ -35,10 +37,20 @@ def newsletter(request):
 
     return render(request, 'newsletter/newsletter_success.html', context)
 
+value = "foo.bar@baz.qux"
 
+try:
+    validate_email(value)
+except ValidationError as e:
+    print("bad email, details:", e)
+else:
+    print("good email")
+
+    
 @login_required
 def send_newsletter(request):
-    """" send a newsletter out to all subscribers """
+    """" Gets user input then sends a email to newsletter subscriber\
+        with vaild email addresss """
 
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, you must be admin to add products.')
@@ -52,15 +64,25 @@ def send_newsletter(request):
         email_list = []
         for subscriber in NewletterSubscribers.objects.all():
             email_list.append(subscriber.email)
-
-        # send email confirmation to user
-        send_mail(
-            subject,
-            message,
-            'northyeastbrewing.com',
-            [email_list],
-            fail_silently=False,
-        )
+            
+        invalid_email = 0
+        sent_emails = 0
+        for email in email_list:
+            # vaildate email and send to vaid email address
+            try:
+                validate_email(email)
+            except:
+                invalid_email = invalid_email + 1
+            else:
+                sent_emails = sent_emails + 1
+                send_mail(
+                    subject,
+                    message,
+                    'northyeastbrewing.com',
+                    [email],
+                    fail_silently=False,
+                )
+    messages.success(request, f"Sent newsletter to {sent_emails} email address. { invalid_email} could not sent ")                       
 
     return render(request, 'newsletter/send_newsletter.html')
 

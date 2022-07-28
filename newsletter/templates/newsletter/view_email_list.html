@@ -12,9 +12,9 @@
         </div>
         <hr>
         <div class="contact-forms">
+            {% for email in email_list %}
             <div class="row">
                 <div class="col-8">
-                    {% for email in email_list %}
                     <p>{{ email }}</p>
                 </div>
                 <div class="col-4">
@@ -24,9 +24,8 @@
                     </small>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-
 </section>
 <!-- ./newsletter signup section -->
 
